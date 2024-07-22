@@ -1,0 +1,45 @@
+2024-07-22 14:20:30,377 [ 1] INFO  Unity: LoadingManager start
+2024-07-22 14:20:33,447 [ 1] INFO  Unity: DataManager > DataManager()
+2024-07-22 14:20:34,517 [ 1] INFO  Unity: ÕýÔÚ¼ÓÔØ
+2024-07-22 14:20:42,491 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2024-07-22 14:20:42,492 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-07-22 14:20:42,493 [ 1] INFO  Unity: DoConnect
+2024-07-22 14:20:42,494 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-07-22 14:20:42,496 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-07-22 14:20:42,498 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-07-22 14:20:43,964 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-07-22 14:20:43,966 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-07-22 14:20:43,967 [ 1] ERROR Unity: Scene 'CharSelect' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
+UILogin:OnLogin(Result, String) (at Assets/Scripts/UI/UILogin.cs:25)
+Services.UserService:OnUserLogin(Object, UserLoginResponse) (at Assets/Scripts/Services/UserService.cs:162)
+Network.MessageDistributer`1:RaiseEvent(Object, UserLoginResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+
+2024-07-22 14:20:43,968 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
+UILogin:OnLogin(Result, String) (at Assets/Scripts/UI/UILogin.cs:25)
+Services.UserService:OnUserLogin(Object, UserLoginResponse) (at Assets/Scripts/Services/UserService.cs:162)
+Network.MessageDistributer`1:RaiseEvent(Object, UserLoginResponse)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
+Network.MessageDistributer`1:Distribute()
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
+}</args></log4net.Error>
+2024-07-22 14:22:07,495 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-07-22 14:22:07,495 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+
