@@ -1,45 +1,33 @@
-2024-07-22 14:24:32,315 [ 1] INFO  Unity: LoadingManager start
-2024-07-22 14:24:35,659 [ 1] INFO  Unity: DataManager > DataManager()
-2024-07-22 14:24:36,918 [ 1] INFO  Unity: 正在加载
-2024-07-22 14:24:47,255 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2024-07-22 14:24:47,261 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-07-22 14:24:47,270 [ 1] INFO  Unity: DoConnect
-2024-07-22 14:24:47,271 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-07-22 14:24:47,278 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-07-24 17:02:04,493 [ 1] INFO  Unity: LoadingManager start
+2024-07-24 17:02:07,513 [ 1] INFO  Unity: DataManager > DataManager()
+2024-07-24 17:02:08,519 [ 1] INFO  Unity: 正在加载
+2024-07-24 17:02:11,367 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2024-07-24 17:02:11,368 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-07-24 17:02:11,370 [ 1] INFO  Unity: DoConnect
+2024-07-24 17:02:11,371 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-07-24 17:02:11,373 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-07-22 14:24:47,290 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-07-22 14:24:47,451 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-07-22 14:25:13,294 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-07-22 14:25:28,462 [ 1] ERROR Unity: Scene 'CharSelect' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
-UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
-<LoadLevel>c__Iterator0:MoveNext() (at Assets/Scripts/Scene/SceneManager.cs:29)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-UILogin:OnLogin(Result, String) (at Assets/Scripts/UI/UILogin.cs:25)
-Services.UserService:OnUserLogin(Object, UserLoginResponse) (at Assets/Scripts/Services/UserService.cs:162)
-Network.MessageDistributer`1:RaiseEvent(Object, UserLoginResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-
-2024-07-22 14:25:34,588 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, SceneManager+<LoadLevel>c__Iterator0.MoveNext () (at Assets/Scripts/Scene/SceneManager.cs:30)
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
-UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
-SceneManager:LoadScene(String) (at Assets/Scripts/Scene/SceneManager.cs:23)
-UILogin:OnLogin(Result, String) (at Assets/Scripts/UI/UILogin.cs:25)
-Services.UserService:OnUserLogin(Object, UserLoginResponse) (at Assets/Scripts/Services/UserService.cs:162)
-Network.MessageDistributer`1:RaiseEvent(Object, UserLoginResponse)
-Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse)
-Network.MessageDistributer`1:Distribute()
-Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:421)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:439)
-}</args></log4net.Error>
-2024-07-22 14:27:49,228 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-07-22 14:27:49,326 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-07-24 17:02:11,375 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-07-24 17:02:12,890 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-07-24 17:02:12,893 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-07-24 17:02:13,019 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:02:14,382 [ 1] INFO  Unity: Select Char:[7]123[Warrior]
+2024-07-24 17:02:15,393 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-07-24 17:02:15,428 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-07-24 17:02:15,429 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-07-24 17:02:15,430 [ 1] INFO  Unity: AddCharacter:7:123 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-07-24 17:02:15,431 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-07-24 17:02:15,431 [ 1] INFO  Unity: OnCharacterEnter:1
+2024-07-24 17:02:15,432 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-07-24 17:02:15,570 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-24 17:02:15,571 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-24 17:02:15,619 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:02:15,756 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-24 17:02:15,794 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:03:36,493 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-07-24 17:03:36,494 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2024-07-24 17:03:36,495 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 

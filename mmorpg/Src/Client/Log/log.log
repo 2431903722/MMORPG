@@ -1,20 +1,49 @@
-2024-07-22 16:22:33,657 [ 1] INFO  Unity: LoadingManager start
-2024-07-22 16:22:36,679 [ 1] INFO  Unity: DataManager > DataManager()
-2024-07-22 16:22:37,801 [ 1] INFO  Unity: 正在加载
-2024-07-22 16:22:42,674 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2024-07-22 16:22:42,678 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-07-22 16:22:42,680 [ 1] INFO  Unity: DoConnect
-2024-07-22 16:22:42,681 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-07-22 16:22:42,683 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-07-24 17:24:23,126 [ 1] INFO  Unity: LoadingManager start
+2024-07-24 17:24:26,139 [ 1] INFO  Unity: DataManager > DataManager()
+2024-07-24 17:24:27,161 [ 1] INFO  Unity: 正在加载
+2024-07-24 17:24:30,190 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2024-07-24 17:24:30,191 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-07-24 17:24:30,193 [ 1] INFO  Unity: DoConnect
+2024-07-24 17:24:30,194 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-07-24 17:24:30,196 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-07-22 16:22:42,686 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-07-22 16:22:44,100 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-07-22 16:22:44,105 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-07-22 16:22:44,249 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-07-22 16:22:47,755 [ 1] INFO  Unity: SendCharacterCreate::user :123 psw:Warrior
-2024-07-22 16:22:55,573 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-07-22 16:22:55,574 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-07-24 17:24:30,198 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-07-24 17:24:30,254 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-07-24 17:24:30,256 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-07-24 17:24:30,364 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:24:31,500 [ 1] INFO  Unity: Select Char:[8]1[Wizard]
+2024-07-24 17:24:32,643 [ 1] INFO  Unity: UserGameEnterRequest::characterId :1
+2024-07-24 17:24:32,678 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-07-24 17:24:32,678 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2024-07-24 17:24:32,679 [ 1] INFO  Unity: AddCharacter:8:1 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-07-24 17:24:32,680 [ 1] INFO  Unity: AddCharacter:7:123 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-07-24 17:24:32,680 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-07-24 17:24:32,681 [ 1] INFO  Unity: OnCharacterEnter:1
+2024-07-24 17:24:32,681 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-07-24 17:24:32,821 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-24 17:24:32,822 [ 1] INFO  Unity: Wizard OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-24 17:24:32,870 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:24:33,025 [ 1] INFO  Unity: Character_7_123 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-07-24 17:24:33,027 [ 1] INFO  Unity: Character_8_1 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-07-24 17:24:33,067 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-24 17:24:33,651 [ 1] INFO  Unity: MoveForward
+2024-07-24 17:24:34,330 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2024-07-24 17:24:34,430 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2024-07-24 17:24:34,529 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
+2024-07-24 17:24:34,611 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
+2024-07-24 17:24:34,727 [ 1] INFO  Unity: Stop
+2024-07-24 17:24:34,727 [ 1] INFO  Unity: SetDirection:(58, -82, 0)
+2024-07-24 17:24:34,776 [ 1] INFO  Unity: MoveForward
+2024-07-24 17:24:34,809 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
+2024-07-24 17:24:34,893 [ 1] INFO  Unity: SetDirection:(26, -97, 0)
+2024-07-24 17:24:34,993 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
+2024-07-24 17:24:35,124 [ 1] INFO  Unity: SetDirection:(-13, -99, 0)
+2024-07-24 17:24:35,721 [ 1] INFO  Unity: Stop
+2024-07-24 17:24:36,236 [ 1] INFO  Unity: Character_8_1 OnDestroy :ID:0 POS:(5295, 3666, 820) DIR:(-13, -99, 0) SPD:0 
+2024-07-24 17:24:36,237 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-07-24 17:24:36,237 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2024-07-24 17:24:36,238 [ 1] INFO  Unity: Character_7_123 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

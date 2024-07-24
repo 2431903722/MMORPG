@@ -36,6 +36,8 @@ GameObject:
   - component: {fileID: 4616454976859732}
   - component: {fileID: 54694007077697496}
   - component: {fileID: 136387830155563700}
+  - component: {fileID: 114007820079496068}
+  - component: {fileID: 114867588004478454}
   m_Layer: 0
   m_Name: Archer
   m_TagString: Untagged
@@ -2378,6 +2380,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114007820079496068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023616289239580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422006e2d7ced2f4b9b2415cf83e4629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95842149403464802}
+  rb: {fileID: 54694007077697496}
+  position: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
+  speed: 0
+  animSpeed: 1.5
+  jumpPower: 3
+  isPlayer: 0
+--- !u!114 &114867588004478454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023616289239580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c99e2cbb8f032409e0e1d25c142557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 54694007077697496}
+  rotateSpeed: 2
+  turnAngle: 10
+  speed: 0
+  entityController: {fileID: 114007820079496068}
+  onAir: 0
 --- !u!136 &136387830155563700
 CapsuleCollider:
   m_ObjectHideFlags: 1

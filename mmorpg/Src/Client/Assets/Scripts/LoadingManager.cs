@@ -37,7 +37,7 @@ public class LoadingManager : MonoBehaviour {
         yield return DataManager.Instance.LoadData();
 
         //Init basic services
-        //MapService.Instance.Init();
+        MapService.Instance.Init();
         UserService.Instance.Init();
 
         // Fake Loading Simulate
@@ -53,7 +53,6 @@ public class LoadingManager : MonoBehaviour {
         UILogin.SetActive(true);
         yield return null;
     }
-
 
     // Update is called once per frame
     void Update () {

@@ -7,6 +7,7 @@ using Common;
 using Network;
 using SkillBridge.Message;
 using GameServer.Entities;
+using GameServer.Managers;
 
 namespace GameServer.Services
 {
@@ -18,6 +19,7 @@ namespace GameServer.Services
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserRegisterRequest>(this.OnRegister);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserLoginRequest>(this.OnLogin);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserCreateCharacterRequest>(this.OnCreateCharacter);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<UserGameEnterRequest>(this.OnGameEnter);
         }
 
         public void Init()
@@ -94,7 +96,6 @@ namespace GameServer.Services
             sender.SendData(data, 0, data.Length);
         }
 
-
         void OnCreateCharacter(NetConnection<NetSession> sender, UserCreateCharacterRequest request)
         {
             Log.InfoFormat("UserCreateCharacterRequest: Name:{0}  Class:{1}", request.Name, request.Class);
@@ -123,6 +124,27 @@ namespace GameServer.Services
             
             byte[] data = PackageHandler.PackMessage(message);
             sender.SendData(data, 0, data.Length);
+        }
+
+        void OnGameEnter(NetConnection<NetSession> sender, UserGameEnterRequest request)
+        {
+            // 拿到角色信息
+            TCharacter dbchar = sender.Session.User.Player.Characters.ElementAt(request.characterIdx);
+            Log.InfoFormat("UserGameEnterRequest: characterID:{0}:{1} Map:{2}", dbchar.ID, dbchar.Name, dbchar.MapID);
+            Character character = CharacterManager.Instance.AddCharacter(dbchar);
+
+            // 生成进入响应
+            NetMessage message = new NetMessage();
+            message.Response = new NetMessageResponse();
+            message.Response.gameEnter = new UserGameEnterResponse();
+            message.Response.gameEnter.Result = Result.Success;
+            message.Response.gameEnter.Errormsg = "None";
+
+            // 成功进入游戏对角色进行赋值
+            byte[] data = PackageHandler.PackMessage(message);
+            sender.SendData(data, 0, data.Length);
+            sender.Session.Character = character;
+            MapManager.Instance[dbchar.MapID].CharacterEnter(sender, character);
         }
     }
 }

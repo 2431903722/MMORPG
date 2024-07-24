@@ -684,6 +684,8 @@ GameObject:
   - component: {fileID: 4174984745379422}
   - component: {fileID: 54255169930946384}
   - component: {fileID: 136599443910912012}
+  - component: {fileID: 114317500119065496}
+  - component: {fileID: 114877634000537914}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Untagged
@@ -1414,6 +1416,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114317500119065496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953393978184550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422006e2d7ced2f4b9b2415cf83e4629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95715579257785278}
+  rb: {fileID: 54255169930946384}
+  position: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
+  speed: 0
+  animSpeed: 1.5
+  jumpPower: 3
+  isPlayer: 0
+--- !u!114 &114877634000537914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953393978184550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c99e2cbb8f032409e0e1d25c142557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 54255169930946384}
+  rotateSpeed: 2
+  turnAngle: 10
+  speed: 0
+  entityController: {fileID: 114317500119065496}
+  onAir: 0
 --- !u!136 &136599443910912012
 CapsuleCollider:
   m_ObjectHideFlags: 1

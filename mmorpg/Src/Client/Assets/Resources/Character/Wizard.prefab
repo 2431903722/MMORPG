@@ -578,6 +578,8 @@ GameObject:
   - component: {fileID: 4991727956260050}
   - component: {fileID: 54499142378551830}
   - component: {fileID: 136158063157274762}
+  - component: {fileID: 114100814127141006}
+  - component: {fileID: 114714811547752746}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -2462,6 +2464,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114100814127141006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442858012577984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422006e2d7ced2f4b9b2415cf83e4629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95599080199780296}
+  rb: {fileID: 54499142378551830}
+  position: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
+  lastPosition: {x: 0, y: 0, z: 0}
+  speed: 0
+  animSpeed: 1.5
+  jumpPower: 3
+  isPlayer: 0
+--- !u!114 &114714811547752746
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442858012577984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c99e2cbb8f032409e0e1d25c142557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 54499142378551830}
+  rotateSpeed: 2
+  turnAngle: 10
+  speed: 0
+  entityController: {fileID: 114100814127141006}
+  onAir: 0
 --- !u!136 &136158063157274762
 CapsuleCollider:
   m_ObjectHideFlags: 1
