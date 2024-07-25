@@ -5,15 +5,13 @@ using UnityEngine;
 public class UIWorldElement : MonoBehaviour {
 
     public Transform owner;
-
     public float height = 1.5f;
 
-	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
 		
 	}
 
-    // Update is called once per frame
     void Update()
     {
         if (owner != null)
