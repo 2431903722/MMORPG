@@ -1,71 +1,93 @@
-2024-07-25 15:44:08,180 [ 1] INFO  Unity: LoadingManager start
-2024-07-25 15:44:11,191 [ 1] INFO  Unity: DataManager > DataManager()
-2024-07-25 15:44:12,298 [ 1] INFO  Unity: 正在加载
-2024-07-25 15:44:15,129 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
-2024-07-25 15:44:15,129 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-07-25 15:44:15,131 [ 1] INFO  Unity: DoConnect
-2024-07-25 15:44:15,132 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-07-25 15:44:15,134 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-07-27 22:59:28,789 [ 1] INFO  Unity: LoadingManager start
+2024-07-27 22:59:31,800 [ 1] INFO  Unity: DataManager > DataManager()
+2024-07-27 22:59:32,889 [ 1] INFO  Unity: 正在加载
+2024-07-27 22:59:37,327 [ 1] INFO  Unity: UserLoginRequest::user :123 psw:123
+2024-07-27 22:59:37,328 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-07-27 22:59:37,330 [ 1] INFO  Unity: DoConnect
+2024-07-27 22:59:37,331 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-07-27 22:59:37,333 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-07-25 15:44:15,136 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-07-25 15:44:15,200 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-07-25 15:44:15,202 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-07-25 15:44:15,332 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-07-25 15:44:16,281 [ 1] INFO  Unity: Select Char:[7]123[Warrior]
-2024-07-25 15:44:16,811 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-07-25 15:44:16,846 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-07-25 15:44:16,847 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2024-07-25 15:44:16,848 [ 1] INFO  Unity: AddCharacter:7:123 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-07-25 15:44:16,848 [ 1] INFO  Unity: AddCharacter:7:123 Map:1 Entity:(0:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-07-25 15:44:16,848 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-07-25 15:44:16,848 [ 1] INFO  Unity: OnCharacterEnter:1
-2024-07-25 15:44:16,849 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-07-25 15:44:16,988 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-07-25 15:44:16,989 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-07-25 15:44:17,036 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-07-25 15:44:17,171 [ 1] INFO  Unity: Character_7_123 OnDestroy :ID:0 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-07-25 15:44:17,212 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-07-25 15:44:18,813 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2024-07-25 15:44:18,913 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
-2024-07-25 15:44:18,996 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
-2024-07-25 15:44:19,062 [ 1] INFO  Unity: MoveForward
-2024-07-25 15:44:19,095 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
-2024-07-25 15:44:19,211 [ 1] INFO  Unity: SetDirection:(58, -81, 0)
-2024-07-25 15:44:19,293 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
-2024-07-25 15:44:19,376 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
-2024-07-25 15:44:19,459 [ 1] INFO  Unity: SetDirection:(10, -100, 0)
-2024-07-25 15:44:19,543 [ 1] INFO  Unity: SetDirection:(-8, -100, 0)
-2024-07-25 15:44:19,642 [ 1] INFO  Unity: SetDirection:(-28, -96, 0)
-2024-07-25 15:44:19,724 [ 1] INFO  Unity: SetDirection:(-45, -89, 0)
-2024-07-25 15:44:19,824 [ 1] INFO  Unity: SetDirection:(-62, -79, 0)
-2024-07-25 15:44:19,956 [ 1] INFO  Unity: SetDirection:(-76, -65, 0)
-2024-07-25 15:44:20,701 [ 1] INFO  Unity: SetDirection:(-63, -78, 0)
-2024-07-25 15:44:20,801 [ 1] INFO  Unity: SetDirection:(-45, -89, 0)
-2024-07-25 15:44:20,900 [ 1] INFO  Unity: SetDirection:(-26, -97, 0)
-2024-07-25 15:44:21,000 [ 1] INFO  Unity: SetDirection:(-5, -100, 0)
-2024-07-25 15:44:21,100 [ 1] INFO  Unity: SetDirection:(16, -99, 0)
-2024-07-25 15:44:21,199 [ 1] INFO  Unity: SetDirection:(36, -93, 0)
-2024-07-25 15:44:21,315 [ 1] INFO  Unity: SetDirection:(54, -84, 0)
-2024-07-25 15:44:21,397 [ 1] INFO  Unity: SetDirection:(68, -73, 0)
-2024-07-25 15:44:21,480 [ 1] INFO  Unity: SetDirection:(80, -60, 0)
-2024-07-25 15:44:21,580 [ 1] INFO  Unity: SetDirection:(91, -42, 0)
-2024-07-25 15:44:21,646 [ 1] INFO  Unity: Stop
-2024-07-25 15:44:21,679 [ 1] INFO  Unity: SetDirection:(97, -23, 0)
-2024-07-25 15:44:21,713 [ 1] INFO  Unity: MoveForward
-2024-07-25 15:44:21,762 [ 1] INFO  Unity: SetDirection:(100, -5, 0)
-2024-07-25 15:44:21,862 [ 1] INFO  Unity: SetDirection:(99, 16, 0)
-2024-07-25 15:44:21,961 [ 1] INFO  Unity: SetDirection:(93, 36, 0)
-2024-07-25 15:44:22,061 [ 1] INFO  Unity: SetDirection:(84, 54, 0)
-2024-07-25 15:44:22,143 [ 1] INFO  Unity: SetDirection:(73, 68, 0)
-2024-07-25 15:44:22,226 [ 1] INFO  Unity: SetDirection:(60, 80, 0)
-2024-07-25 15:44:22,326 [ 1] INFO  Unity: SetDirection:(42, 91, 0)
-2024-07-25 15:44:22,425 [ 1] INFO  Unity: SetDirection:(24, 97, 0)
-2024-07-25 15:44:22,591 [ 1] INFO  Unity: SetDirection:(6, 100, 0)
-2024-07-25 15:44:22,690 [ 1] INFO  Unity: Stop
-2024-07-25 15:44:23,686 [ 1] INFO  Unity: Character_7_123 OnDestroy :ID:0 POS:(5087, 3580, 820) DIR:(6, 100, 0) SPD:0 
-2024-07-25 15:44:23,687 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-07-25 15:44:23,687 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-07-27 22:59:37,335 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-07-27 22:59:38,767 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-07-27 22:59:38,769 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-07-27 22:59:38,924 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-27 22:59:39,960 [ 1] INFO  Unity: Select Char:[7]123[Warrior]
+2024-07-27 22:59:40,887 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-07-27 22:59:40,922 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-07-27 22:59:40,923 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-07-27 22:59:40,924 [ 1] INFO  Unity: AddCharacter:7:123 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-07-27 22:59:40,925 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-07-27 22:59:41,091 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-27 22:59:41,091 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-07-27 22:59:41,138 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-27 22:59:44,415 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-07-27 22:59:44,415 [ 1] INFO  Unity: UserGameLeaveRequest
+2024-07-27 22:59:44,448 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:7
+2024-07-27 22:59:44,449 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2024-07-27 22:59:44,522 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-07-27 22:59:44,784 [ 1] INFO  Unity: SetPosition:(5000, 4000, 769)
+2024-07-27 22:59:44,934 [ 1] INFO  Unity: SetPosition:(5000, 4000, 717)
+2024-07-27 22:59:45,050 [ 1] INFO  Unity: SetPosition:(5000, 4000, 661)
+2024-07-27 22:59:45,149 [ 1] INFO  Unity: SetPosition:(5000, 4000, 603)
+2024-07-27 22:59:45,231 [ 1] INFO  Unity: SetPosition:(5000, 4000, 547)
+2024-07-27 22:59:45,314 [ 1] INFO  Unity: SetPosition:(5000, 4000, 484)
+2024-07-27 22:59:45,381 [ 1] INFO  Unity: SetPosition:(5000, 4000, 429)
+2024-07-27 22:59:45,447 [ 1] INFO  Unity: SetPosition:(5000, 4000, 369)
+2024-07-27 22:59:45,513 [ 1] INFO  Unity: SetPosition:(5000, 4000, 305)
+2024-07-27 22:59:45,563 [ 1] INFO  Unity: SetPosition:(5000, 4000, 254)
+2024-07-27 22:59:45,613 [ 1] INFO  Unity: SetPosition:(5000, 4000, 201)
+2024-07-27 22:59:45,662 [ 1] INFO  Unity: SetPosition:(5000, 4000, 145)
+2024-07-27 22:59:45,712 [ 1] INFO  Unity: SetPosition:(5000, 4000, 87)
+2024-07-27 22:59:45,761 [ 1] INFO  Unity: SetPosition:(5000, 4000, 26)
+2024-07-27 22:59:45,811 [ 1] INFO  Unity: SetPosition:(5000, 4000, -37)
+2024-07-27 22:59:45,861 [ 1] INFO  Unity: SetPosition:(5000, 4000, -103)
+2024-07-27 22:59:45,911 [ 1] INFO  Unity: SetPosition:(5000, 4000, -171)
+2024-07-27 22:59:45,960 [ 1] INFO  Unity: SetPosition:(5000, 4000, -242)
+2024-07-27 22:59:46,010 [ 1] INFO  Unity: SetPosition:(5000, 4000, -315)
+2024-07-27 22:59:46,060 [ 1] INFO  Unity: SetPosition:(5000, 4000, -390)
+2024-07-27 22:59:46,093 [ 1] INFO  Unity: SetPosition:(5000, 4000, -442)
+2024-07-27 22:59:46,126 [ 1] INFO  Unity: SetPosition:(5000, 4000, -495)
+2024-07-27 22:59:46,159 [ 1] INFO  Unity: SetPosition:(5000, 4000, -548)
+2024-07-27 22:59:46,192 [ 1] INFO  Unity: SetPosition:(5000, 4000, -603)
+2024-07-27 22:59:46,225 [ 1] INFO  Unity: SetPosition:(5000, 4000, -660)
+2024-07-27 22:59:46,259 [ 1] INFO  Unity: SetPosition:(5000, 4000, -717)
+2024-07-27 22:59:46,291 [ 1] INFO  Unity: SetPosition:(5000, 4000, -775)
+2024-07-27 22:59:46,324 [ 1] INFO  Unity: SetPosition:(5000, 4000, -834)
+2024-07-27 22:59:46,359 [ 1] INFO  Unity: SetPosition:(5000, 4000, -895)
+2024-07-27 22:59:46,407 [ 1] INFO  Unity: SetPosition:(5000, 4000, -956)
+2024-07-27 22:59:46,441 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1019)
+2024-07-27 22:59:46,474 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1083)
+2024-07-27 22:59:46,507 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1148)
+2024-07-27 22:59:46,540 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1214)
+2024-07-27 22:59:46,574 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1281)
+2024-07-27 22:59:46,606 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1349)
+2024-07-27 22:59:46,639 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1418)
+2024-07-27 22:59:46,672 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1488)
+2024-07-27 22:59:46,706 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1560)
+2024-07-27 22:59:46,739 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1632)
+2024-07-27 22:59:46,772 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1706)
+2024-07-27 22:59:46,805 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1780)
+2024-07-27 22:59:46,838 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1856)
+2024-07-27 22:59:46,871 [ 1] INFO  Unity: SetPosition:(5000, 4000, -1933)
+2024-07-27 22:59:46,904 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2011)
+2024-07-27 22:59:46,938 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2090)
+2024-07-27 22:59:46,971 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2170)
+2024-07-27 22:59:47,004 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2252)
+2024-07-27 22:59:47,037 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2334)
+2024-07-27 22:59:47,070 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2417)
+2024-07-27 22:59:47,104 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2502)
+2024-07-27 22:59:47,137 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2588)
+2024-07-27 22:59:47,170 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2674)
+2024-07-27 22:59:47,203 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2762)
+2024-07-27 22:59:47,236 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2851)
+2024-07-27 22:59:47,269 [ 1] INFO  Unity: SetPosition:(5000, 4000, -2941)
+2024-07-27 22:59:47,302 [ 1] INFO  Unity: SetPosition:(5000, 4000, -3032)
+2024-07-27 22:59:47,336 [ 1] INFO  Unity: SetPosition:(5000, 4000, -3124)
+2024-07-27 23:00:17,010 [ 1] INFO  Unity: Character_7_123 OnDestroy :ID:1 POS:(5000, 4000, -3124) DIR:(100, 0, 0) SPD:0 
+2024-07-27 23:00:17,011 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-07-27 23:00:17,011 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2024-07-27 23:00:17,012 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 

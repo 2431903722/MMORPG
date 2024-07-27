@@ -8,11 +8,6 @@ public class UIWorldElementManager : MonoSingleton<UIWorldElementManager> {
     public GameObject nameBarPrefab;
 
     private Dictionary<Transform, GameObject> elements = new Dictionary<Transform, GameObject>();
-
-	void Start () 
-    {
-		
-	}
 	
 	void Update () 
     {

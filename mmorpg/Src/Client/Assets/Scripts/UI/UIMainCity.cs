@@ -20,8 +20,9 @@ public class UIMainCity : MonoBehaviour {
 		this.avatarLevel.text = User.Instance.CurrentCharacter.Level.ToString();
 	}
 
-	void Update () 
-	{		
-		
+	public void BackToCharSelect()
+	{
+		SceneManager.Instance.LoadScene("CharSelect");
+		Services.UserService.Instance.SendGameLeave();
 	}
 }
