@@ -30,9 +30,14 @@ public class UIMinimap : MonoBehaviour {
 
 	void Update()
 	{
-		if(playerTransform == null && User.Instance.CurrentCharacterObject != null)
+		//if(playerTransform == null && User.Instance.CurrentCharacterObject != null)
+		//{
+		//	this.playerTransform = User.Instance.CurrentCharacterObject.transform;
+		//}
+
+		if (playerTransform == null)
 		{
-			this.playerTransform = User.Instance.CurrentCharacterObject.transform;
+			playerTransform = MinimapManager.Instance.PlayerTransform;
 		}
 
 		if(minimapBoudingBox == null || playerTransform == null)

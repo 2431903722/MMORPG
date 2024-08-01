@@ -106,4 +106,9 @@ public class EntityController : MonoBehaviour , IEntityNotify
                 break;
         }
     }
+
+    public void OnEntityChanged(Entity entity)
+    {
+        Debug.LogFormat("OnEntityChanger: ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.entityId, entity.position, entity.direction, entity.speed);
+    }
 }

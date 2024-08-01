@@ -11,6 +11,7 @@ using Common.Data;
 using Network;
 using GameServer.Managers;
 using GameServer.Entities;
+using GameServer.Services;
 
 namespace GameServer.Models
 {
@@ -70,12 +71,13 @@ namespace GameServer.Models
             }
             
             this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+            //this.MapCharacters[character.Info.Id] = new MapCharacter(conn, character);
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
         }
 
-        internal void CharacterLeave(NCharacterInfo cha)
+        internal void CharacterLeave(Character cha)
         {
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, cha.Id);
             foreach (var kv in this.MapCharacters)
@@ -83,6 +85,7 @@ namespace GameServer.Models
                 this.SendCharacterLeaveMap(kv.Value.connection, cha);
             }
             this.MapCharacters.Remove(cha.Id);
+            //this.MapCharacters.Remove(cha.Entity.Id);
         }
 
         void SendCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
@@ -98,7 +101,7 @@ namespace GameServer.Models
             conn.SendData(data, 0, data.Length);
         }
 
-        void SendCharacterLeaveMap(NetConnection<NetSession> connection, NCharacterInfo character)
+        void SendCharacterLeaveMap(NetConnection<NetSession> connection, Character character)
         {
             NetMessage message = new NetMessage();
             message.Response = new NetMessageResponse();
@@ -108,6 +111,23 @@ namespace GameServer.Models
 
             byte[] data = PackageHandler.PackMessage(message);
             connection.SendData(data, 0, data.Length);
+        }
+
+        internal void UpdateEntity(NEntitySync entity)
+        {
+            foreach (var kv in this.MapCharacters)
+            {
+                if (kv.Value.character.entityId == entity.Id)
+                {
+                    kv.Value.character.Position = entity.Entity.Position;
+                    kv.Value.character.Direction = entity.Entity.Direction;
+                    kv.Value.character.Speed = entity.Entity.Speed;
+                }
+                else
+                {
+                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entity);
+                }
+            }
         }
     }
 }
