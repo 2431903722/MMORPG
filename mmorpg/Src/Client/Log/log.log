@@ -1,340 +1,109 @@
-2024-08-01 10:14:50,061 [ 1] INFO  Unity: LoadingManager start
-2024-08-01 10:14:53,078 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-01 10:14:54,203 [ 1] INFO  Unity: 正在加载
-2024-08-01 10:15:04,107 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-01 10:15:04,108 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-01 10:15:04,110 [ 1] INFO  Unity: DoConnect
-2024-08-01 10:15:04,111 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-01 10:15:04,113 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-08-01 22:31:45,558 [ 1] INFO  Unity: LoadingManager start
+2024-08-01 22:31:48,577 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-01 22:31:49,787 [ 1] INFO  Unity: 正在加载
+2024-08-01 22:31:54,368 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-08-01 22:31:54,369 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-08-01 22:31:54,371 [ 1] INFO  Unity: DoConnect
+2024-08-01 22:31:54,372 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-08-01 22:31:54,374 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-08-01 10:15:04,115 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-01 10:15:05,569 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-01 10:15:05,571 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-01 10:15:05,727 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-01 10:15:06,634 [ 1] INFO  Unity: Select Char:[1008]001_01[Warrior]
-2024-08-01 10:15:07,364 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-01 10:15:07,398 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-01 10:15:07,398 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-01 10:15:07,399 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-01 10:15:07,400 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-01 10:15:07,561 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-01 10:15:07,561 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-01 10:15:07,609 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-01 10:15:08,964 [ 1] INFO  Unity: MoveForward
-2024-08-01 10:15:08,965 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2024-08-01 10:15:09,428 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2024-08-01 10:15:09,428 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5140,4000,820) DIR:(98,-18,0) SPD:300
-2024-08-01 10:15:09,527 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
-2024-08-01 10:15:09,528 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5170,3994,820) DIR:(94,-35,0) SPD:300
-2024-08-01 10:15:09,610 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
-2024-08-01 10:15:09,610 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5195,3984,820) DIR:(86,-51,0) SPD:300
-2024-08-01 10:15:09,677 [ 1] INFO  Unity: Stop
-2024-08-01 10:15:09,677 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(86,-51,0) SPD:0
-2024-08-01 10:15:09,709 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
-2024-08-01 10:15:09,709 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(74,-68,0) SPD:0
-2024-08-01 10:15:09,792 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
-2024-08-01 10:15:09,792 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(61,-79,0) SPD:0
-2024-08-01 10:15:09,875 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
-2024-08-01 10:15:09,876 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(46,-89,0) SPD:0
-2024-08-01 10:15:09,975 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
-2024-08-01 10:15:09,975 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(27,-96,0) SPD:0
-2024-08-01 10:15:10,057 [ 1] INFO  Unity: SetDirection:(9, -100, 0)
-2024-08-01 10:15:10,057 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(9,-100,0) SPD:0
-2024-08-01 10:15:10,157 [ 1] INFO  Unity: SetDirection:(-11, -99, 0)
-2024-08-01 10:15:10,157 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-11,-99,0) SPD:0
-2024-08-01 10:15:10,256 [ 1] INFO  Unity: SetDirection:(-29, -96, 0)
-2024-08-01 10:15:10,257 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-29,-96,0) SPD:0
-2024-08-01 10:15:10,356 [ 1] INFO  Unity: SetDirection:(-48, -88, 0)
-2024-08-01 10:15:10,356 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-48,-88,0) SPD:0
-2024-08-01 10:15:10,455 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
-2024-08-01 10:15:10,455 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-65,-76,0) SPD:0
-2024-08-01 10:15:10,588 [ 1] INFO  Unity: SetDirection:(-78, -63, 0)
-2024-08-01 10:15:10,588 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-78,-63,0) SPD:0
-2024-08-01 10:15:20,760 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-01 10:15:20,760 [ 1] INFO  Unity: AddCharacter:2:002_01 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-01 10:15:26,450 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(98, -18, 0) SPD:0
-2024-08-01 10:15:26,450 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5000,4000,820),dir:(98,-18,0),spd:0
-
-2024-08-01 10:15:26,548 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(94, -35, 0) SPD:0
-2024-08-01 10:15:26,548 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5000,4000,820),dir:(94,-35,0),spd:0
-
-2024-08-01 10:15:26,630 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(86, -51, 0) SPD:0
-2024-08-01 10:15:26,631 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5000,4000,820),dir:(86,-51,0),spd:0
-
-2024-08-01 10:15:26,730 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(74, -67, 0) SPD:0
-2024-08-01 10:15:26,731 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5000,4000,820),dir:(74,-67,0),spd:0
-
-2024-08-01 10:15:26,896 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(60, -80, 0) SPD:0
-2024-08-01 10:15:26,897 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5000,4000,820),dir:(60,-80,0),spd:0
-
-2024-08-01 10:15:27,145 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(60, -80, 0) SPD:300
-2024-08-01 10:15:27,145 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:MoveFwd entity:(2:pos:(5000,4000,820),dir:(60,-80,0),spd:300
-
-2024-08-01 10:15:27,808 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(60, -80, 0) SPD:0
-2024-08-01 10:15:27,808 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:Idle entity:(2:pos:(5120,3840,820),dir:(60,-80,0),spd:0
-
-2024-08-01 10:15:28,718 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(74, -67, 0) SPD:0
-2024-08-01 10:15:28,719 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(74,-67,0),spd:0
-
-2024-08-01 10:15:28,817 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(86, -51, 0) SPD:0
-2024-08-01 10:15:28,818 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(86,-51,0),spd:0
-
-2024-08-01 10:15:28,917 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(95, -32, 0) SPD:0
-2024-08-01 10:15:28,918 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(95,-32,0),spd:0
-
-2024-08-01 10:15:29,016 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(99, -12, 0) SPD:0
-2024-08-01 10:15:29,017 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(99,-12,0),spd:0
-
-2024-08-01 10:15:29,115 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(100, 9, 0) SPD:0
-2024-08-01 10:15:29,116 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(100,9,0),spd:0
-
-2024-08-01 10:15:29,214 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(96, 29, 0) SPD:0
-2024-08-01 10:15:29,215 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(96,29,0),spd:0
-
-2024-08-01 10:15:29,297 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(89, 46, 0) SPD:0
-2024-08-01 10:15:29,298 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(89,46,0),spd:0
-
-2024-08-01 10:15:29,397 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(78, 63, 0) SPD:0
-2024-08-01 10:15:29,397 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(78,63,0),spd:0
-
-2024-08-01 10:15:29,480 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(66, 76, 0) SPD:0
-2024-08-01 10:15:29,481 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(66,76,0),spd:0
-
-2024-08-01 10:15:29,580 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(51, 86, 0) SPD:0
-2024-08-01 10:15:29,580 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(51,86,0),spd:0
-
-2024-08-01 10:15:29,679 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(32, 95, 0) SPD:0
-2024-08-01 10:15:29,680 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(32,95,0),spd:0
-
-2024-08-01 10:15:29,778 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(12, 99, 0) SPD:0
-2024-08-01 10:15:29,779 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(12,99,0),spd:0
-
-2024-08-01 10:15:29,877 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(-9, 100, 0) SPD:0
-2024-08-01 10:15:29,878 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(-9,100,0),spd:0
-
-2024-08-01 10:15:29,977 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(-29, 96, 0) SPD:0
-2024-08-01 10:15:29,977 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(-29,96,0),spd:0
-
-2024-08-01 10:15:30,060 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(-45, 89, 0) SPD:0
-2024-08-01 10:15:30,060 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(-45,89,0),spd:0
-
-2024-08-01 10:15:30,175 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(-61, 79, 0) SPD:0
-2024-08-01 10:15:30,176 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:None entity:(2:pos:(5120,3840,820),dir:(-61,79,0),spd:0
-
-2024-08-01 10:15:30,226 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5120, 3840, 820) DIR:(-61, 79, 0) SPD:300
-2024-08-01 10:15:30,227 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:MoveFwd entity:(2:pos:(5120,3840,820),dir:(-61,79,0),spd:300
-
-2024-08-01 10:15:31,037 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(4973, 4036, 820) DIR:(-61, 79, 0) SPD:0
-2024-08-01 10:15:31,038 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[2]evt:Idle entity:(2:pos:(4973,4036,820),dir:(-61,79,0),spd:0
-
-2024-08-01 10:15:32,860 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
-2024-08-01 10:15:32,860 [ 1] INFO  Unity: RemoveCharacter:2
-2024-08-01 10:15:32,862 [ 1] INFO  Unity: Character_2_002_01 OnDestroy :ID:2 POS:(4973, 4036, 820) DIR:(-61, 79, 0) SPD:0 
-2024-08-01 10:15:34,947 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-01 10:15:34,948 [ 1] INFO  Unity: AddCharacter:3:002_01 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-01 10:15:36,123 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(98, -18, 0) SPD:0
-2024-08-01 10:15:36,124 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(98,-18,0),spd:0
-
-2024-08-01 10:15:36,223 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(93, -36, 0) SPD:0
-2024-08-01 10:15:36,224 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(93,-36,0),spd:0
-
-2024-08-01 10:15:36,322 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(84, -54, 0) SPD:0
-2024-08-01 10:15:36,323 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(84,-54,0),spd:0
-
-2024-08-01 10:15:36,405 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(73, -68, 0) SPD:0
-2024-08-01 10:15:36,406 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(73,-68,0),spd:0
-
-2024-08-01 10:15:36,521 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(60, -80, 0) SPD:0
-2024-08-01 10:15:36,522 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(60,-80,0),spd:0
-
-2024-08-01 10:15:37,714 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(74, -68, 0) SPD:0
-2024-08-01 10:15:37,714 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(74,-68,0),spd:0
-
-2024-08-01 10:15:37,813 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(86, -51, 0) SPD:0
-2024-08-01 10:15:37,814 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(86,-51,0),spd:0
-
-2024-08-01 10:15:37,896 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(94, -35, 0) SPD:0
-2024-08-01 10:15:37,897 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(94,-35,0),spd:0
-
-2024-08-01 10:15:38,012 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(99, -15, 0) SPD:0
-2024-08-01 10:15:38,013 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(99,-15,0),spd:0
-
-2024-08-01 10:15:38,095 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(100, 2, 0) SPD:0
-2024-08-01 10:15:38,095 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(100,2,0),spd:0
-
-2024-08-01 10:15:38,194 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(98, 22, 0) SPD:-300
-2024-08-01 10:15:38,195 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:MoveBack entity:(3:pos:(5000,4000,820),dir:(98,22,0),spd:-300
-
-2024-08-01 10:15:38,227 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(5000, 4000, 820) DIR:(98, 22, 0) SPD:-300
-2024-08-01 10:15:38,228 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(5000,4000,820),dir:(98,22,0),spd:-300
-
-2024-08-01 10:15:38,327 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4960, 3992, 820) DIR:(92, 39, 0) SPD:-300
-2024-08-01 10:15:38,327 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(4960,3992,820),dir:(92,39,0),spd:-300
-
-2024-08-01 10:15:38,674 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4855, 3950, 820) DIR:(83, 56, 0) SPD:-300
-2024-08-01 10:15:38,675 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(4855,3950,820),dir:(83,56,0),spd:-300
-
-2024-08-01 10:15:38,790 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4827, 3929, 820) DIR:(71, 71, 0) SPD:-300
-2024-08-01 10:15:38,791 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(4827,3929,820),dir:(71,71,0),spd:-300
-
-2024-08-01 10:15:38,890 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4803, 3905, 820) DIR:(55, 84, 0) SPD:-300
-2024-08-01 10:15:38,891 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(4803,3905,820),dir:(55,84,0),spd:-300
-
-2024-08-01 10:15:38,973 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4788, 3885, 820) DIR:(55, 84, 0) SPD:0
-2024-08-01 10:15:38,973 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:Idle entity:(3:pos:(4788,3885,820),dir:(55,84,0),spd:0
-
-2024-08-01 10:15:39,006 [ 1] INFO  Unity: OnEntityChanger: ID:3 POS:(4788, 3885, 820) DIR:(39, 92, 0) SPD:0
-2024-08-01 10:15:39,007 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
-[3]evt:None entity:(3:pos:(4788,3885,820),dir:(39,92,0),spd:0
-
-2024-08-01 10:15:39,973 [ 1] INFO  Unity: SetDirection:(-88, -47, 0)
-2024-08-01 10:15:39,973 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-88,-47,0) SPD:0
-2024-08-01 10:15:40,089 [ 1] INFO  Unity: SetDirection:(-95, -30, 0)
-2024-08-01 10:15:40,089 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-95,-30,0) SPD:0
-2024-08-01 10:15:40,188 [ 1] INFO  Unity: SetDirection:(-100, -10, 0)
-2024-08-01 10:15:40,188 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-100,-10,0) SPD:0
-2024-08-01 10:15:40,270 [ 1] INFO  Unity: SetDirection:(-100, 8, 0)
-2024-08-01 10:15:40,271 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-100,8,0) SPD:0
-2024-08-01 10:15:40,369 [ 1] INFO  Unity: SetDirection:(-96, 28, 0)
-2024-08-01 10:15:40,370 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-96,28,0) SPD:0
-2024-08-01 10:15:40,453 [ 1] INFO  Unity: MoveForward
-2024-08-01 10:15:40,453 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-96,28,0) SPD:300
-2024-08-01 10:15:40,453 [ 1] INFO  Unity: SetDirection:(-90, 44, 0)
-2024-08-01 10:15:40,454 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5211,3972,820) DIR:(-90,44,0) SPD:300
-2024-08-01 10:15:40,553 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
-2024-08-01 10:15:40,553 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5181,3984,820) DIR:(-79,61,0) SPD:300
-2024-08-01 10:15:40,718 [ 1] INFO  Unity: SetDirection:(-67, 74, 0)
-2024-08-01 10:15:40,718 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5141,4014,820) DIR:(-67,74,0) SPD:300
-2024-08-01 10:15:41,380 [ 1] INFO  Unity: Stop
-2024-08-01 10:15:41,380 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-67,74,0) SPD:0
-2024-08-01 10:15:41,513 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
-2024-08-01 10:15:41,513 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-79,61,0) SPD:0
-2024-08-01 10:15:41,613 [ 1] INFO  Unity: SetDirection:(-89, 45, 0)
-2024-08-01 10:15:41,613 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-89,45,0) SPD:0
-2024-08-01 10:15:41,695 [ 1] INFO  Unity: SetDirection:(-96, 29, 0)
-2024-08-01 10:15:41,696 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-96,29,0) SPD:0
-2024-08-01 10:15:41,778 [ 1] INFO  Unity: SetDirection:(-99, 12, 0)
-2024-08-01 10:15:41,778 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-99,12,0) SPD:0
-2024-08-01 10:15:41,861 [ 1] INFO  Unity: SetDirection:(-100, -6, 0)
-2024-08-01 10:15:41,861 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-100,-6,0) SPD:0
-2024-08-01 10:15:41,960 [ 1] INFO  Unity: SetDirection:(-96, -26, 0)
-2024-08-01 10:15:41,960 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-96,-26,0) SPD:0
-2024-08-01 10:15:42,043 [ 1] INFO  Unity: SetDirection:(-90, -43, 0)
-2024-08-01 10:15:42,044 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-90,-43,0) SPD:0
-2024-08-01 10:15:42,143 [ 1] INFO  Unity: SetDirection:(-80, -61, 0)
-2024-08-01 10:15:42,143 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-80,-61,0) SPD:0
-2024-08-01 10:15:42,242 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
-2024-08-01 10:15:42,242 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-65,-76,0) SPD:0
-2024-08-01 10:15:42,342 [ 1] INFO  Unity: SetDirection:(-48, -88, 0)
-2024-08-01 10:15:42,342 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-48,-88,0) SPD:0
-2024-08-01 10:15:42,441 [ 1] INFO  Unity: SetDirection:(-29, -96, 0)
-2024-08-01 10:15:42,441 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-29,-96,0) SPD:0
-2024-08-01 10:15:42,524 [ 1] INFO  Unity: SetDirection:(-12, -99, 0)
-2024-08-01 10:15:42,524 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(-12,-99,0) SPD:0
-2024-08-01 10:15:42,607 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
-2024-08-01 10:15:42,607 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(6,-100,0) SPD:0
-2024-08-01 10:15:42,706 [ 1] INFO  Unity: SetDirection:(26, -96, 0)
-2024-08-01 10:15:42,706 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(26,-96,0) SPD:0
-2024-08-01 10:15:42,789 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
-2024-08-01 10:15:42,789 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(43,-90,0) SPD:0
-2024-08-01 10:15:42,822 [ 1] INFO  Unity: MoveForward
-2024-08-01 10:15:42,822 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5024,4170,820) DIR:(43,-90,0) SPD:300
-2024-08-01 10:15:42,904 [ 1] INFO  Unity: SetDirection:(59, -81, 0)
-2024-08-01 10:15:42,905 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5032,4150,820) DIR:(59,-81,0) SPD:300
-2024-08-01 10:15:43,103 [ 1] INFO  Unity: SetDirection:(72, -69, 0)
-2024-08-01 10:15:43,104 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5068,4102,820) DIR:(72,-69,0) SPD:300
-2024-08-01 10:15:43,584 [ 1] INFO  Unity: SetDirection:(57, -82, 0)
-2024-08-01 10:15:43,584 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5184,4015,820) DIR:(57,-82,0) SPD:300
-2024-08-01 10:15:43,651 [ 1] INFO  Unity: Stop
-2024-08-01 10:15:43,651 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(57,-82,0) SPD:0
-2024-08-01 10:15:43,684 [ 1] INFO  Unity: SetDirection:(40, -91, 0)
-2024-08-01 10:15:43,684 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(40,-91,0) SPD:0
-2024-08-01 10:15:43,783 [ 1] INFO  Unity: SetDirection:(21, -98, 0)
-2024-08-01 10:15:43,783 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(21,-98,0) SPD:0
-2024-08-01 10:15:43,866 [ 1] INFO  Unity: SetDirection:(3, -100, 0)
-2024-08-01 10:15:43,866 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(3,-100,0) SPD:0
-2024-08-01 10:15:43,965 [ 1] INFO  Unity: SetDirection:(-18, -98, 0)
-2024-08-01 10:15:43,965 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-18,-98,0) SPD:0
-2024-08-01 10:15:44,065 [ 1] INFO  Unity: SetDirection:(-38, -93, 0)
-2024-08-01 10:15:44,065 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-38,-93,0) SPD:0
-2024-08-01 10:15:44,164 [ 1] INFO  Unity: SetDirection:(-56, -83, 0)
-2024-08-01 10:15:44,164 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-56,-83,0) SPD:0
-2024-08-01 10:15:44,247 [ 1] INFO  Unity: SetDirection:(-70, -72, 0)
-2024-08-01 10:15:44,247 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-70,-72,0) SPD:0
-2024-08-01 10:15:44,346 [ 1] INFO  Unity: SetDirection:(-83, -56, 0)
-2024-08-01 10:15:44,346 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-83,-56,0) SPD:0
-2024-08-01 10:15:44,429 [ 1] INFO  Unity: SetDirection:(-91, -40, 0)
-2024-08-01 10:15:44,429 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-91,-40,0) SPD:0
-2024-08-01 10:15:44,528 [ 1] INFO  Unity: SetDirection:(-98, -21, 0)
-2024-08-01 10:15:44,528 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-98,-21,0) SPD:0
-2024-08-01 10:15:44,612 [ 1] INFO  Unity: SetDirection:(-100, -3, 0)
-2024-08-01 10:15:44,612 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-100,-3,0) SPD:0
-2024-08-01 10:15:44,711 [ 1] INFO  Unity: SetDirection:(-98, 18, 0)
-2024-08-01 10:15:44,711 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-98,18,0) SPD:0
-2024-08-01 10:15:44,810 [ 1] INFO  Unity: SetDirection:(-93, 38, 0)
-2024-08-01 10:15:44,810 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-93,38,0) SPD:0
-2024-08-01 10:15:44,910 [ 1] INFO  Unity: SetDirection:(-83, 56, 0)
-2024-08-01 10:15:44,910 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-83,56,0) SPD:0
-2024-08-01 10:15:45,010 [ 1] INFO  Unity: SetDirection:(-72, 70, 0)
-2024-08-01 10:15:45,010 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-72,70,0) SPD:0
-2024-08-01 10:15:45,042 [ 1] INFO  Unity: MoveForward
-2024-08-01 10:15:45,042 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5196,3999,820) DIR:(-72,70,0) SPD:300
-2024-08-01 10:15:45,108 [ 1] INFO  Unity: SetDirection:(-56, 83, 0)
-2024-08-01 10:15:45,109 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5180,4015,820) DIR:(-56,83,0) SPD:300
-2024-08-01 10:15:45,208 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
-2024-08-01 10:15:45,208 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5162,4039,820) DIR:(-39,92,0) SPD:300
-2024-08-01 10:15:45,357 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
-2024-08-01 10:15:45,357 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5144,4084,820) DIR:(-22,97,0) SPD:300
-2024-08-01 10:15:46,699 [ 1] INFO  Unity: Stop
-2024-08-01 10:15:46,699 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5063,4489,820) DIR:(-22,97,0) SPD:0
-2024-08-01 10:15:46,700 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5031,4453,806) DIR:(-22,97,0) SPD:0
-2024-08-01 10:15:47,696 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-01 10:15:47,696 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-01 22:31:54,376 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-08-01 22:31:55,811 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-08-01 22:31:55,816 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-08-01 22:31:55,978 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-01 22:34:37,337 [ 1] INFO  Unity: Select Char:[1008]001_01[Warrior]
+2024-08-01 22:34:37,950 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-08-01 22:34:37,985 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-08-01 22:34:37,986 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-08-01 22:34:37,987 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-08-01 22:34:37,988 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-08-01 22:34:38,199 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-01 22:34:38,200 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-01 22:34:38,258 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-01 22:34:39,168 [ 1] INFO  Unity: MoveForward
+2024-08-01 22:34:39,169 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2024-08-01 22:34:39,731 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2024-08-01 22:34:39,732 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5170,4000,820) DIR:(98,-18,0) SPD:300
+2024-08-01 22:34:39,831 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2024-08-01 22:34:39,831 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5200,3994,820) DIR:(94,-35,0) SPD:300
+2024-08-01 22:34:39,914 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2024-08-01 22:34:39,914 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5225,3984,820) DIR:(86,-51,0) SPD:300
+2024-08-01 22:34:40,013 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
+2024-08-01 22:34:40,013 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5249,3966,820) DIR:(74,-68,0) SPD:300
+2024-08-01 22:34:40,096 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
+2024-08-01 22:34:40,096 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5269,3951,820) DIR:(61,-79,0) SPD:300
+2024-08-01 22:34:40,179 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
+2024-08-01 22:34:40,179 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5284,3931,820) DIR:(46,-89,0) SPD:300
+2024-08-01 22:34:40,279 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
+2024-08-01 22:34:40,279 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5296,3907,820) DIR:(27,-96,0) SPD:300
+2024-08-01 22:34:40,378 [ 1] INFO  Unity: SetDirection:(9, -100, 0)
+2024-08-01 22:34:40,378 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3877,820) DIR:(9,-100,0) SPD:300
+2024-08-01 22:34:40,560 [ 1] INFO  Unity: SetDirection:(-9, -100, 0)
+2024-08-01 22:34:40,560 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3822,820) DIR:(-9,-100,0) SPD:300
+2024-08-01 22:34:41,256 [ 1] INFO  Unity: Stop
+2024-08-01 22:34:41,256 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3617,820) DIR:(-9,-100,0) SPD:0
+2024-08-01 22:34:42,489 [ 1] INFO  Unity: MoveForward
+2024-08-01 22:34:42,489 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3617,820) DIR:(-9,-100,0) SPD:300
+2024-08-01 22:34:43,085 [ 1] INFO  Unity: SetDirection:(9, -100, 0)
+2024-08-01 22:34:43,085 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3437,820) DIR:(9,-100,0) SPD:300
+2024-08-01 22:34:44,410 [ 1] INFO  Unity: SetDirection:(28, -96, 0)
+2024-08-01 22:34:44,411 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5302,3042,820) DIR:(28,-96,0) SPD:300
+2024-08-01 22:34:44,526 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
+2024-08-01 22:34:44,526 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5309,3007,820) DIR:(46,-89,0) SPD:300
+2024-08-01 22:34:44,626 [ 1] INFO  Unity: SetDirection:(63, -78, 0)
+2024-08-01 22:34:44,626 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5321,2983,820) DIR:(63,-78,0) SPD:300
+2024-08-01 22:34:44,709 [ 1] INFO  Unity: SetDirection:(76, -65, 0)
+2024-08-01 22:34:44,709 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5336,2963,820) DIR:(76,-65,0) SPD:300
+2024-08-01 22:34:44,825 [ 1] INFO  Unity: SetDirection:(87, -49, 0)
+2024-08-01 22:34:44,825 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5364,2942,820) DIR:(87,-49,0) SPD:300
+2024-08-01 22:34:45,355 [ 1] INFO  Unity: SetDirection:(94, -33, 0)
+2024-08-01 22:34:45,355 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5492,2878,820) DIR:(94,-33,0) SPD:300
+2024-08-01 22:34:45,504 [ 1] INFO  Unity: SetDirection:(99, -15, 0)
+2024-08-01 22:34:45,504 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5537,2860,820) DIR:(99,-15,0) SPD:300
+2024-08-01 22:34:45,619 [ 1] INFO  Unity: SetDirection:(100, 4, 0)
+2024-08-01 22:34:45,620 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5572,2853,820) DIR:(100,4,0) SPD:300
+2024-08-01 22:34:46,514 [ 1] INFO  Unity: SetDirection:(99, -14, 0)
+2024-08-01 22:34:46,514 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5837,2853,820) DIR:(99,-14,0) SPD:300
+2024-08-01 22:34:46,697 [ 1] INFO  Unity: SetDirection:(95, -31, 0)
+2024-08-01 22:34:46,697 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5892,2842,820) DIR:(95,-31,0) SPD:300
+2024-08-01 22:34:47,376 [ 1] INFO  Unity: SetDirection:(99, -12, 0)
+2024-08-01 22:34:47,376 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(6097,2760,820) DIR:(99,-12,0) SPD:300
+2024-08-01 22:34:48,503 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(6446,2739,806) DIR:(99,-12,0) SPD:300
+2024-08-01 22:34:48,536 [ 1] INFO  Unity: TeleporterObject: Character [001_01] Enter Teleporter[出城传入点2:4]
+2024-08-01 22:34:50,591 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(7066,2664,806) DIR:(99,-12,0) SPD:300
+2024-08-01 22:34:51,121 [ 1] INFO  Unity: TeleporterObject: Character [001_01] Enter Teleporter[主城->野外:3]
+2024-08-01 22:34:51,122 [ 1] INFO  Unity: MapTeleportRequest: teleporterID: 3
+2024-08-01 22:34:51,154 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:1
+2024-08-01 22:34:51,155 [ 1] INFO  Unity: RemoveCharacter:1
+2024-08-01 22:34:51,156 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
+2024-08-01 22:34:51,157 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:2 Entity:(1:pos:(3076,3988,78),dir:(0,100,0),spd:300
+2024-08-01 22:34:51,160 [ 1] INFO  Unity: LoadLevel: Map01
+2024-08-01 22:34:51,160 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:1 POS:(7236, 2630, 806) DIR:(99, -12, 0) SPD:300 
+2024-08-01 22:34:51,296 [ 1] INFO  Unity: MoveForward
+2024-08-01 22:34:51,296 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3076,3993,78) DIR:(0,100,0) SPD:300
+2024-08-01 22:34:51,413 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-01 22:34:51,414 [ 1] INFO  Unity: Stop
+2024-08-01 22:34:51,414 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3076,4033,78) DIR:(0,100,0) SPD:0
+2024-08-01 22:34:51,414 [ 1] INFO  Unity: TeleporterObject: Character [001_01] Enter Teleporter[野外传入点:6]
+2024-08-01 22:34:51,745 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3076,4029,26) DIR:(0,100,0) SPD:0
+2024-08-01 22:34:52,258 [ 1] INFO  Unity: SetDirection:(18, 98, 0)
+2024-08-01 22:34:52,258 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3076,4029,26) DIR:(18,98,0) SPD:0
+2024-08-01 22:34:52,275 [ 1] INFO  Unity: MoveForward
+2024-08-01 22:34:52,275 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3076,4029,26) DIR:(18,98,0) SPD:300
+2024-08-01 22:34:52,357 [ 1] INFO  Unity: SetDirection:(36, 93, 0)
+2024-08-01 22:34:52,358 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3081,4054,26) DIR:(36,93,0) SPD:300
+2024-08-01 22:34:52,457 [ 1] INFO  Unity: SetDirection:(54, 84, 0)
+2024-08-01 22:34:52,457 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3093,4084,26) DIR:(54,84,0) SPD:300
+2024-08-01 22:34:52,556 [ 1] INFO  Unity: SetDirection:(70, 72, 0)
+2024-08-01 22:34:52,556 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3111,4108,26) DIR:(70,72,0) SPD:300
+2024-08-01 22:34:52,688 [ 1] INFO  Unity: SetDirection:(81, 58, 0)
+2024-08-01 22:34:52,689 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3143,4140,26) DIR:(81,58,0) SPD:300
+2024-08-01 22:34:53,069 [ 1] INFO  Unity: Stop
+2024-08-01 22:34:53,069 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(3235,4209,26) DIR:(81,58,0) SPD:0
+2024-08-01 22:34:53,733 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-01 22:34:53,734 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
-2024-08-01 10:15:47,697 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:1 POS:(5031, 4453, 806) DIR:(-22, 97, 0) SPD:0 
-2024-08-01 10:15:47,697 [ 1] INFO  Unity: Character_3_002_01 OnDestroy :ID:3 POS:(4788, 3885, 820) DIR:(39, 92, 0) SPD:0 
+2024-08-01 22:34:53,735 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:1 POS:(3235, 4209, 26) DIR:(81, 58, 0) SPD:0 

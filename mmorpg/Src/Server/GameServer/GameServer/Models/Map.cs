@@ -71,7 +71,6 @@ namespace GameServer.Models
             }
             
             this.MapCharacters[character.Id] = new MapCharacter(conn, character);
-            //this.MapCharacters[character.Info.Id] = new MapCharacter(conn, character);
 
             byte[] data = PackageHandler.PackMessage(message);
             conn.SendData(data, 0, data.Length);
@@ -85,7 +84,6 @@ namespace GameServer.Models
                 this.SendCharacterLeaveMap(kv.Value.connection, cha);
             }
             this.MapCharacters.Remove(cha.Id);
-            //this.MapCharacters.Remove(cha.Entity.Id);
         }
 
         void SendCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
