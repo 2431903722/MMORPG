@@ -15,30 +15,25 @@ public class UIMinimap : MonoBehaviour {
 
 	void Start () 
 	{
-		this.InitMap();
+		MinimapManager.Instance.minimap = this;
+		this.UpdateMap();
 	}
 
-	void InitMap()
+	public void UpdateMap()
 	{
         this.mapName.text = User.Instance.CurrentMapData.Name;
-		if(this.minimap.overrideSprite != null)
-			this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
+		this.minimap.overrideSprite = MinimapManager.Instance.LoadCurrentMinimap();
 
 		this.minimap.SetNativeSize();
 		this.minimap.transform.localPosition = Vector3.zero;
+		this.minimapBoudingBox = MinimapManager.Instance.MinimapBoundingBox;
+		this.playerTransform = null;
     }
 
 	void Update()
 	{
-		//if(playerTransform == null && User.Instance.CurrentCharacterObject != null)
-		//{
-		//	this.playerTransform = User.Instance.CurrentCharacterObject.transform;
-		//}
-
-		if (playerTransform == null)
-		{
-			playerTransform = MinimapManager.Instance.PlayerTransform;
-		}
+		if (playerTransform == null)		
+			playerTransform = MinimapManager.Instance.PlayerTransform;		
 
 		if(minimapBoudingBox == null || playerTransform == null)
 			return;
