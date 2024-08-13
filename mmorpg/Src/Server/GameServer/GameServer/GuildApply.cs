@@ -12,13 +12,16 @@ namespace GameServer
     using System;
     using System.Collections.Generic;
     
-    public partial class TCharacterItem
+    public partial class GuildApply
     {
         public int Id { get; set; }
-        public int CharacterID { get; set; }
-        public int ItemID { get; set; }
-        public int ItemCount { get; set; }
+        public int CharacterId { get; set; }
+        public string Name { get; set; }
+        public int Class { get; set; }
+        public int Level { get; set; }
+        public int Result { get; set; }
+        public System.DateTime ApplyTime { get; set; }
     
-        public virtual TCharacter Owner { get; set; }
+        public virtual Guild Guild { get; set; }
     }
 }
