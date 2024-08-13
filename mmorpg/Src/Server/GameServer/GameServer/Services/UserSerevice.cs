@@ -157,7 +157,7 @@ namespace GameServer.Services
             message.Response.gameEnter.Character = character.Info;
 
             // 道具系统测试
-            int itemId = 10;
+            int itemId = 8;
             bool hasItem = character.ItemManager.HasItem(itemId);
             Log.InfoFormat("HasItem:[{0}]{1}", itemId, hasItem);
             if (hasItem)
