@@ -145,6 +145,9 @@
     <Compile Include="TCharacter.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
+    <Compile Include="TCharacterBag.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
     <Compile Include="TCharacterItem.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>

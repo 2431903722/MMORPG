@@ -25,4 +25,9 @@ public class UIMain : MonoSingleton<UIMain> {
 		SceneManager.Instance.LoadScene("CharSelect");
 		Services.UserService.Instance.SendGameLeave();
 	}
+
+	public void OnClickBag()
+	{
+		UIManager.Instance.Show<UIBag>();
+	}
 }

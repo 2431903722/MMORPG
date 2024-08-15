@@ -17,6 +17,8 @@
         <EntityTypeShape EntityType="ExtremeWorldModel.Guild" Width="1.5" PointX="0.75" PointY="6.875" />
         <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildApply" />
         <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildMember" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterBag" Width="1.5" PointX="11" PointY="6.5" />
+        <AssociationConnector Association="ExtremeWorldModel.TCharacterTCharacterBag" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

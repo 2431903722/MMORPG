@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 08/13/2024 17:05:40
+-- Date Created: 08/14/2024 10:52:03
 -- Generated from EDMX file: E:\Project\MMO\mmorpg\Src\Server\GameServer\GameServer\Entities.edmx
 -- --------------------------------------------------
 
@@ -17,22 +17,40 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_UserPlayer]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPlayer];
+GO
+IF OBJECT_ID(N'[dbo].[FK_PlayerCharacter]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Characters] DROP CONSTRAINT [FK_PlayerCharacter];
+GO
+IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterItem]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[TCharacterItems] DROP CONSTRAINT [FK_TCharacterTCharacterItem];
+GO
 IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildApply]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[GuildApplies] DROP CONSTRAINT [FK_TGuildTGuildApply];
 GO
 IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildMember]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[GuildMembers] DROP CONSTRAINT [FK_TGuildTGuildMember];
 GO
-IF OBJECT_ID(N'[dbo].[FK_UserPlayer]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPlayer];
+IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterBag]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Characters] DROP CONSTRAINT [FK_TCharacterTCharacterBag];
 GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Users];
+GO
+IF OBJECT_ID(N'[dbo].[Players]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Players];
+GO
 IF OBJECT_ID(N'[dbo].[Characters]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Characters];
+GO
+IF OBJECT_ID(N'[dbo].[TCharacterItems]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TCharacterItems];
 GO
 IF OBJECT_ID(N'[dbo].[GuildApplies]', 'U') IS NOT NULL
     DROP TABLE [dbo].[GuildApplies];
@@ -43,14 +61,8 @@ GO
 IF OBJECT_ID(N'[dbo].[Guilds]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Guilds];
 GO
-IF OBJECT_ID(N'[dbo].[Players]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Players];
-GO
-IF OBJECT_ID(N'[dbo].[TCharacterItems]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[TCharacterItems];
-GO
-IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Users];
+IF OBJECT_ID(N'[dbo].[TCharacterBag]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[TCharacterBag];
 GO
 
 -- --------------------------------------------------
@@ -83,7 +95,8 @@ CREATE TABLE [dbo].[Characters] (
     [MapPosX] int  NOT NULL,
     [MapPosY] int  NOT NULL,
     [MapPosZ] int  NOT NULL,
-    [Player_ID] int  NOT NULL
+    [Player_ID] int  NOT NULL,
+    [Bag_Id] int  NOT NULL
 );
 GO
 
@@ -92,7 +105,8 @@ CREATE TABLE [dbo].[TCharacterItems] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [CharacterID] int  NOT NULL,
     [ItemID] int  NOT NULL,
-    [ItemCount] int  NOT NULL
+    [ItemCount] int  NOT NULL,
+    [Owner_ID] int  NOT NULL
 );
 GO
 
@@ -131,6 +145,14 @@ CREATE TABLE [dbo].[Guilds] (
     [LeaderName] nvarchar(20)  NOT NULL,
     [Notice] nvarchar(200)  NOT NULL,
     [CreateTime] datetime  NOT NULL
+);
+GO
+
+-- Creating table 'TCharacterBag'
+CREATE TABLE [dbo].[TCharacterBag] (
+    [Id] int IDENTITY(1,1) NOT NULL,
+    [Items] varbinary(max)  NOT NULL,
+    [Unlocked] int  NOT NULL
 );
 GO
 
@@ -180,6 +202,12 @@ ADD CONSTRAINT [PK_Guilds]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
+-- Creating primary key on [Id] in table 'TCharacterBag'
+ALTER TABLE [dbo].[TCharacterBag]
+ADD CONSTRAINT [PK_TCharacterBag]
+    PRIMARY KEY CLUSTERED ([Id] ASC);
+GO
+
 -- --------------------------------------------------
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
@@ -214,10 +242,10 @@ ON [dbo].[Characters]
     ([Player_ID]);
 GO
 
--- Creating foreign key on [CharacterID] in table 'TCharacterItems'
+-- Creating foreign key on [Owner_ID] in table 'TCharacterItems'
 ALTER TABLE [dbo].[TCharacterItems]
 ADD CONSTRAINT [FK_TCharacterTCharacterItem]
-    FOREIGN KEY ([CharacterID])
+    FOREIGN KEY ([Owner_ID])
     REFERENCES [dbo].[Characters]
         ([ID])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
@@ -226,7 +254,7 @@ GO
 -- Creating non-clustered index for FOREIGN KEY 'FK_TCharacterTCharacterItem'
 CREATE INDEX [IX_FK_TCharacterTCharacterItem]
 ON [dbo].[TCharacterItems]
-    ([CharacterID]);
+    ([Owner_ID]);
 GO
 
 -- Creating foreign key on [Guild_Id] in table 'GuildApplies'
@@ -257,6 +285,21 @@ GO
 CREATE INDEX [IX_FK_TGuildTGuildMember]
 ON [dbo].[GuildMembers]
     ([Guild_Id]);
+GO
+
+-- Creating foreign key on [Bag_Id] in table 'Characters'
+ALTER TABLE [dbo].[Characters]
+ADD CONSTRAINT [FK_TCharacterTCharacterBag]
+    FOREIGN KEY ([Bag_Id])
+    REFERENCES [dbo].[TCharacterBag]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_TCharacterTCharacterBag'
+CREATE INDEX [IX_FK_TCharacterTCharacterBag]
+ON [dbo].[Characters]
+    ([Bag_Id]);
 GO
 
 -- --------------------------------------------------
