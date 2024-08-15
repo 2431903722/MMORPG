@@ -1,35 +1,9 @@
-2024-08-13 17:07:25,849 [ 1] INFO  Unity: LoadingManager start
-2024-08-13 17:07:28,862 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-13 17:07:30,000 [ 1] INFO  Unity: 正在加载
-2024-08-13 17:07:33,362 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-13 17:07:33,362 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-13 17:07:33,365 [ 1] INFO  Unity: DoConnect
-2024-08-13 17:07:33,366 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-13 17:07:33,367 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-08-13 17:07:33,369 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-13 17:07:34,979 [ 1] INFO  Unity: OnUserLogin:Failed [用户不存在]
-2024-08-13 17:07:41,375 [ 1] INFO  Unity: UserRegisterRequest::user :001 psw:123
-2024-08-13 17:07:41,690 [ 1] INFO  Unity: OnUserRegister:Success [None]
-2024-08-13 17:07:46,097 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-13 17:07:46,151 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-13 17:07:46,152 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-13 17:07:46,333 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-13 17:07:53,443 [ 1] INFO  Unity: SendCharacterCreate::user :001_01 psw:Warrior
-2024-08-13 17:07:53,510 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2024-08-13 17:07:54,404 [ 1] INFO  Unity: Select Char:[0]001_01[Warrior]
-2024-08-13 17:07:55,200 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-13 17:07:57,785 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-13 17:07:57,786 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-13 17:07:57,787 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-13 17:07:57,788 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-13 17:07:58,051 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-13 17:07:58,052 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-13 17:07:58,110 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-13 17:08:00,651 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-13 17:08:00,653 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-13 17:08:00,653 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-15 22:35:29,099 [ 1] INFO  Unity: LoadingManager start
+2024-08-15 22:35:32,210 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-15 22:35:33,284 [ 1] INFO  Unity: 正在加载
+2024-08-15 22:35:36,364 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-15 22:35:36,364 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 

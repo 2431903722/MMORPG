@@ -11,7 +11,7 @@ public class TabView : MonoBehaviour {
     public UnityAction<int> OnTabSelect;
 
     public int index = -1;
-    // Use this for initialization
+    
     IEnumerator Start () {
         for (int i = 0; i < tabButtons.Length; i++)
         {
@@ -22,7 +22,6 @@ public class TabView : MonoBehaviour {
         SelectTab(0);
     }
 
-
     public void SelectTab(int index)
     {
         if (this.index != index)
@@ -30,7 +29,7 @@ public class TabView : MonoBehaviour {
             for (int i = 0; i < tabButtons.Length; i++)
             {
                 tabButtons[i].Select(i == index);
-                if (i < tabPages.Length - 1)
+                if (i < tabPages.Length)
                     tabPages[i].SetActive(i == index);
             }
             if (OnTabSelect != null)
