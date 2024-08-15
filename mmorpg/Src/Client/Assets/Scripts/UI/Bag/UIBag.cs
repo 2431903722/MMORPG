@@ -51,4 +51,9 @@ public class UIBag : MonoBehaviour {
     {
         this.money.text = User.Instance.CurrentCharacter.Id.ToString();
     }
+
+    public void OnReset()
+    {
+        BagManager.Instance.Reset();
+    }
 }

@@ -118,7 +118,7 @@ namespace GameServer.Services
             bag.Owner = character;
             bag.Items = new byte[0];
             bag.Unlocked = 20;
-            character.Bag = DBService.Instance.Entities.TCharacterBag.Add(bag);            
+            character.Bag = DBService.Instance.Entities.CharacterBags.Add(bag);            
             character = DBService.Instance.Entities.Characters.Add(character);
             sender.Session.User.Player.Characters.Add(character);
             DBService.Instance.Entities.SaveChanges();
