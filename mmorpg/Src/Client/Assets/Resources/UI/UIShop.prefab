@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 223509617002755864}
   - component: {fileID: 114021172944461058}
   - component: {fileID: 114730975445095666}
+  - component: {fileID: 114358444830554356}
   m_Layer: 5
   m_Name: UIShop
   m_TagString: Untagged
@@ -860,6 +861,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114358444830554356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270584358578064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5f7a7d3ce90854ca75ed082c7bd0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: {fileID: 114450477975218856}
+  money: {fileID: 114959297878925704}
+  shopItem: {fileID: 1998580892786704, guid: aca6259867dde50479529b96dfee7f69, type: 2}
+  itemRoot:
+  - {fileID: 224805876564374546}
+  - {fileID: 224139563125657740}
 --- !u!114 &114420815491134084
 MonoBehaviour:
   m_ObjectHideFlags: 1

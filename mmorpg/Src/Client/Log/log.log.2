@@ -1,61 +1,125 @@
-2024-08-16 00:03:34,108 [ 1] INFO  Unity: LoadingManager start
-2024-08-16 00:03:37,119 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-16 00:03:38,224 [ 1] INFO  Unity: 正在加载
-2024-08-16 00:03:44,955 [ 1] INFO  Unity: UserRegisterRequest::user :001 psw:123
-2024-08-16 00:03:44,955 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-16 00:03:44,959 [ 1] INFO  Unity: DoConnect
-2024-08-16 00:03:44,960 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-16 00:03:44,963 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-08-17 17:01:39,990 [ 1] INFO  Unity: LoadingManager start
+2024-08-17 17:01:43,122 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-17 17:01:44,474 [ 1] INFO  Unity: 正在加载
+2024-08-17 17:01:58,760 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-08-17 17:01:58,764 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-08-17 17:01:58,773 [ 1] INFO  Unity: DoConnect
+2024-08-17 17:01:58,774 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-08-17 17:01:58,780 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-08-16 00:03:44,965 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-16 00:03:46,543 [ 1] INFO  Unity: OnUserRegister:Success [None]
-2024-08-16 00:03:51,440 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-16 00:03:51,496 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-16 00:03:51,497 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-16 00:03:51,725 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-16 00:03:58,926 [ 1] INFO  Unity: SendCharacterCreate::user :001_01 psw:Warrior
-2024-08-16 00:03:58,994 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2024-08-16 00:04:00,003 [ 1] INFO  Unity: Select Char:[0]001_01[Warrior]
-2024-08-16 00:04:00,632 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-16 00:04:00,733 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-16 00:04:00,735 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-16 00:04:00,736 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-16 00:04:00,736 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-16 00:04:01,000 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-16 00:04:01,001 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-16 00:04:01,048 [ 1] WARN  Unity: MainPlayerCamera[-1433976] Awake
+2024-08-17 17:01:58,793 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-08-17 17:01:58,961 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-08-17 17:01:58,980 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-08-17 17:01:59,175 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-17 17:02:00,745 [ 1] INFO  Unity: Select Char:[1]001_01[Warrior]
+2024-08-17 17:02:01,655 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-08-17 17:02:01,700 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-08-17 17:02:01,708 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:1000]
+2024-08-17 17:02:01,708 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:500]
+2024-08-17 17:02:01,708 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:150]
+2024-08-17 17:02:01,709 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:600]
+2024-08-17 17:02:01,718 [ 1] ERROR Unity: Message handler exception:, Array index is out of range., Assembly-CSharp,   at Managers.BagManager.Reset () [0x00096] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\BagManager.cs:49 
+  at Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) [0x00075] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\BagManager.cs:30 
+  at Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) [0x00065] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Services\UserService.cs:231 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg) [0x00000] in <filename unknown>:0 
+2024-08-17 17:02:01,720 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IndexOutOfRangeException: Array index is out of range., Managers.BagManager.Reset () (at Assets/Scripts/Managers/BagManager.cs:49)
+Managers.BagManager.Init (SkillBridge.Message.NBagInfo info) (at Assets/Scripts/Managers/BagManager.cs:30)
+Services.UserService.OnGameEnter (System.Object sender, SkillBridge.Message.UserGameEnterResponse response) (at Assets/Scripts/Services/UserService.cs:231)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserGameEnterResponse] (System.Object sender, SkillBridge.Message.UserGameEnterResponse msg)
+}</args></log4net.Error>
+2024-08-17 17:02:01,739 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-08-17 17:02:01,743 [ 1] INFO  Unity: AddCharacter:5:001_01 Map:1 Entity:(5:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-08-17 17:02:01,745 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-08-17 17:02:01,997 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-17 17:02:01,998 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-17 17:02:02,039 [ 1] WARN  Unity: MainPlayerCamera[-1905286] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-16 00:04:01,049 [ 1] WARN  Unity: GameObjectManager[-1432920] Awake
+2024-08-17 17:02:02,041 [ 1] WARN  Unity: GameObjectManager[-1904230] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-16 00:04:01,051 [ 1] WARN  Unity: UIMain[158746] Awake
+2024-08-17 17:02:02,052 [ 1] WARN  Unity: UIMain[202186] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-16 00:04:01,052 [ 1] WARN  Unity: UIWorldElementManager[159586] Awake
+2024-08-17 17:02:02,052 [ 1] WARN  Unity: UIWorldElementManager[203026] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-16 00:04:01,069 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-16 00:04:02,655 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
-2024-08-16 00:04:02,656 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0
-2024-08-16 00:04:02,755 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
-2024-08-16 00:04:02,755 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(94,-35,0) SPD:0
-2024-08-16 00:04:02,838 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
-2024-08-16 00:04:02,838 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(86,-51,0) SPD:0
-2024-08-16 00:04:02,937 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
-2024-08-16 00:04:02,937 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(74,-68,0) SPD:0
-2024-08-16 00:04:03,036 [ 1] INFO  Unity: SetDirection:(59, -81, 0)
-2024-08-16 00:04:03,036 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(59,-81,0) SPD:0
-2024-08-16 00:04:03,169 [ 1] INFO  Unity: SetDirection:(44, -90, 0)
-2024-08-16 00:04:03,169 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(44,-90,0) SPD:0
-2024-08-16 00:04:40,507 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-16 00:04:40,508 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-17 17:02:02,079 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-17 17:02:02,774 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2024-08-17 17:02:02,774 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5000,4000,820) DIR:(98,-18,0) SPD:0
+2024-08-17 17:02:02,822 [ 1] INFO  Unity: MoveForward
+2024-08-17 17:02:02,825 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5000,4000,820) DIR:(98,-18,0) SPD:300
+2024-08-17 17:02:02,872 [ 1] INFO  Unity: SetDirection:(94, -35, 0)
+2024-08-17 17:02:02,872 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5015,3997,820) DIR:(94,-35,0) SPD:300
+2024-08-17 17:02:02,956 [ 1] INFO  Unity: SetDirection:(86, -51, 0)
+2024-08-17 17:02:02,956 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5040,3987,820) DIR:(86,-51,0) SPD:300
+2024-08-17 17:02:03,055 [ 1] INFO  Unity: SetDirection:(74, -68, 0)
+2024-08-17 17:02:03,055 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5064,3969,820) DIR:(74,-68,0) SPD:300
+2024-08-17 17:02:03,138 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
+2024-08-17 17:02:03,139 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5084,3954,820) DIR:(61,-79,0) SPD:300
+2024-08-17 17:02:03,221 [ 1] INFO  Unity: SetDirection:(46, -89, 0)
+2024-08-17 17:02:03,221 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5099,3934,820) DIR:(46,-89,0) SPD:300
+2024-08-17 17:02:03,321 [ 1] INFO  Unity: SetDirection:(27, -96, 0)
+2024-08-17 17:02:03,321 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5111,3910,820) DIR:(27,-96,0) SPD:300
+2024-08-17 17:02:03,403 [ 1] INFO  Unity: SetDirection:(9, -100, 0)
+2024-08-17 17:02:03,403 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5116,3885,820) DIR:(9,-100,0) SPD:300
+2024-08-17 17:02:03,519 [ 1] INFO  Unity: SetDirection:(-10, -99, 0)
+2024-08-17 17:02:03,519 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5116,3850,820) DIR:(-10,-99,0) SPD:300
+2024-08-17 17:02:03,817 [ 1] INFO  Unity: SetDirection:(-29, -96, 0)
+2024-08-17 17:02:03,817 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5099,3765,820) DIR:(-29,-96,0) SPD:300
+2024-08-17 17:02:03,950 [ 1] INFO  Unity: SetDirection:(-46, -89, 0)
+2024-08-17 17:02:03,950 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5091,3725,820) DIR:(-46,-89,0) SPD:300
+2024-08-17 17:02:04,082 [ 1] INFO  Unity: SetDirection:(-61, -79, 0)
+2024-08-17 17:02:04,083 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(5075,3693,820) DIR:(-61,-79,0) SPD:300
+2024-08-17 17:02:04,828 [ 1] INFO  Unity: SetDirection:(-75, -67, 0)
+2024-08-17 17:02:04,828 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4940,3513,820) DIR:(-75,-67,0) SPD:300
+2024-08-17 17:02:06,419 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4594,3194,806) DIR:(-75,-67,0) SPD:300
+2024-08-17 17:02:06,550 [ 1] INFO  Unity: SetDirection:(-85, -52, 0)
+2024-08-17 17:02:06,551 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4562,3170,806) DIR:(-85,-52,0) SPD:300
+2024-08-17 17:02:06,699 [ 1] INFO  Unity: SetDirection:(-93, -36, 0)
+2024-08-17 17:02:06,699 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4526,3143,806) DIR:(-93,-36,0) SPD:300
+2024-08-17 17:02:07,363 [ 1] INFO  Unity: SetDirection:(-98, -17, 0)
+2024-08-17 17:02:07,363 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4326,3063,806) DIR:(-98,-17,0) SPD:300
+2024-08-17 17:02:07,677 [ 1] INFO  Unity: SetDirection:(-100, 1, 0)
+2024-08-17 17:02:07,677 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4236,3045,806) DIR:(-100,1,0) SPD:300
+2024-08-17 17:02:07,876 [ 1] INFO  Unity: SetDirection:(-98, 20, 0)
+2024-08-17 17:02:07,876 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4176,3045,806) DIR:(-98,20,0) SPD:300
+2024-08-17 17:02:08,373 [ 1] INFO  Unity: SetDirection:(-93, 37, 0)
+2024-08-17 17:02:08,373 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(4026,3075,806) DIR:(-93,37,0) SPD:300
+2024-08-17 17:02:08,522 [ 1] INFO  Unity: SetDirection:(-85, 53, 0)
+2024-08-17 17:02:08,523 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3981,3093,806) DIR:(-85,53,0) SPD:300
+2024-08-17 17:02:10,395 [ 1] INFO  Unity: SetDirection:(-74, 67, 0)
+2024-08-17 17:02:10,395 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3533,3429,806) DIR:(-74,67,0) SPD:300
+2024-08-17 17:02:10,560 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2024-08-17 17:02:10,560 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3493,3459,806) DIR:(-60,80,0) SPD:300
+2024-08-17 17:02:10,658 [ 1] INFO  Unity: SetDirection:(-44, 90, 0)
+2024-08-17 17:02:10,659 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3475,3483,806) DIR:(-44,90,0) SPD:300
+2024-08-17 17:02:10,775 [ 1] INFO  Unity: SetDirection:(-26, 97, 0)
+2024-08-17 17:02:10,775 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3461,3518,806) DIR:(-26,97,0) SPD:300
+2024-08-17 17:02:12,117 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3349,3879,806) DIR:(-26,97,0) SPD:300
+2024-08-17 17:02:12,879 [ 1] INFO  Unity: SetDirection:(-8, 100, 0)
+2024-08-17 17:02:12,879 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3303,4109,806) DIR:(-8,100,0) SPD:300
+2024-08-17 17:02:14,387 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3253,4554,806) DIR:(-8,100,0) SPD:300
+2024-08-17 17:02:16,474 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3203,5180,806) DIR:(-8,100,0) SPD:300
+2024-08-17 17:02:17,054 [ 1] INFO  Unity: Stop
+2024-08-17 17:02:17,054 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:5 POS:(3203,5355,806) DIR:(-8,100,0) SPD:0
+2024-08-17 17:02:22,675 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{KeyNotFoundException: The given key was not present in the dictionary., System.Collections.Generic.Dictionary`2[System.Int32,Common.Data.ItemDefine].get_Item (Int32 key) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/Dictionary.cs:746)
+UIShopItem.SetShopItem (Int32 id, Common.Data.ShopItemDefine shopItem, .UIShop owner) (at Assets/Scripts/UI/Shop/UIShopItem.cs:44)
+UIShop+<InitItems>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Shop/UIShop.cs:30)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIShop:Start() (at Assets/Scripts/UI/Shop/UIShop.cs:19)
+}</args></log4net.Error>
+2024-08-17 17:02:47,080 [ 1] INFO  Unity: Character_5_001_01 OnDestroy :ID:5 POS:(3203, 5355, 806) DIR:(-8, 100, 0) SPD:0 
+2024-08-17 17:02:47,083 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-17 17:02:47,083 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2024-08-16 00:04:40,509 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(44, -90, 0) SPD:0 

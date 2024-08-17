@@ -27,7 +27,7 @@ public class UIShop : MonoBehaviour {
             {
                 GameObject go = Instantiate(shopItem, itemRoot[0]);
                 UIShopItem ui = go.GetComponent<UIShopItem>();
-                //ui.SetShopItem(kv.Key, kv.Value, this);
+                ui.SetShopItem(kv.Key, kv.Value, this);
             }
         }
         yield return null;
@@ -57,6 +57,11 @@ public class UIShop : MonoBehaviour {
         {
             MessageBox.Show("请选择要购买的道具", "购买提示");
             return;
+        }
+
+        if(!ShopManager.Instance.BuyItem(this.shop.ID, this.selectedItem.ShopItemID))
+        {
+
         }
     }
 }
