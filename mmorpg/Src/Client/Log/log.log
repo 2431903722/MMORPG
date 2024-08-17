@@ -1,48 +1,8 @@
-2024-08-16 00:04:42,185 [ 1] INFO  Unity: LoadingManager start
-2024-08-16 00:04:45,198 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-16 00:04:46,340 [ 1] INFO  Unity: 正在加载
-2024-08-16 00:04:49,801 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-16 00:04:49,802 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-16 00:04:49,804 [ 1] INFO  Unity: DoConnect
-2024-08-16 00:04:49,805 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-16 00:04:49,807 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-08-16 00:04:49,810 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-16 00:04:49,871 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-16 00:04:49,874 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-16 00:04:50,034 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-16 00:04:50,739 [ 1] INFO  Unity: Select Char:[1]001_01[Warrior]
-2024-08-16 00:04:51,220 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-16 00:04:51,255 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-16 00:04:51,256 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:200]
-2024-08-16 00:04:51,256 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:100]
-2024-08-16 00:04:51,257 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:30]
-2024-08-16 00:04:51,257 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:120]
-2024-08-16 00:04:51,258 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-16 00:04:51,259 [ 1] INFO  Unity: AddCharacter:2:001_01 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-16 00:04:51,260 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-16 00:04:51,516 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-16 00:04:51,516 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-16 00:04:51,557 [ 1] WARN  Unity: MainPlayerCamera[-1443256] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-16 00:04:51,557 [ 1] WARN  Unity: GameObjectManager[-1442200] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-16 00:04:51,559 [ 1] WARN  Unity: UIMain[163208] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-16 00:04:51,560 [ 1] WARN  Unity: UIWorldElementManager[164048] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-16 00:04:51,573 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-16 00:05:52,093 [ 1] INFO  Unity: Character_2_001_01 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-16 00:05:52,094 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-16 00:05:52,094 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-17 10:34:00,311 [ 1] INFO  Unity: LoadingManager start
+2024-08-17 10:34:03,460 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-17 10:34:04,458 [ 1] INFO  Unity: 正在加载
+2024-08-17 10:34:04,474 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-17 10:34:04,475 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
