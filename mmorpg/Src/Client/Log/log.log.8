@@ -1,100 +1,116 @@
-2024-08-17 16:37:58,796 [ 1] INFO  Unity: LoadingManager start
-2024-08-17 16:38:01,944 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-17 16:38:03,253 [ 1] INFO  Unity: 正在加载
-2024-08-17 16:38:24,193 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-17 16:38:24,198 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-17 16:38:24,207 [ 1] INFO  Unity: DoConnect
-2024-08-17 16:38:24,208 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-17 16:38:24,213 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-08-17 18:04:01,568 [ 1] INFO  Unity: LoadingManager start
+2024-08-17 18:04:04,584 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-17 18:04:05,684 [ 1] INFO  Unity: 正在加载
+2024-08-17 18:04:11,540 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-08-17 18:04:11,541 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-08-17 18:04:11,543 [ 1] INFO  Unity: DoConnect
+2024-08-17 18:04:11,544 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-08-17 18:04:11,547 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-08-17 16:38:26,233 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:270)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:56)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:158)
-UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
-UnityEngine.EventSystems.EventSystem:Update()
+2024-08-17 18:04:11,548 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-08-17 18:04:11,611 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-08-17 18:04:11,613 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-08-17 18:04:11,746 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-17 18:04:13,131 [ 1] INFO  Unity: Select Char:[1]001_01[Warrior]
+2024-08-17 18:04:14,026 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-08-17 18:04:14,061 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-08-17 18:04:14,063 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:201]
+2024-08-17 18:04:14,063 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:101]
+2024-08-17 18:04:14,063 [ 1] INFO  Unity: ItemManager:Init[Id:3, Count:31]
+2024-08-17 18:04:14,063 [ 1] INFO  Unity: ItemManager:Init[Id:4, Count:121]
+2024-08-17 18:04:14,064 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-08-17 18:04:14,065 [ 1] INFO  Unity: AddCharacter:3:001_01 Map:1 Entity:(3:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-08-17 18:04:14,066 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-08-17 18:04:14,301 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-17 18:04:14,302 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-08-17 18:04:14,344 [ 1] WARN  Unity: MainPlayerCamera[-2016206] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-17 16:38:26,237 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+2024-08-17 18:04:14,345 [ 1] WARN  Unity: GameObjectManager[-2015150] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:272)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Services.UserService:ConnectToServer() (at Assets/Scripts/Services/UserService.cs:56)
-Services.UserService:SendLogin(String, String) (at Assets/Scripts/Services/UserService.cs:158)
-UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:46)
-UnityEngine.EventSystems.EventSystem:Update()
+2024-08-17 18:04:14,346 [ 1] WARN  Unity: UIMain[242344] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-17 16:38:26,237 [ 1] INFO  Unity: DoConnect
-2024-08-17 16:38:26,238 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-17 16:38:26,238 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+2024-08-17 18:04:14,347 [ 1] WARN  Unity: UIWorldElementManager[243184] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-17 16:38:28,255 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:270)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:311)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:428)
-
-2024-08-17 16:38:28,256 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:272)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:311)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:428)
-
-2024-08-17 16:38:28,294 [ 1] INFO  Unity: DoConnect
-2024-08-17 16:38:28,294 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-17 16:38:28,295 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2024-08-17 16:38:30,302 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:270)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:311)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:428)
-
-2024-08-17 16:38:30,302 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:272)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:165)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:311)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:428)
-
-2024-08-17 16:38:30,303 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2024-08-17 16:38:32,392 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-17 16:38:32,392 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-17 18:04:14,361 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-08-17 18:04:14,737 [ 1] INFO  Unity: MoveForward
+2024-08-17 18:04:14,738 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2024-08-17 18:04:15,035 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2024-08-17 18:04:15,035 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5090,4000,820) DIR:(98,-18,0) SPD:300
+2024-08-17 18:04:15,151 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2024-08-17 18:04:15,151 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5120,3994,820) DIR:(93,-36,0) SPD:300
+2024-08-17 18:04:15,250 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
+2024-08-17 18:04:15,251 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5150,3982,820) DIR:(84,-54,0) SPD:300
+2024-08-17 18:04:15,333 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
+2024-08-17 18:04:15,333 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5170,3967,820) DIR:(73,-68,0) SPD:300
+2024-08-17 18:04:15,416 [ 1] INFO  Unity: SetDirection:(60, -80, 0)
+2024-08-17 18:04:15,416 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5190,3952,820) DIR:(60,-80,0) SPD:300
+2024-08-17 18:04:15,515 [ 1] INFO  Unity: SetDirection:(42, -91, 0)
+2024-08-17 18:04:15,515 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5208,3928,820) DIR:(42,-91,0) SPD:300
+2024-08-17 18:04:15,615 [ 1] INFO  Unity: SetDirection:(23, -97, 0)
+2024-08-17 18:04:15,615 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5220,3898,820) DIR:(23,-97,0) SPD:300
+2024-08-17 18:04:15,747 [ 1] INFO  Unity: SetDirection:(4, -100, 0)
+2024-08-17 18:04:15,748 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5228,3858,820) DIR:(4,-100,0) SPD:300
+2024-08-17 18:04:15,963 [ 1] INFO  Unity: SetDirection:(-15, -99, 0)
+2024-08-17 18:04:15,963 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5228,3793,820) DIR:(-15,-99,0) SPD:300
+2024-08-17 18:04:16,079 [ 1] INFO  Unity: SetDirection:(-34, -94, 0)
+2024-08-17 18:04:16,079 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5221,3758,820) DIR:(-34,-94,0) SPD:300
+2024-08-17 18:04:16,228 [ 1] INFO  Unity: SetDirection:(-50, -87, 0)
+2024-08-17 18:04:16,228 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5203,3713,820) DIR:(-50,-87,0) SPD:300
+2024-08-17 18:04:17,023 [ 1] INFO  Unity: SetDirection:(-65, -76, 0)
+2024-08-17 18:04:17,023 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5059,3521,820) DIR:(-65,-76,0) SPD:300
+2024-08-17 18:04:17,139 [ 1] INFO  Unity: SetDirection:(-78, -62, 0)
+2024-08-17 18:04:17,139 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(5038,3493,820) DIR:(-78,-62,0) SPD:300
+2024-08-17 18:04:18,083 [ 1] INFO  Unity: SetDirection:(-89, -46, 0)
+2024-08-17 18:04:18,083 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(4814,3325,820) DIR:(-89,-46,0) SPD:300
+2024-08-17 18:04:18,745 [ 1] INFO  Unity: SetDirection:(-95, -30, 0)
+2024-08-17 18:04:18,745 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(4654,3245,820) DIR:(-95,-30,0) SPD:300
+2024-08-17 18:04:19,989 [ 1] INFO  Unity: SetDirection:(-99, -12, 0)
+2024-08-17 18:04:19,989 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(4284,3097,820) DIR:(-99,-12,0) SPD:300
+2024-08-17 18:04:20,701 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(4108,3082,806) DIR:(-99,-12,0) SPD:300
+2024-08-17 18:04:20,767 [ 1] INFO  Unity: SetDirection:(-100, 6, 0)
+2024-08-17 18:04:20,767 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(4088,3078,806) DIR:(-100,6,0) SPD:300
+2024-08-17 18:04:21,114 [ 1] INFO  Unity: SetDirection:(-97, 24, 0)
+2024-08-17 18:04:21,115 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3983,3078,806) DIR:(-97,24,0) SPD:300
+2024-08-17 18:04:21,247 [ 1] INFO  Unity: SetDirection:(-90, 43, 0)
+2024-08-17 18:04:21,247 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3943,3086,806) DIR:(-90,43,0) SPD:300
+2024-08-17 18:04:21,363 [ 1] INFO  Unity: SetDirection:(-79, 61, 0)
+2024-08-17 18:04:21,364 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3913,3098,806) DIR:(-79,61,0) SPD:300
+2024-08-17 18:04:21,480 [ 1] INFO  Unity: SetDirection:(-66, 75, 0)
+2024-08-17 18:04:21,480 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3885,3119,806) DIR:(-66,75,0) SPD:300
+2024-08-17 18:04:23,053 [ 1] INFO  Unity: Stop
+2024-08-17 18:04:23,054 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3600,3499,806) DIR:(-66,75,0) SPD:0
+2024-08-17 18:04:26,892 [ 1] INFO  Unity: MoveForward
+2024-08-17 18:04:26,892 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3600,3499,806) DIR:(-66,75,0) SPD:300
+2024-08-17 18:04:27,256 [ 1] INFO  Unity: SetDirection:(-51, 86, 0)
+2024-08-17 18:04:27,257 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3537,3583,806) DIR:(-51,86,0) SPD:300
+2024-08-17 18:04:27,355 [ 1] INFO  Unity: SetDirection:(-33, 94, 0)
+2024-08-17 18:04:27,356 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3519,3607,806) DIR:(-33,94,0) SPD:300
+2024-08-17 18:04:27,521 [ 1] INFO  Unity: SetDirection:(-16, 99, 0)
+2024-08-17 18:04:27,521 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3499,3657,806) DIR:(-16,99,0) SPD:300
+2024-08-17 18:04:32,342 [ 1] INFO  Unity: SetDirection:(-34, 94, 0)
+2024-08-17 18:04:32,342 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3210,5102,806) DIR:(-34,94,0) SPD:300
+2024-08-17 18:04:32,575 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3219,5138,806) DIR:(-34,94,0) SPD:300
+2024-08-17 18:04:33,536 [ 1] INFO  Unity: Stop
+2024-08-17 18:04:33,536 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:3 POS:(3105,5423,806) DIR:(-34,94,0) SPD:0
+2024-08-17 18:04:33,834 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIShopItem.SetShopItem (Int32 id, Common.Data.ShopItemDefine shopItem, .UIShop owner) (at Assets/Scripts/UI/Shop/UIShopItem.cs:49)
+UIShop+<InitItems>c__Iterator0.MoveNext () (at Assets/Scripts/UI/Shop/UIShop.cs:30)
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) (at D:/unity/Runtime/Export/Coroutines.cs:17)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+UIShop:Start() (at Assets/Scripts/UI/Shop/UIShop.cs:19)
+}</args></log4net.Error>
+2024-08-17 18:04:53,291 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-17 18:04:53,292 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2024-08-17 16:38:32,401 [ 1] ERROR Unity: Some objects were not cleaned up when closing the scene. (Did you spawn new GameObjects from OnDestroy?)
-The following scene GameObjects were found:
-UIMessageBox(Clone)
-TitleBar
-IconQ
-Icons
-Buttons
-Text
-Message
-Text
-Title
-IconE
-Panel
-IconI
-ButtonOK
-ButtonCancel
-
-
+2024-08-17 18:04:53,292 [ 1] INFO  Unity: Character_3_001_01 OnDestroy :ID:3 POS:(3105, 5423, 806) DIR:(-34, 94, 0) SPD:0 

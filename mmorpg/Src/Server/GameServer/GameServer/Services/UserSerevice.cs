@@ -172,10 +172,10 @@ namespace GameServer.Services
             }
             else
             {
-                character.ItemManager.AddItem(1, 200);
-                character.ItemManager.AddItem(2, 100);
-                character.ItemManager.AddItem(3, 30);
-                character.ItemManager.AddItem(4, 120);
+                //character.ItemManager.AddItem(1, 200);
+                //character.ItemManager.AddItem(2, 100);
+                //character.ItemManager.AddItem(3, 30);
+                //character.ItemManager.AddItem(4, 120);
             }
             Models.Item item = character.ItemManager.GetItem(itemId);
 

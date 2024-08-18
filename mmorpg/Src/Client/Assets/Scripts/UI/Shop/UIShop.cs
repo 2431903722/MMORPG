@@ -64,4 +64,9 @@ public class UIShop : MonoBehaviour {
 
         }
     }
+
+    public void OnClickClose()
+    {
+        UIManager.Instance.Close(typeof(UIShop));
+    }
 }
