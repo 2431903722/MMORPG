@@ -56,4 +56,9 @@ public class UIBag : MonoBehaviour {
     {
         BagManager.Instance.Reset();
     }
+
+    public void OnClickClose()
+    {
+        UIManager.Instance.Close(typeof(UIBag));
+    }
 }
