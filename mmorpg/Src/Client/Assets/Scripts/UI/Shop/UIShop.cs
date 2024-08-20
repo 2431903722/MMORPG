@@ -28,7 +28,7 @@ public class UIShop : MonoBehaviour {
         {
             if(kv.Value.Status > 0)
             {
-                GameObject go = Instantiate(shopItem, itemRoot[0]);
+                GameObject go = Instantiate(shopItem, itemRoot[page]);
                 UIShopItem ui = go.GetComponent<UIShopItem>();
                 ui.SetShopItem(kv.Key, kv.Value, this);
                 count++;

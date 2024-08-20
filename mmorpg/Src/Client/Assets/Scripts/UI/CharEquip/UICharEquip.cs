@@ -47,7 +47,7 @@ public class UICharEquip : UIWindow
     {
         foreach (var kv in ItemManager.Instance.Items)
         {
-            if (kv.Value.Define.Type == ItemType.Equip)
+            if (kv.Value.Define.Type == ItemType.Equip && kv.Value.Define.LimitClass == User.Instance.CurrentCharacter.Class)
             {
                 // 已装备则不再显示
                 if (EquipManager.Instance.Contains(kv.Key))
@@ -105,6 +105,11 @@ public class UICharEquip : UIWindow
     public void UnEquip(Item item)
     {
         EquipManager.Instance.UnEquipItem(item);
+    }
+
+    public void OnClickClose()
+    {
+        UIManager.Instance.Close(typeof(UICharEquip));
     }
 }
 
