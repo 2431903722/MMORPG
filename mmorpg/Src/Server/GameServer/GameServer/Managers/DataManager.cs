@@ -23,6 +23,7 @@ namespace GameServer.Managers
         public Dictionary<int, ShopDefine> Shops = null;
         public Dictionary<int, Dictionary<int, ShopItemDefine>> ShopItems = null;
         public Dictionary<int, EquipDefine> Equips = null;
+        public Dictionary<int, QuestDefine> Quests = null;
 
         public DataManager()
         {
