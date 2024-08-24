@@ -24,7 +24,6 @@ namespace Managers
         public Dictionary<int, Quest> allQuests = new Dictionary<int, Quest>();
         public Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>> npcQuests = new Dictionary<int, Dictionary<NpcQuestStatus, List<Quest>>>();
 
-
         public void Init(List<NQuestInfo> quests)
         {
             this.questInfos = quests;
@@ -39,12 +38,21 @@ namespace Managers
             foreach (var info in this.questInfos)
             {
                 Quest quest = new Quest(info);
-                this.AddNpcQuest(quest.Define.AcceptNPC, quest);
-                this.AddNpcQuest(quest.Define.SubmitNPC, quest);
                 this.allQuests[quest.Define.ID] = quest;
             }
 
-            // 初始化可用任务
+            this.CheckAvailableQuests();
+
+            foreach (var kv in this.allQuests)
+            {
+                this.AddNpcQuest(kv.Value.Define.AcceptNPC, kv.Value);
+                this.AddNpcQuest(kv.Value.Define.SubmitNPC, kv.Value);
+            }          
+        }
+
+        // 初始化可用任务
+        void CheckAvailableQuests()
+        {
             foreach (var kv in DataManager.Instance.Quests)
             {
                 if (kv.Value.LimitClass != CharacterClass.None && kv.Value.LimitClass != User.Instance.CurrentCharacter.Class)
@@ -73,8 +81,6 @@ namespace Managers
                 }
 
                 Quest quest = new Quest(kv.Value);
-                this.AddNpcQuest(quest.Define.AcceptNPC, quest);
-                this.AddNpcQuest(quest.Define.SubmitNPC, quest);
                 this.allQuests[quest.Define.ID] = quest;
             }
         }
@@ -160,7 +166,7 @@ namespace Managers
                 if (status[NpcQuestStatus.Incomplete].Count > 0)
                     return ShowQuestDialog(status[NpcQuestStatus.Incomplete].First());
                 if (status[NpcQuestStatus.Available].Count > 0)
-                    return ShowQuestDialog(status[NpcQuestStatus.Available].First());                
+                    return ShowQuestDialog(status[NpcQuestStatus.Available].First());
             }
             return false;
         }
@@ -176,7 +182,7 @@ namespace Managers
             }
             if (quest.Info != null || quest.Info.Status == QuestStatus.Complated)
             {
-                if(!string.IsNullOrEmpty(quest.Define.DialogIncomplete))
+                if (!string.IsNullOrEmpty(quest.Define.DialogIncomplete))
                     MessageBox.Show(quest.Define.DialogIncomplete);
             }
             return true;
@@ -192,6 +198,11 @@ namespace Managers
         }
 
         public void OnQuestAccepted(Quest quest)
+        {
+
+        }
+
+        public void OnQuestSubmited(Quest quest)
         {
 
         }
