@@ -263,3 +263,10 @@ Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:311)
 Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:428)
 
 2024-08-24 19:46:59,264 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2024-08-24 20:05:13,860 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-24 20:05:13,860 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+
+2024-08-24 20:05:13,861 [ 1] INFO  Unity: Character_2_001_01 OnDestroy :ID:2 POS:(4257, 4920, 806) DIR:(-97, -22, 0) SPD:0 
