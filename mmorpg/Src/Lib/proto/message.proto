@@ -197,6 +197,7 @@ message NetMessageRequest{
 
 	QuestListRequest questList = 12;
 	QuestAcceptRequest questAccept = 13;
+	QuestSubmitRequest questSubmit = 14;
 }
 
 message NetMessageResponse{
@@ -216,6 +217,7 @@ message NetMessageResponse{
 
 	QuestListResponse questList = 12;
 	QuestAcceptResponse questAccept = 13;
+	QuestSubmitResponse questSubmit = 14;
 
 	StatusNotify statusNotify = 100;
 	
@@ -393,6 +395,7 @@ message QuestAcceptResponse
 {
 	RESULT result = 1;
 	string errormsg = 2;
+	NQuestInfo quest = 3;
 }
 
 message QuestSubmitRequest
@@ -404,6 +407,7 @@ message QuestSubmitResponse
 {
 	RESULT result = 1;
 	string errormsg = 2;
+	NQuestInfo quest = 3;
 }
 
 message QuestAbandonRequest

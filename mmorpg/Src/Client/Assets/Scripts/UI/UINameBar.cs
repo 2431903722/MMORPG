@@ -20,7 +20,6 @@ public class UINameBar : MonoBehaviour {
 	void Update () 
     {
         this.UpdateInfo();
-        this.transform.forward = Camera.main.transform.forward;
 	}
 
     void UpdateInfo()

@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 224930726409372344}
   - component: {fileID: 222756839929613276}
   - component: {fileID: 114977979695540290}
+  - component: {fileID: 114310703407177428}
   m_Layer: 5
   m_Name: UIQuestItem
   m_TagString: Untagged
@@ -78,6 +79,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "[\u4E3B\u7EBF] \u6DF1\u5165\u843D\u65E5\u68EE\u6797"
+--- !u!114 &114310703407177428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891850413337738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e311bb1e123201b44a39ffee95c76f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  title: {fileID: 114093900966263602}
+  background: {fileID: 114977979695540290}
+  normalBg: {fileID: 21300000, guid: f2c26ba28b4d05643ba74996bb40967b, type: 3}
+  selectedBg: {fileID: 21300000, guid: 8a8e3ccd07960e3438329e6fe1bfc2b4, type: 3}
 --- !u!114 &114977979695540290
 MonoBehaviour:
   m_ObjectHideFlags: 1
