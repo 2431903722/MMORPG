@@ -9338,46 +9338,27 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1942284325382558, guid: d627848d703b2c44795c90473f5da198, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114829974422975548, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f55b47bd393f04d4988fd507a0b6467c,
-        type: 3}
-    - target: {fileID: 114811196534697432, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 8c66e40f3c50aff4aaa1380db9fd70a3,
-        type: 3}
-    - target: {fileID: 114019733274144960, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c85c2e6da6f093c44bd85d0d70e21c05,
-        type: 3}
-    - target: {fileID: 224553160488945520, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 224412659439871472, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 224707383037079024, guid: d627848d703b2c44795c90473f5da198,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 48
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d627848d703b2c44795c90473f5da198, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &301443737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1942284325382558, guid: d627848d703b2c44795c90473f5da198,
+    type: 2}
+  m_PrefabInternal: {fileID: 301443736}
+--- !u!114 &301443738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301443737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4643eb4a78e3a13459a79797e93e15e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: {fileID: 0}
+  height: 2.5
 --- !u!1001 &302042819
 Prefab:
   m_ObjectHideFlags: 0
@@ -57900,7 +57881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   global: 1
   nameBarPrefab: {fileID: 459407280}
-  npcStatusPrefab: {fileID: 0}
+  npcStatusPrefab: {fileID: 301443737}
 --- !u!1001 &1949129406
 Prefab:
   m_ObjectHideFlags: 0

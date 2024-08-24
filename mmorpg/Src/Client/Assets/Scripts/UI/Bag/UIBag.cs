@@ -38,6 +38,7 @@ public class UIBag : MonoBehaviour {
                 var def = ItemManager.Instance.Items[item.ItemId].Define;
                 ui.SetMainIcon(def.Icon, item.Count.ToString());
             }
+            this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
         }
 
         for(int i = BagManager.Instance.Items.Length; i < slots.Count; i++)
@@ -49,7 +50,7 @@ public class UIBag : MonoBehaviour {
 
     public void SetTitle(string title)
     {
-        this.money.text = User.Instance.CurrentCharacter.Id.ToString();
+        this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
     }
 
     void Clear()

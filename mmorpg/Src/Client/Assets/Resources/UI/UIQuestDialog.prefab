@@ -729,9 +729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749cd05c31ccc584eb91dd50c26ac36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questInfo: {fileID: 0}
-  openButtons: {fileID: 0}
-  submitButtons: {fileID: 0}
+  questInfo: {fileID: 114544527039623140}
+  openButtons: {fileID: 1949096320268730}
+  submitButtons: {fileID: 1607756212428208}
 --- !u!114 &114202264139789766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1275,12 +1275,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2146d89ae15667b4496007bd357f3a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  targets: []
-  description: {fileID: 0}
+  title: {fileID: 114494368560148120}
+  targets:
+  - {fileID: 114524604980012932}
+  - {fileID: 114998918901743280}
+  - {fileID: 114745267829683070}
+  description: {fileID: 114161574737915668}
   rewardItems: {fileID: 0}
-  rewardMoney: {fileID: 0}
-  rewardExp: {fileID: 0}
+  rewardMoney: {fileID: 114574392354946822}
+  rewardExp: {fileID: 114478868505909416}
 --- !u!114 &114574392354946822
 MonoBehaviour:
   m_ObjectHideFlags: 1

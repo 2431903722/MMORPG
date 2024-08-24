@@ -22,8 +22,10 @@
     "Target3": "None",
     "Target3ID": 0,
     "Target3Num": 0,
-    "RewardGold": 1000,
-    "RewardExp": 2000
+    "RewardGold": 300,
+    "RewardExp": 2000,
+    "RewardItem1": 3,
+    "RewardItem1Count": 5
   },
   "1002": {
     "ID": 1002,
@@ -48,7 +50,10 @@
     "Target3": "None",
     "Target3ID": 0,
     "Target3Num": 0,
-    "RewardExp": 2000
+    "RewardGold": 500,
+    "RewardExp": 2000,
+    "RewardItem1": 4,
+    "RewardItem1Count": 10
   },
   "1003": {
     "ID": 1003,
@@ -73,6 +78,7 @@
     "Target3": "None",
     "Target3ID": 0,
     "Target3Num": 0,
+    "RewardGold": 700,
     "RewardExp": 2000
   },
   "1004": {
@@ -98,6 +104,7 @@
     "Target3": "None",
     "Target3ID": 0,
     "Target3Num": 0,
+    "RewardGold": 900,
     "RewardExp": 2000
   },
   "2001": {
@@ -124,6 +131,7 @@
     "Target3": "None",
     "Target3ID": 0,
     "Target3Num": 0,
+    "RewardGold": 1000,
     "RewardExp": 3000
   },
   "2002": {
@@ -338,6 +346,7 @@
     "Name": "帮多丽丝送信",
     "LimitLevel": 5,
     "LimitClass": 0,
+    "PreQuest": 0,
     "Type": "BRANCH",
     "AcceptNPC": 1,
     "SubmitNPC": 1,
