@@ -1,4 +1,5 @@
-﻿using GameServer.Models;
+﻿using GameServer.Entities;
+using GameServer.Models;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;

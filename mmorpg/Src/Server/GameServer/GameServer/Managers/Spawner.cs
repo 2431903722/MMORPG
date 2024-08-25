@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameServer.Managers
 {
-    class Spqwner
+    class Spawner
     {
         public SpawnRuleDefine Define { get; set; }
         private Map Map;
@@ -24,7 +24,7 @@ namespace GameServer.Managers
         private bool spawned = false;
         private SpawnPointDefine spawPoint = null;
 
-        public Spqwner(SpawnRuleDefine define, Map map)
+        public Spawner(SpawnRuleDefine define, Map map)
         {
             this.Define = define;
             this.Map = map;
