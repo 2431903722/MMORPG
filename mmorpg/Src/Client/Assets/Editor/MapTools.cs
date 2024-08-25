@@ -94,7 +94,14 @@ public class MapTools : MonoBehaviour {
                     DataManager.Instance.SpawnPoints[map.Value.ID][sp.ID] = new SpawnPointDefine();
 
                 SpawnPointDefine def = DataManager.Instance.SpawnPoints[map.Value.ID][sp.ID];
+                def.ID = sp.ID;
+                def.MapID = map.Value.ID;
+                def.Position = GameObjectTool.WorldToLogicN(sp.transform.position);
+                def.Direction = GameObjectTool.WorldToLogicN(sp.transform.forward);
             }
         }
+        DataManager.Instance.SaveSpawnPoints();
+        EditorSceneManager.OpenScene("Assets/Levels/" + currentScene + ".unity");
+        EditorUtility.DisplayDialog("提示", "刷怪点导出完成", "确定");
     }
 }

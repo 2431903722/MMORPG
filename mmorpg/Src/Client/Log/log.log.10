@@ -1,70 +1,8 @@
-2024-08-24 17:47:51,714 [ 1] INFO  Unity: LoadingManager start
-2024-08-24 17:47:54,838 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-24 17:47:56,228 [ 1] INFO  Unity: 正在加载
-2024-08-24 17:47:59,590 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-24 17:47:59,597 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-24 17:47:59,606 [ 1] INFO  Unity: DoConnect
-2024-08-24 17:47:59,607 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-24 17:47:59,614 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-08-24 17:47:59,626 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-24 17:47:59,800 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-24 17:47:59,809 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-24 17:47:59,959 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-24 17:48:01,650 [ 1] INFO  Unity: Select Char:[1]001_01[Warrior]
-2024-08-24 17:48:02,479 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-24 17:48:02,520 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-24 17:48:02,526 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-08-24 17:48:02,527 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-08-24 17:48:02,566 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-24 17:48:02,570 [ 1] INFO  Unity: AddCharacter:5:001_01 Map:1 Entity:(5:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-24 17:48:02,572 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-24 17:48:02,811 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-24 17:48:02,811 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-24 17:48:02,856 [ 1] WARN  Unity: MainPlayerCamera[-165734] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-24 17:48:02,858 [ 1] WARN  Unity: GameObjectManager[-164652] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-24 17:48:02,868 [ 1] WARN  Unity: UIMain[74660] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-24 17:48:02,869 [ 1] WARN  Unity: UIWorldElementManager[75512] Awake
-UnityEngine.Debug:LogWarningFormat(String, Object[])
-MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
-
-2024-08-24 17:48:02,893 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-24 17:48:39,877 [ 1] INFO  Unity: !!!
-2024-08-24 17:48:39,878 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:48)
-NpcController.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcController.cs:42)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:30)
-}</args></log4net.Error>
-2024-08-24 17:48:39,880 [ 1] INFO  Unity: !!!
-2024-08-24 17:48:39,881 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:48)
-NpcController.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcController.cs:42)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:30)
-}</args></log4net.Error>
-2024-08-24 17:48:39,881 [ 1] INFO  Unity: !!!
-2024-08-24 17:48:39,882 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:48)
-NpcController.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcController.cs:42)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:30)
-}</args></log4net.Error>
-2024-08-24 17:48:39,883 [ 1] INFO  Unity: !!!
-2024-08-24 17:48:39,883 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIWorldElementManager.AddNpcQuestStatus (UnityEngine.Transform owner, NpcQuestStatus status) (at Assets/Scripts/UI/UIWorldElementManager.cs:48)
-NpcController.RefreshNpcStatus () (at Assets/Scripts/GameObject/NpcController.cs:42)
-NpcController.Start () (at Assets/Scripts/GameObject/NpcController.cs:30)
-}</args></log4net.Error>
-2024-08-24 17:48:41,317 [ 1] INFO  Unity: Character_5_001_01 OnDestroy :ID:5 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-24 17:48:41,320 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-24 17:48:41,321 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-08-24 19:04:27,629 [ 1] INFO  Unity: LoadingManager start
+2024-08-24 19:04:30,640 [ 1] INFO  Unity: DataManager > DataManager()
+2024-08-24 19:04:31,848 [ 1] INFO  Unity: 正在加载
+2024-08-24 19:04:50,054 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-08-24 19:04:50,055 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)

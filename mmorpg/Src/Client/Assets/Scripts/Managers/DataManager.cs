@@ -111,6 +111,5 @@ public class DataManager : Singleton<DataManager>
         string json = JsonConvert.SerializeObject(this.SpawnPoints, Formatting.Indented);
         File.WriteAllText(this.DataPath + "SpawnPointDefine.txt", json);
     }
-
 #endif
 }
