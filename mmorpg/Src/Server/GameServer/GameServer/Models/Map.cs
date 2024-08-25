@@ -85,7 +85,7 @@ namespace GameServer.Models
                 //this.SendCharacterEnterMap(kv.Value.connection, character.Info);
             }
 
-            foreach(var kv in this.MonsterManager.Moinsters)
+            foreach(var kv in this.MonsterManager.Monsters)
             {
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
             }
@@ -106,29 +106,41 @@ namespace GameServer.Models
             this.MapCharacters.Remove(cha.Id);
         }
 
-        void SendCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
+        void AddCharacterEnterMap(NetConnection<NetSession> conn, NCharacterInfo character)
         {
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
+            //NetMessage message = new NetMessage();
+            //message.Response = new NetMessageResponse();
 
-            message.Response.mapCharacterEnter = new MapCharacterEnterResponse();
-            message.Response.mapCharacterEnter.mapId = this.Define.ID;
-            message.Response.mapCharacterEnter.Characters.Add(character);
+            //message.Response.mapCharacterEnter = new MapCharacterEnterResponse();
+            //message.Response.mapCharacterEnter.mapId = this.Define.ID;
+            //message.Response.mapCharacterEnter.Characters.Add(character);
 
-            byte[] data = PackageHandler.PackMessage(message);
-            conn.SendData(data, 0, data.Length);
+            //byte[] data = PackageHandler.PackMessage(message);
+            //conn.SendData(data, 0, data.Length);
+
+            if(conn.Session.Response.mapCharacterEnter == null)
+            {
+                conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
+                conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
+            }
+            conn.Session.Response.mapCharacterEnter.Characters.Add(character);
+            conn.SendResponse();
         }
 
-        void SendCharacterLeaveMap(NetConnection<NetSession> connection, Character character)
+        void SendCharacterLeaveMap(NetConnection<NetSession> conn, Character character)
         {
-            NetMessage message = new NetMessage();
-            message.Response = new NetMessageResponse();
+            //NetMessage message = new NetMessage();
+            //message.Response = new NetMessageResponse();
 
-            message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
-            message.Response.mapCharacterLeave.characterId = character.Id;
+            //message.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            //message.Response.mapCharacterLeave.characterId = character.Id;
 
-            byte[] data = PackageHandler.PackMessage(message);
-            connection.SendData(data, 0, data.Length);
+            //byte[] data = PackageHandler.PackMessage(message);
+            //connection.SendData(data, 0, data.Length);
+
+            conn.Session.Response.mapCharacterLeave = new MapCharacterLeaveResponse();
+            conn.Session.Response.mapCharacterLeave.characterId = character.Id;
+            conn.SendResponse();
         }
 
         internal void UpdateEntity(NEntitySync entity)
