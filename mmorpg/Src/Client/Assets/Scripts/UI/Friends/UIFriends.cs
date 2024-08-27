@@ -1,5 +1,6 @@
 ﻿using Managers;
 using Models;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ public class UIFriends : UIWindow
 
     void Start()
     {
-        FriendSerive.Instance.OnFriendUpdate = RefreshUI;
+        FriendService.Instance.OnFriendUpdate = RefreshUI;
         this.listMain.onItemSelected += this.OnFriendSelected;
         RefreshUI();
     }

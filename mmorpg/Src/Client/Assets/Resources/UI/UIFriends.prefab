@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 223438474600249090}
   - component: {fileID: 114633970605021348}
   - component: {fileID: 114074271013515386}
+  - component: {fileID: 114617852840641284}
   m_Layer: 5
   m_Name: UIFriends
   m_TagString: Untagged
@@ -296,6 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224370425687299660}
   - component: {fileID: 114555888232193882}
+  - component: {fileID: 114973126055431614}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -527,7 +529,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114440421975957750}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114617852840641284}
+        m_MethodName: OnCloseClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114150025331546618
@@ -720,8 +733,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickBuy
+      - m_Target: {fileID: 114617852840641284}
+        m_MethodName: OnClickFriendChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -859,8 +872,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickBuy
+      - m_Target: {fileID: 114617852840641284}
+        m_MethodName: OnClickFriendAdd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1001,6 +1014,21 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u5220\u9664\u597D\u53CB\n"
+--- !u!114 &114617852840641284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567605239945598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2ac2fffef61e842a18e2800edf6a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPrefab: {fileID: 1327244178130644, guid: 953c11e01776faf419571fa34ca333d8, type: 2}
+  listMain: {fileID: 114973126055431614}
+  itemRoot: {fileID: 224370425687299660}
+  selectedItem: {fileID: 0}
 --- !u!114 &114624035601325702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1166,8 +1194,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnClickBuy
+      - m_Target: {fileID: 114617852840641284}
+        m_MethodName: OnClickFriendRemove
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1320,6 +1348,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114973126055431614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1808744933954266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 771d6b6fd6955bc47a0337bdf29f132d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114996644935706030
 MonoBehaviour:
   m_ObjectHideFlags: 1

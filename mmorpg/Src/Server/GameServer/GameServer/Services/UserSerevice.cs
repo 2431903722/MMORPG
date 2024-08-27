@@ -177,8 +177,9 @@ namespace GameServer.Services
 
             SessionManager.Instance.RemoveSession(character.Id);
 
-            this.CharacterLeave(character);
-            
+            this.CharacterLeave(character);   
+            sender.Session.Character = null;
+
             sender.Session.Response.gameLeave = new UserGameLeaveResponse();
             sender.Session.Response.gameLeave.Result = Result.Success;
             sender.Session.Response.gameLeave.Errormsg = "None";
