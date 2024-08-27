@@ -279,10 +279,10 @@ namespace SkillBridge.Message
         public FriendAddResponse friendAddRes { get; set; }
 
         [global::ProtoBuf.ProtoMember(17)]
-        public FriendListResponse friendList { get; set; }
+        public FriendListRequest friendList { get; set; }
 
         [global::ProtoBuf.ProtoMember(18)]
-        public FriendRemoveResponse friendRemove { get; set; }
+        public FriendRemoveRequest friendRemove { get; set; }
 
     }
 

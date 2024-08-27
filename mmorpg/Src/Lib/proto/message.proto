@@ -203,8 +203,8 @@ message NetMessageRequest{
 
 	FriendAddRequest friendAddReq = 15;
 	FriendAddResponse friendAddRes = 16;
-	FriendListResponse friendList = 17;
-	FriendRemoveResponse friendRemove = 18;
+	FriendListRequest friendList = 17;
+	FriendRemoveRequest friendRemove = 18;
 }
 
 message NetMessageResponse{

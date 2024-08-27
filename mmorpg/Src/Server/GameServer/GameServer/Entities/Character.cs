@@ -7,10 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Network;
 
 namespace GameServer.Entities
 {
-    class Character : CharacterBase
+    class Character : CharacterBase, IPostResponser
     {
        
         public TCharacter Data;
@@ -70,6 +71,9 @@ namespace GameServer.Entities
                 this.StatusManager.PostProcess(message);
         }
 
+        /// <summary>
+        /// 角色离开时调用
+        /// </summary>
         public void Clear()
         {
             this.FriendManager.UpdateFriendInfo(this.Info, 0);
