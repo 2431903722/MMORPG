@@ -209,7 +209,7 @@ message NetMessageRequest{
 	TeamInviteRequest teamInviteReq = 19;
 	TeamInviteResponse teamInviteRes = 20;
 	TeamInfoResponse teamInfo = 21;
-	TeamLeaveResponse teamLeave = 22;
+	TeamLeaveRequest teamLeave = 22;
 }
 
 message NetMessageResponse{

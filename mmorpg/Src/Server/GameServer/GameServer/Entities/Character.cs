@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Network;
+using Common;
+using GameServer.Models;
 
 namespace GameServer.Entities
 {
@@ -20,6 +22,9 @@ namespace GameServer.Entities
         public QuestManager QuestManager;
         public StatusManager StatusManager;
         public FriendManager FriendManager;
+
+        public Team Team;
+        public int TeamUpdateTS;
         
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -66,7 +71,17 @@ namespace GameServer.Entities
 
         public void PostProcess(NetMessageResponse message)
         {
+            Log.InfoFormat("PostProcess > Character: characterID:{0}{1}", this.Id, this.Info.Name);
             this.FriendManager.PostProcess(message);
+            if(this.Team != null)
+            {
+                Log.InfoFormat("PostProcess > Team: characterID:{0}:{1} {2}<{3}", this.Id, this.Info.Name, TeamUpdateTS, this.Team.timestamp);
+                if (this.TeamUpdateTS < this.Team.timestamp)
+                {
+                    TeamUpdateTS = Team.timestamp;
+                    this.Team.PostProcess(message);
+                }
+            }
             if (this.StatusManager.HasStatus)
                 this.StatusManager.PostProcess(message);
         }
@@ -75,8 +90,19 @@ namespace GameServer.Entities
         /// 角色离开时调用
         /// </summary>
         public void Clear()
+        {            
+            this.FriendManager.OfflineNotify();
+        }
+
+        public NCharacterInfo GetBasicInfo()
         {
-            this.FriendManager.UpdateFriendInfo(this.Info, 0);
+            return new NCharacterInfo()
+            {
+                Id = this.Id,
+                Name = this.Info.Name,
+                Class = this.Info.Class,
+                Level = this.Info.Level,
+            };
         }
     }
 }

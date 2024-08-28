@@ -294,7 +294,7 @@ namespace SkillBridge.Message
         public TeamInfoResponse teamInfo { get; set; }
 
         [global::ProtoBuf.ProtoMember(22)]
-        public TeamLeaveResponse teamLeave { get; set; }
+        public TeamLeaveRequest teamLeave { get; set; }
 
     }
 

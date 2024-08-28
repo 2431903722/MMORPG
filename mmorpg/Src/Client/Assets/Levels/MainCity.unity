@@ -42900,6 +42900,7 @@ MonoBehaviour:
   global: 1
   avatarName: {fileID: 282546785}
   avatarLevel: {fileID: 667941274}
+  TeamWindow: {fileID: 2122973009}
 --- !u!114 &1415483397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63512,6 +63513,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224942738914176582, guid: a505ed38aa6de8f47ae82432b02a45f9,
     type: 2}
   m_PrefabInternal: {fileID: 2122973007}
+--- !u!114 &2122973009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114461770551169406, guid: a505ed38aa6de8f47ae82432b02a45f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122973007}
+  m_Script: {fileID: 11500000, guid: 5026c59bf7e078a4db7d3f4789c2062f, type: 3}
 --- !u!1001 &2126434038
 Prefab:
   m_ObjectHideFlags: 0
