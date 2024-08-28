@@ -73,10 +73,14 @@ public class ListView : MonoBehaviour
 
     public void RemoveAll()
     {
-        foreach(var it in items)
+        if(items != null)
         {
-            Destroy(it.gameObject);
+            foreach (var it in items)
+            {
+                if (it != null)
+                    Destroy(it.gameObject);
+            }
+            items.Clear();
         }
-        items.Clear();
     }
 }

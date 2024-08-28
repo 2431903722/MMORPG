@@ -107,6 +107,7 @@
      <Compile Include="Assets\Scripts\UI\QuestSystem\UIQuestSystem.cs" />
      <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
      <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
+     <Compile Include="Assets\Scripts\UI\SpriteManager.cs" />
      <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
      <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
      <Compile Include="Assets\Scripts\UI\UICharacterSelect.cs" />
