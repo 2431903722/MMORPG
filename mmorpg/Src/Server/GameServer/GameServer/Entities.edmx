@@ -104,6 +104,7 @@
     <Property Name="Level" Type="int" Nullable="false" />
     <Property Name="Result" Type="int" Nullable="false" />
     <Property Name="ApplyTime" Type="datetime" Nullable="false" />
+    <Property Name="GuildId" Type="int" Nullable="false" />
     <Property Name="Guild_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="GuildMembers">
@@ -118,6 +119,7 @@
     <Property Name="Title" Type="int" Nullable="false" />
     <Property Name="JoinTime" Type="datetime" Nullable="false" />
     <Property Name="LastTime" Type="datetime" Nullable="false" />
+    <Property Name="GuildId" Type="int" Nullable="false" />
     <Property Name="Guild_Id" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Guilds">
@@ -387,6 +389,7 @@
           <Property Name="Result" Type="Int32" Nullable="false" />
           <Property Name="ApplyTime" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Guild" Relationship="ExtremeWorldModel.FK_TGuildTGuildApply" FromRole="GuildApply" ToRole="Guild" />
+          <Property Name="GuildId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="GuildMember">
           <Key>
@@ -401,6 +404,7 @@
           <Property Name="JoinTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="LastTime" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="Guild" Relationship="ExtremeWorldModel.FK_TGuildTGuildMember" FromRole="GuildMember" ToRole="Guild" />
+          <Property Name="GuildId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Guild">
           <Key>
@@ -546,6 +550,7 @@
           <ScalarProperty Name="Level" ColumnName="Level" />
           <ScalarProperty Name="Result" ColumnName="Result" />
           <ScalarProperty Name="ApplyTime" ColumnName="ApplyTime" />
+          <ScalarProperty Name="GuildId" ColumnName="GuildId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -560,6 +565,7 @@
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="JoinTime" ColumnName="JoinTime" />
           <ScalarProperty Name="LastTime" ColumnName="LastTime" />
+          <ScalarProperty Name="GuildId" ColumnName="GuildId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

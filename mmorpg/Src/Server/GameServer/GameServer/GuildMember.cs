@@ -22,6 +22,7 @@ namespace GameServer
         public int Title { get; set; }
         public System.DateTime JoinTime { get; set; }
         public System.DateTime LastTime { get; set; }
+        public int GuildId { get; set; }
     
         public virtual Guild Guild { get; set; }
     }

@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 08/26/2024 14:55:10
+-- Date Created: 08/29/2024 10:42:08
 -- Generated from EDMX file: E:\Project\MMO\mmorpg\Src\Server\GameServer\GameServer\Entities.edmx
 -- --------------------------------------------------
 
@@ -38,6 +38,9 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterQuest]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[CharacterQuests] DROP CONSTRAINT [FK_TCharacterTCharacterQuest];
 GO
+IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterFriend]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CharacterFriends] DROP CONSTRAINT [FK_TCharacterTCharacterFriend];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
@@ -69,6 +72,9 @@ IF OBJECT_ID(N'[dbo].[CharacterBags]', 'U') IS NOT NULL
 GO
 IF OBJECT_ID(N'[dbo].[CharacterQuests]', 'U') IS NOT NULL
     DROP TABLE [dbo].[CharacterQuests];
+GO
+IF OBJECT_ID(N'[dbo].[CharacterFriends]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[CharacterFriends];
 GO
 
 -- --------------------------------------------------
@@ -128,6 +134,7 @@ CREATE TABLE [dbo].[GuildApplies] (
     [Level] int  NOT NULL,
     [Result] int  NOT NULL,
     [ApplyTime] datetime  NOT NULL,
+    [GuildId] int  NOT NULL,
     [Guild_Id] int  NOT NULL
 );
 GO
@@ -142,6 +149,7 @@ CREATE TABLE [dbo].[GuildMembers] (
     [Title] int  NOT NULL,
     [JoinTime] datetime  NOT NULL,
     [LastTime] datetime  NOT NULL,
+    [GuildId] int  NOT NULL,
     [Guild_Id] int  NOT NULL
 );
 GO
