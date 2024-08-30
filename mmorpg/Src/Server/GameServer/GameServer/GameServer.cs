@@ -12,6 +12,7 @@ using System.Threading;
 using Network;
 using GameServer.Services;
 using GameServer.Managers;
+using GameServer.Models;
 
 namespace GameServer
 {
@@ -34,6 +35,8 @@ namespace GameServer
             QuestService.Instance.Init();
             FriendService.Instance.Init();
             TeamService.Instance.Init();
+            GuildService.Instance.Init();
+
             thread = new Thread(new ThreadStart(this.Update));
 
             return true;
