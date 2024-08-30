@@ -1,4 +1,5 @@
-﻿using SkillBridge.Message;
+﻿using Services;
+using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ public class UIGuildList : UIWindow
     public ListView listMain;
     public Transform itemRoot;
     public UIGuildInfo uiInfo;
-    public UIGUildItem selectedItem;
+    public UIGuildItem selectedItem;
 
     void Start()
     {
@@ -48,7 +49,7 @@ public class UIGuildList : UIWindow
         {
             GameObject go = Instantiate(itemPrefab, this.listMain.transform);
             UIGuildItem ui = go.GetComponent<UIGuildItem>();
-            ui.SetGuildInfo(item);
+            ui.SetGuildItemInfo(item);
             this.listMain.AddItem(ui);
         }
     }

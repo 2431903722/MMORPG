@@ -109,15 +109,6 @@
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Entities\Monster.cs" />
     <Compile Include="GameServer.cs" />
-    <Compile Include="Guild.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GuildApply.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GuildMember.cs">
-      <DependentUpon>Entities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Managers\CharacterManager.cs" />
     <Compile Include="Managers\DataManager.cs" />
     <Compile Include="Managers\EntityManager.cs" />
@@ -133,6 +124,7 @@
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\StatusManager.cs" />
     <Compile Include="Managers\TeamManager.cs" />
+    <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Map.cs" />
     <Compile Include="Models\Team.cs" />
@@ -174,6 +166,15 @@
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TCharacterQuest.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuild.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuildApply.cs">
+      <DependentUpon>Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGuildMember.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TPlayer.cs">

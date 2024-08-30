@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ public class UIGuildPopCreate : UIWindow
 
     private void Start()
     {
-        GuildService.Instance.OnGuildCreateResult += OnGuildCreate;
+        GuildService.Instance.OnGuildCreateResult += OnGuildCreated;
     }
 
     private void OnDestroy()

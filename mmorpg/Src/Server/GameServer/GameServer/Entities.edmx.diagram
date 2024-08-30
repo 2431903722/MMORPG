@@ -12,17 +12,17 @@
         <AssociationConnector Association="ExtremeWorldModel.PlayerCharacter" />
         <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterItem" Width="1.5" PointX="11" PointY="4.25" />
         <AssociationConnector Association="ExtremeWorldModel.CharacterItem" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.GuildApply" Width="1.5" PointX="3" PointY="5.125" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.GuildMember" Width="1.5" PointX="3" PointY="8.375" />
-        <EntityTypeShape EntityType="ExtremeWorldModel.Guild" Width="1.5" PointX="0.75" PointY="6.875" />
-        <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildApply" />
-        <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildMember" />
         <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterBag" Width="1.5" PointX="11" PointY="6.5" />
         <AssociationConnector Association="ExtremeWorldModel.CharacterBag" />
         <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterQuest" Width="1.5" PointX="11" PointY="8.75" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterTCharacterQuest" />
         <EntityTypeShape EntityType="ExtremeWorldModel.TCharacterFriend" Width="1.5" PointX="11" PointY="11.5" />
         <AssociationConnector Association="ExtremeWorldModel.TCharacterTCharacterFriend" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TGuildApply" Width="1.5" PointX="5.25" PointY="15.125" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TGuildMember" Width="1.5" PointX="5.25" PointY="11.5" />
+        <EntityTypeShape EntityType="ExtremeWorldModel.TGuild" Width="1.5" PointX="3" PointY="13.375" />
+        <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildApply1" />
+        <AssociationConnector Association="ExtremeWorldModel.FK_TGuildTGuildMember1" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

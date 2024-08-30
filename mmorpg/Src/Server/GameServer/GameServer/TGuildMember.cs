@@ -12,7 +12,7 @@ namespace GameServer
     using System;
     using System.Collections.Generic;
     
-    public partial class GuildMember
+    public partial class TGuildMember
     {
         public int Id { get; set; }
         public int CharacterId { get; set; }
@@ -24,6 +24,6 @@ namespace GameServer
         public System.DateTime LastTime { get; set; }
         public int GuildId { get; set; }
     
-        public virtual Guild Guild { get; set; }
+        public virtual TGuild Guild { get; set; }
     }
 }

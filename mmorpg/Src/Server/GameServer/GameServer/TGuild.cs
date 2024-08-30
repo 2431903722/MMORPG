@@ -12,13 +12,13 @@ namespace GameServer
     using System;
     using System.Collections.Generic;
     
-    public partial class Guild
+    public partial class TGuild
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Guild()
+        public TGuild()
         {
-            this.GuildApplies = new HashSet<GuildApply>();
-            this.GuildMembers = new HashSet<GuildMember>();
+            this.Applies = new HashSet<TGuildApply>();
+            this.Members = new HashSet<TGuildMember>();
         }
     
         public int Id { get; set; }
@@ -29,8 +29,8 @@ namespace GameServer
         public System.DateTime CreateTime { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GuildApply> GuildApplies { get; set; }
+        public virtual ICollection<TGuildApply> Applies { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GuildMember> GuildMembers { get; set; }
+        public virtual ICollection<TGuildMember> Members { get; set; }
     }
 }

@@ -13,7 +13,12 @@ public class GuildManager : Singleton<GuildManager>
         get { return (this.guildInfo != null); }
     }
 
-    public void ShowGuld()
+    public void Init(NGuildInfo guild)
+    {
+        this.guildInfo = guild;
+    }
+
+    public void ShowGuild()
     {
         if(this.HasGuild)
             UIManager.Instance.Show<UIGuild>();
