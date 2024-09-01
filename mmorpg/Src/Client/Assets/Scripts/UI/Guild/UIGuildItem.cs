@@ -27,7 +27,7 @@ public class UIGuildItem : ListView.ListViewItem
     public void SetGuildItemInfo(NGuildInfo item)
     {
         this.Info = item;
-        if (this.guildId != null) this.guildId.text = this.Info.GuildName;
+        if (this.guildId != null) this.guildId.text = this.Info.Id.ToString();
         if(this.guildName != null) this.guildName.text = this.Info.GuildName;
         if (this.memberNum != null) this.memberNum.text = this.Info.memberCount.ToString();
         if (this.leader != null) this.leader.text = this.Info.leaderName;

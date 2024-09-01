@@ -1,88 +1,159 @@
-2024-08-30 20:06:55,129 [ 1] INFO  Unity: LoadingManager start
-2024-08-30 20:06:58,152 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-30 20:06:59,263 [ 1] INFO  Unity: 正在加载
-2024-08-30 20:07:01,946 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-08-30 20:07:01,947 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-30 20:07:01,949 [ 1] INFO  Unity: DoConnect
-2024-08-30 20:07:01,950 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-30 20:07:01,952 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-09-01 22:40:38,129 [ 1] INFO  Unity: LoadingManager start
+2024-09-01 22:40:41,142 [ 1] INFO  Unity: DataManager > DataManager()
+2024-09-01 22:40:42,372 [ 1] INFO  Unity: 正在加载
+2024-09-01 22:40:46,430 [ 1] INFO  Unity: UserLoginRequest::user :003 psw:123
+2024-09-01 22:40:46,431 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-09-01 22:40:46,433 [ 1] INFO  Unity: DoConnect
+2024-09-01 22:40:46,434 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-01 22:40:46,439 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-08-30 20:07:01,954 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-30 20:07:02,026 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-30 20:07:02,028 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-30 20:07:02,168 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-30 20:07:02,851 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
-2024-08-30 20:07:03,398 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-30 20:07:03,433 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-30 20:07:03,434 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-08-30 20:07:03,435 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-08-30 20:07:03,439 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-30 20:07:03,440 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:(16:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-30 20:07:03,441 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-30 20:07:03,703 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-30 20:07:03,704 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-30 20:07:03,747 [ 1] WARN  Unity: MainPlayerCamera[-2097464] Awake
+2024-09-01 22:40:46,440 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-09-01 22:40:46,511 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-09-01 22:40:46,514 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-09-01 22:40:46,651 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-01 22:40:47,479 [ 1] INFO  Unity: Select Char:[3]003[Archer]
+2024-09-01 22:40:48,076 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-09-01 22:40:48,111 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-09-01 22:40:48,112 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-09-01 22:40:48,113 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-09-01 22:40:48,117 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-09-01 22:40:48,118 [ 1] INFO  Unity: AddCharacter:3:003 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-09-01 22:40:48,119 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-09-01 22:40:48,388 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-01 22:40:48,431 [ 1] WARN  Unity: MainPlayerCamera[-2471396] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:03,747 [ 1] WARN  Unity: GameObjectManager[-2096382] Awake
+2024-09-01 22:40:48,432 [ 1] WARN  Unity: GameObjectManager[-2470314] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:03,749 [ 1] WARN  Unity: UIMain[584176] Awake
+2024-09-01 22:40:48,434 [ 1] WARN  Unity: UIMain[743574] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:03,750 [ 1] WARN  Unity: UIWorldElementManager[585036] Awake
+2024-09-01 22:40:48,435 [ 1] WARN  Unity: UIWorldElementManager[744434] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:03,763 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-30 20:07:13,421 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:18,605 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:19,136 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:19,600 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:26,077 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:26,113 [ 1] INFO  Unity: OnGuildCreateResponse : Success
-2024-08-30 20:07:31,199 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-30 20:07:31,199 [ 1] INFO  Unity: UserGameLeaveRequest
-2024-08-30 20:07:31,232 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:16
-2024-08-30 20:07:31,234 [ 1] INFO  Unity: RemoveCharacter:16
-2024-08-30 20:07:31,235 [ 1] INFO  Unity: OnGameLeave:Success [None]
-2024-08-30 20:07:31,236 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:16 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-30 20:07:31,316 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-30 20:07:31,860 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
-2024-08-30 20:07:32,589 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-30 20:07:32,623 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-30 20:07:32,623 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-08-30 20:07:32,623 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-08-30 20:07:32,624 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-30 20:07:32,624 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:(17:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-30 20:07:32,625 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-30 20:07:32,859 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-30 20:07:32,859 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-30 20:07:32,903 [ 1] WARN  Unity: MainPlayerCamera[-2107218] Awake
+2024-09-01 22:40:48,447 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-01 22:40:48,941 [ 1] INFO  Unity: MoveForward
+2024-09-01 22:40:48,941 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
+2024-09-01 22:40:49,504 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2024-09-01 22:40:49,504 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5165,4000,820) DIR:(98,-18,0) SPD:300
+2024-09-01 22:40:49,603 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2024-09-01 22:40:49,603 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5195,3994,820) DIR:(93,-36,0) SPD:300
+2024-09-01 22:40:49,686 [ 1] INFO  Unity: Stop
+2024-09-01 22:40:49,686 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(93,-36,0) SPD:0
+2024-09-01 22:40:49,686 [ 1] INFO  Unity: SetDirection:(86, -52, 0)
+2024-09-01 22:40:49,686 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(86,-52,0) SPD:0
+2024-09-01 22:40:49,768 [ 1] INFO  Unity: SetDirection:(75, -66, 0)
+2024-09-01 22:40:49,768 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(75,-66,0) SPD:0
+2024-09-01 22:40:49,867 [ 1] INFO  Unity: SetDirection:(60, -80, 0)
+2024-09-01 22:40:49,868 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(60,-80,0) SPD:0
+2024-09-01 22:40:49,951 [ 1] INFO  Unity: SetDirection:(45, -89, 0)
+2024-09-01 22:40:49,952 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(45,-89,0) SPD:0
+2024-09-01 22:40:50,034 [ 1] INFO  Unity: SetDirection:(29, -96, 0)
+2024-09-01 22:40:50,034 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(29,-96,0) SPD:0
+2024-09-01 22:40:50,116 [ 1] INFO  Unity: SetDirection:(12, -99, 0)
+2024-09-01 22:40:50,116 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(12,-99,0) SPD:0
+2024-09-01 22:40:50,200 [ 1] INFO  Unity: SetDirection:(-6, -100, 0)
+2024-09-01 22:40:50,200 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-6,-100,0) SPD:0
+2024-09-01 22:40:50,298 [ 1] INFO  Unity: SetDirection:(-26, -96, 0)
+2024-09-01 22:40:50,299 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-26,-96,0) SPD:0
+2024-09-01 22:40:50,381 [ 1] INFO  Unity: SetDirection:(-43, -90, 0)
+2024-09-01 22:40:50,381 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-43,-90,0) SPD:0
+2024-09-01 22:40:50,481 [ 1] INFO  Unity: SetDirection:(-60, -80, 0)
+2024-09-01 22:40:50,481 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-60,-80,0) SPD:0
+2024-09-01 22:40:50,565 [ 1] INFO  Unity: SetDirection:(-73, -68, 0)
+2024-09-01 22:40:50,565 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-73,-68,0) SPD:0
+2024-09-01 22:40:50,697 [ 1] INFO  Unity: SetDirection:(-85, -53, 0)
+2024-09-01 22:40:50,697 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-85,-53,0) SPD:0
+2024-09-01 22:41:21,547 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-09-01 22:41:21,547 [ 1] INFO  Unity: AddCharacter:4:004 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-09-01 22:41:38,106 [ 1] INFO  Unity: SendGuildCreate
+2024-09-01 22:41:38,176 [ 1] INFO  Unity: OnGuildCreateResponse : Success
+2024-09-01 22:41:38,178 [ 1] INFO  Unity: OnGuild: Success 5:0003
+2024-09-01 22:41:45,929 [ 1] INFO  Unity: OnGuild: Success 5:0003
+2024-09-01 22:41:47,328 [ 1] INFO  Unity: SendGUildJoinResponse
+2024-09-01 22:42:04,082 [ 1] INFO  Unity: OnEntityChanger: ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:300
+2024-09-01 22:42:04,083 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+[11]evt:MoveFwd entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:300
+
+2024-09-01 22:42:04,297 [ 1] INFO  Unity: OnEntityChanger: ID:11 POS:(5065, 4000, 820) DIR:(100, 0, 0) SPD:0
+2024-09-01 22:42:04,297 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+[11]evt:Idle entity:(11:pos:(5065,4000,820),dir:(100,0,0),spd:0
+
+2024-09-01 22:42:06,719 [ 1] INFO  Unity: MoveBack
+2024-09-01 22:42:06,719 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5220,3984,820) DIR:(-85,-53,0) SPD:-300
+2024-09-01 22:42:07,001 [ 1] INFO  Unity: Stop
+2024-09-01 22:42:07,001 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-85,-53,0) SPD:0
+2024-09-01 22:42:09,088 [ 1] INFO  Unity: SetDirection:(-93, -37, 0)
+2024-09-01 22:42:09,088 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-93,-37,0) SPD:0
+2024-09-01 22:42:09,204 [ 1] INFO  Unity: SetDirection:(-98, -19, 0)
+2024-09-01 22:42:09,204 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-98,-19,0) SPD:0
+2024-09-01 22:42:09,304 [ 1] INFO  Unity: SetDirection:(-100, 1, 0)
+2024-09-01 22:42:09,304 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-100,1,0) SPD:0
+2024-09-01 22:42:09,387 [ 1] INFO  Unity: SetDirection:(-98, 19, 0)
+2024-09-01 22:42:09,387 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-98,19,0) SPD:0
+2024-09-01 22:42:09,486 [ 1] INFO  Unity: SetDirection:(-92, 39, 0)
+2024-09-01 22:42:09,486 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-92,39,0) SPD:0
+2024-09-01 22:42:09,585 [ 1] INFO  Unity: SetDirection:(-82, 57, 0)
+2024-09-01 22:42:09,585 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-82,57,0) SPD:0
+2024-09-01 22:42:09,684 [ 1] INFO  Unity: SetDirection:(-69, 72, 0)
+2024-09-01 22:42:09,684 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-69,72,0) SPD:0
+2024-09-01 22:42:09,833 [ 1] INFO  Unity: SetDirection:(-54, 84, 0)
+2024-09-01 22:42:09,834 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:10 POS:(5288,4035,820) DIR:(-54,84,0) SPD:0
+2024-09-01 22:43:01,576 [ 1] INFO  Unity: OnEntityChanger: ID:11 POS:(5065, 4000, 820) DIR:(100, 0, 0) SPD:300
+2024-09-01 22:43:01,576 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+[11]evt:MoveFwd entity:(11:pos:(5065,4000,820),dir:(100,0,0),spd:300
+
+2024-09-01 22:43:01,790 [ 1] INFO  Unity: OnEntityChanger: ID:11 POS:(5130, 4000, 820) DIR:(100, 0, 0) SPD:0
+2024-09-01 22:43:01,791 [ 1] INFO  Unity: MapEntityUpdateResponse: Entitys:1
+[11]evt:Idle entity:(11:pos:(5130,4000,820),dir:(100,0,0),spd:0
+
+2024-09-01 22:43:44,231 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-09-01 22:43:44,232 [ 1] INFO  Unity: UserGameLeaveRequest
+2024-09-01 22:43:44,265 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:10
+2024-09-01 22:43:44,266 [ 1] INFO  Unity: RemoveCharacter:10
+2024-09-01 22:43:44,267 [ 1] INFO  Unity: RemoveCharacter:11
+2024-09-01 22:43:44,267 [ 1] INFO  Unity: OnGuild: Success 5:0003
+2024-09-01 22:43:44,267 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2024-09-01 22:43:44,267 [ 1] INFO  Unity: Character_3_003 OnDestroy :ID:10 POS:(5288, 4035, 820) DIR:(-54, 84, 0) SPD:0 
+2024-09-01 22:43:44,268 [ 1] INFO  Unity: Character_4_004 OnDestroy :ID:11 POS:(5130, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-09-01 22:43:44,325 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-01 22:43:45,536 [ 1] INFO  Unity: Select Char:[3]003[Archer]
+2024-09-01 22:43:46,300 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-09-01 22:43:46,332 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-09-01 22:43:46,333 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-09-01 22:43:46,333 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-09-01 22:43:46,333 [ 1] INFO  Unity: OnGuild: Success 5:0003
+2024-09-01 22:43:46,334 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2024-09-01 22:43:46,334 [ 1] INFO  Unity: AddCharacter:3:003 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-09-01 22:43:46,335 [ 1] INFO  Unity: AddCharacter:4:004 Map:1 Entity:(11:pos:(5130,4000,820),dir:(100,0,0),spd:0
+2024-09-01 22:43:46,336 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-09-01 22:43:46,570 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-01 22:43:46,612 [ 1] WARN  Unity: MainPlayerCamera[-2484550] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:32,903 [ 1] WARN  Unity: GameObjectManager[-2106136] Awake
+2024-09-01 22:43:46,612 [ 1] WARN  Unity: GameObjectManager[-2483468] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:32,904 [ 1] WARN  Unity: UIMain[588232] Awake
+2024-09-01 22:43:46,612 [ 1] WARN  Unity: UIMain[747630] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:32,904 [ 1] WARN  Unity: UIWorldElementManager[589092] Awake
+2024-09-01 22:43:46,613 [ 1] WARN  Unity: UIWorldElementManager[748490] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-08-30 20:07:32,914 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-30 20:07:40,163 [ 1] INFO  Unity: SendGuildCreate
-2024-08-30 20:07:40,196 [ 1] INFO  Unity: OnGuildCreateResponse : Success
-2024-08-30 20:07:45,928 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:17 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-30 20:07:45,928 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-30 20:07:45,929 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-09-01 22:43:46,624 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-01 22:47:10,932 [ 1] INFO  Unity: Character_3_003 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-09-01 22:47:10,932 [ 1] INFO  Unity: Character_4_004 OnDestroy :ID:11 POS:(5130, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-09-01 22:47:10,934 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-09-01 22:47:10,934 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)

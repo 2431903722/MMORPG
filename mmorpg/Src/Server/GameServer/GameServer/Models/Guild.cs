@@ -134,6 +134,10 @@ namespace GameServer.Models
                 message.Guild.Result = Result.Success;
                 message.Guild.guildInfo = this.GuildInfo(from);
             }
+            else
+            {
+                message.Guild.guildInfo = this.GuildInfo(from);
+            }
         }
 
         internal NGuildInfo GuildInfo(Character from)
