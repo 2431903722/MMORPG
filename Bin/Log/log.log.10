@@ -1,53 +1,42 @@
-2024-08-28 08:47:36,969 [ 1] INFO  Unity: LoadingManager start
-2024-08-28 08:47:40,000 [ 1] INFO  Unity: DataManager > DataManager()
-2024-08-28 08:47:41,117 [ 1] INFO  Unity: 正在加载
-2024-08-28 08:47:45,486 [ 1] INFO  Unity: UserLoginRequest::user :002 psw:123
-2024-08-28 08:47:45,486 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-08-28 08:47:45,487 [ 1] INFO  Unity: DoConnect
-2024-08-28 08:47:45,488 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-08-28 08:47:45,488 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-09-06 22:03:55,098 [ 1] INFO  Unity: LoadingManager start
+2024-09-06 22:03:58,359 [ 1] INFO  Unity: DataManager > DataManager()
+2024-09-06 22:03:59,376 [ 1] INFO  Unity: 正在加载
+2024-09-06 22:04:05,895 [ 1] INFO  Unity: UserRegisterRequest::user :009 psw:123
+2024-09-06 22:04:05,895 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-09-06 22:04:05,896 [ 1] INFO  Unity: DoConnect
+2024-09-06 22:04:05,896 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-06 22:04:05,897 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-08-28 08:47:45,490 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-08-28 08:47:46,947 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-08-28 08:47:46,949 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-08-28 08:47:47,087 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-28 08:47:47,834 [ 1] INFO  Unity: Select Char:[2]002_01[Wizard]
-2024-08-28 08:47:48,551 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-08-28 08:47:48,637 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-08-28 08:47:48,637 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-08-28 08:47:48,637 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-08-28 08:47:48,640 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-28 08:47:48,640 [ 1] INFO  Unity: AddCharacter:2:002_01 Map:1 Entity:(1:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-28 08:47:48,640 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-08-28 08:47:48,841 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-28 08:47:48,841 [ 1] INFO  Unity: Wizard OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-08-28 08:47:48,859 [ 1] WARN  Unity: GameObjectManager[17470] Awake
+2024-09-06 22:04:07,901 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
 
-2024-08-28 08:47:48,861 [ 1] WARN  Unity: MainPlayerCamera[17524] Awake
+2024-09-06 22:04:07,903 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
 
-2024-08-28 08:47:48,861 [ 1] WARN  Unity: UIMain[17526] Awake
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
 
-2024-08-28 08:47:48,861 [ 1] WARN  Unity: UIWorldElementManager[17560] Awake
+2024-09-06 22:04:07,903 [ 1] INFO  Unity: DoConnect
+2024-09-06 22:04:07,903 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-06 22:04:07,903 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
 
-2024-08-28 08:47:48,862 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-08-28 08:47:51,385 [ 1] INFO  Unity: MoveForward
-2024-08-28 08:47:51,385 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5000,4000,820) DIR:(100,0,0) SPD:300
-2024-08-28 08:47:51,467 [ 1] INFO  Unity: Stop
-2024-08-28 08:47:51,468 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5025,4000,820) DIR:(100,0,0) SPD:0
-2024-08-28 08:47:51,767 [ 1] INFO  Unity: MoveForward
-2024-08-28 08:47:51,767 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5025,4000,820) DIR:(100,0,0) SPD:300
-2024-08-28 08:47:52,734 [ 1] INFO  Unity: Stop
-2024-08-28 08:47:52,734 [ 1] INFO  Unity: MapEntityUpdateRequest: ID:1 POS:(5315,4000,820) DIR:(100,0,0) SPD:0
-2024-08-28 08:48:08,368 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-08-28 08:48:08,368 [ 1] INFO  Unity: AddCharacter:1:001_01 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-08-28 08:48:16,803 [ 1] INFO  Unity: SendFriendAdd
-2024-08-28 08:48:20,969 [ 1] INFO  Unity: OnFriendList
-2024-08-28 08:48:50,670 [ 1] INFO  Unity: SendFriendRemoveRequest
-2024-08-28 08:49:09,654 [ 1] INFO  Unity: OnFriendList
-2024-08-28 09:18:58,015 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
-2024-08-28 09:18:58,015 [ 1] INFO  Unity: RemoveCharacter:2
-2024-08-28 09:18:58,016 [ 1] INFO  Unity: Character_1_001_01 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-28 09:19:00,567 [ 1] INFO  Unity: Character_2_002_01 OnDestroy :ID:1 POS:(5315, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-08-28 09:19:00,568 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-08-28 09:19:00,568 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-09-06 22:04:09,906 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2024-09-06 22:04:09,906 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2024-09-06 22:04:09,909 [ 1] INFO  Unity: DoConnect
+2024-09-06 22:04:09,909 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-06 22:04:09,909 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2024-09-06 22:04:11,913 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2024-09-06 22:04:11,913 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2024-09-06 22:04:11,913 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2024-09-06 22:04:17,322 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-09-06 22:04:17,322 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 
