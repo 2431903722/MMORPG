@@ -138,6 +138,7 @@ namespace Services
                 MessageBox.Show("加入公会失败", "公会");
         }
 
+
         private void OnGuild(object sender, GuildResponse message)
         {
             Debug.LogFormat("OnGuild: {0} {1}:{2}", message.Result, message.guildInfo.Id, message.guildInfo.GuildName);

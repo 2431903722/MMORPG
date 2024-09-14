@@ -1,42 +1,24 @@
-2024-09-06 22:03:55,098 [ 1] INFO  Unity: LoadingManager start
-2024-09-06 22:03:58,359 [ 1] INFO  Unity: DataManager > DataManager()
-2024-09-06 22:03:59,376 [ 1] INFO  Unity: 正在加载
-2024-09-06 22:04:05,895 [ 1] INFO  Unity: UserRegisterRequest::user :009 psw:123
-2024-09-06 22:04:05,895 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-09-06 22:04:05,896 [ 1] INFO  Unity: DoConnect
-2024-09-06 22:04:05,896 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-09-06 22:04:05,897 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-09-06 22:32:44,622 [ 1] INFO  Unity: LoadingManager start
+2024-09-06 22:32:47,860 [ 1] INFO  Unity: DataManager > DataManager()
+2024-09-06 22:32:48,992 [ 1] INFO  Unity: 正在加载
+2024-09-06 22:32:54,795 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:32:54,795 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-09-06 22:32:54,796 [ 1] INFO  Unity: DoConnect
+2024-09-06 22:32:54,797 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-06 22:32:54,797 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-09-06 22:04:07,901 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-
-2024-09-06 22:04:07,903 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-
-2024-09-06 22:04:07,903 [ 1] INFO  Unity: DoConnect
-2024-09-06 22:04:07,903 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-09-06 22:04:07,903 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2024-09-06 22:04:09,906 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-
-2024-09-06 22:04:09,906 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-
-2024-09-06 22:04:09,909 [ 1] INFO  Unity: DoConnect
-2024-09-06 22:04:09,909 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-09-06 22:04:09,909 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
-
-2024-09-06 22:04:11,913 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-
-2024-09-06 22:04:11,913 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-
-2024-09-06 22:04:11,913 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
-2024-09-06 22:04:17,322 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-09-06 22:04:17,322 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-09-06 22:32:54,799 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-09-06 22:32:59,875 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:00,443 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:00,875 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:01,093 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:01,292 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:01,459 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:01,625 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:01,842 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:02,208 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:02,409 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:02,592 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
+2024-09-06 22:33:03,355 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-09-06 22:33:03,355 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 

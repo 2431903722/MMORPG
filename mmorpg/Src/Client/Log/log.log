@@ -1,51 +1,105 @@
-2024-09-11 14:40:18,877 [ 1] INFO  Unity: LoadingManager start
-2024-09-11 14:40:21,890 [ 1] INFO  Unity: DataManager > DataManager()
-2024-09-11 14:40:23,051 [ 1] INFO  Unity: 正在加载
-2024-09-11 14:40:27,954 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
-2024-09-11 14:40:27,955 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-09-11 14:40:27,957 [ 1] INFO  Unity: DoConnect
-2024-09-11 14:40:27,958 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-09-11 14:40:27,960 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-09-14 19:16:28,671 [ 1] INFO  Unity: LoadingManager start
+2024-09-14 19:16:31,678 [ 1] INFO  Unity: DataManager > DataManager()
+2024-09-14 19:16:32,784 [ 1] INFO  Unity: 正在加载
+2024-09-14 19:16:36,627 [ 1] INFO  Unity: UserLoginRequest::user :010 psw:123
+2024-09-14 19:16:36,627 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-09-14 19:16:36,629 [ 1] INFO  Unity: DoConnect
+2024-09-14 19:16:36,630 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-09-14 19:16:36,632 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-09-11 14:40:27,963 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-09-11 14:40:28,032 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-09-11 14:40:28,034 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-09-11 14:40:28,179 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-09-11 14:40:29,009 [ 1] INFO  Unity: Select Char:[9]009[Warrior]
-2024-09-11 14:40:29,655 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-09-11 14:40:29,694 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-09-11 14:40:29,695 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-09-11 14:40:29,695 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-09-11 14:40:29,699 [ 1] INFO  Unity: OnGuild: Success 8:0010
-2024-09-11 14:40:29,700 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-09-11 14:40:29,701 [ 1] INFO  Unity: AddCharacter:9:009 Map:1 Entity:(12:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-09-11 14:40:29,702 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-09-11 14:40:29,965 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-09-11 14:40:29,966 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-09-11 14:40:30,011 [ 1] WARN  Unity: MainPlayerCamera[-186946] Awake
+2024-09-14 19:16:36,634 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-09-14 19:16:36,705 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-09-14 19:16:36,710 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-09-14 19:16:36,869 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-14 19:16:38,013 [ 1] INFO  Unity: Select Char:[10]010[Warrior]
+2024-09-14 19:16:38,709 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-09-14 19:16:38,749 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-09-14 19:16:38,750 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-09-14 19:16:38,750 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-09-14 19:16:38,755 [ 1] INFO  Unity: OnGuild: Success 8:0010
+2024-09-14 19:16:38,755 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-09-14 19:16:38,756 [ 1] INFO  Unity: AddCharacter:10:010 Map:1 Entity:(10:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-09-14 19:16:38,757 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-09-14 19:16:39,038 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-14 19:16:39,038 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-14 19:16:39,086 [ 1] WARN  Unity: MainPlayerCamera[-231058] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-09-11 14:40:30,011 [ 1] WARN  Unity: GameObjectManager[-185864] Awake
+2024-09-14 19:16:39,086 [ 1] WARN  Unity: GameObjectManager[-229976] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-09-11 14:40:30,013 [ 1] WARN  Unity: UIMain[112724] Awake
+2024-09-14 19:16:39,088 [ 1] WARN  Unity: UIMain[125048] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-09-11 14:40:30,013 [ 1] WARN  Unity: UIWorldElementManager[113584] Awake
+2024-09-14 19:16:39,089 [ 1] WARN  Unity: UIWorldElementManager[125912] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-09-11 14:40:30,026 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-09-11 14:40:36,703 [ 1] INFO  Unity: SendAdminCommand
-2024-09-11 14:40:36,736 [ 1] INFO  Unity: OnGuild: Success 8:0010
-2024-09-11 14:40:36,737 [ 1] INFO  Unity: GuildAdmin :SkillBridge.Message.GuildAdminRequest Success
-2024-09-11 14:40:41,988 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-09-11 14:40:41,989 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-09-14 19:16:39,107 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-14 19:16:39,128 [ 1] INFO  Unity: Set Channel:Local
+2024-09-14 19:16:42,033 [ 1] INFO  Unity: SendChat
+2024-09-14 19:16:43,838 [ 1] INFO  Unity: Set Channel:World
+2024-09-14 19:16:45,163 [ 1] INFO  Unity: SendChat
+2024-09-14 19:16:49,504 [ 1] INFO  Unity: Set Channel:Guild
+2024-09-14 19:16:50,863 [ 1] INFO  Unity: SendChat
+2024-09-14 19:17:07,981 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-09-14 19:17:07,982 [ 1] INFO  Unity: UserGameLeaveRequest
+2024-09-14 19:17:08,057 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:10
+2024-09-14 19:17:08,058 [ 1] INFO  Unity: RemoveCharacter:10
+2024-09-14 19:17:08,059 [ 1] INFO  Unity: OnGameLeave:Success [None]
+2024-09-14 19:17:08,060 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) [0x00011] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\ChatManager.cs:174 
+  at Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) [0x0004c] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\ChatManager.cs:157 
+  at Managers.ChatManager.GetCurrentMessages () [0x0002c] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\ChatManager.cs:147 
+  at UIChat.RefreshUI () [0x0000c] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\UI\Chat\UIChat.cs:42 
+  at Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) [0x00046] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Managers\ChatManager.cs:126 
+  at Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) [0x00019] in E:\Project\MMO\mmorpg\Src\Client\Assets\Scripts\Services\ChatService.cs:48 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg) [0x00000] in <filename unknown>:0 
+2024-09-14 19:17:08,060 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Managers.ChatManager.FormatFromPlayer (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:174)
+Managers.ChatManager.FormatMessage (SkillBridge.Message.ChatMessage message) (at Assets/Scripts/Managers/ChatManager.cs:157)
+Managers.ChatManager.GetCurrentMessages () (at Assets/Scripts/Managers/ChatManager.cs:147)
+UIChat.RefreshUI () (at Assets/Scripts/UI/Chat/UIChat.cs:42)
+Managers.ChatManager.AddMessages (ChatChannel channel, System.Collections.Generic.List`1 messages) (at Assets/Scripts/Managers/ChatManager.cs:126)
+Services.ChatService.OnChat (System.Object sender, SkillBridge.Message.ChatResponse message) (at Assets/Scripts/Services/ChatService.cs:48)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ChatResponse] (System.Object sender, SkillBridge.Message.ChatResponse msg)
+}</args></log4net.Error>
+2024-09-14 19:17:08,062 [ 1] INFO  Unity: Character_10_010 OnDestroy :ID:10 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-09-14 19:17:08,098 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-14 19:17:08,848 [ 1] INFO  Unity: Select Char:[10]010[Warrior]
+2024-09-14 19:17:09,477 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-09-14 19:17:09,511 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-09-14 19:17:09,511 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-09-14 19:17:09,512 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-09-14 19:17:09,512 [ 1] INFO  Unity: OnGuild: Success 8:0010
+2024-09-14 19:17:09,512 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-09-14 19:17:09,513 [ 1] INFO  Unity: AddCharacter:10:010 Map:1 Entity:(11:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-09-14 19:17:09,514 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-09-14 19:17:09,742 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-14 19:17:09,742 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-09-14 19:17:09,787 [ 1] WARN  Unity: MainPlayerCamera[-240398] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-09-14 19:17:09,787 [ 1] WARN  Unity: GameObjectManager[-239316] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-09-14 19:17:09,787 [ 1] WARN  Unity: UIMain[129100] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-09-14 19:17:09,788 [ 1] WARN  Unity: UIWorldElementManager[129964] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2024-09-14 19:17:09,804 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-09-14 19:17:12,126 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-09-14 19:17:12,126 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
 
-2024-09-11 14:40:41,991 [ 1] INFO  Unity: Character_9_009 OnDestroy :ID:12 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-09-14 19:17:12,130 [ 1] INFO  Unity: Character_10_010 OnDestroy :ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

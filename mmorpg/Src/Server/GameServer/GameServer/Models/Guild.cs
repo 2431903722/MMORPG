@@ -168,6 +168,7 @@ namespace GameServer.Models
                 if (from.Id == this.Data.LeaderID)
                     info.Applies.AddRange(GetApplyInfos());
             }
+
             return info;
         }
 

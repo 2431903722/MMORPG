@@ -28,6 +28,8 @@ namespace GameServer.Entities
 
         public Guild Guild;
         public double GuildUpdateTS;
+
+        public Chat Chat;
         
         public Character(CharacterType type,TCharacter cha):
             base(new Core.Vector3Int(cha.MapPosX, cha.MapPosY, cha.MapPosZ),new Core.Vector3Int(100,0,0))
@@ -60,6 +62,9 @@ namespace GameServer.Entities
             this.FriendManager.GetFriendInfos(this.Info.Friends);
 
             this.Guild = GuildManager.Instance.GetGuild(this.Data.GuildId);
+            this.Info.Guild = this.Guild.GuildInfo(this);
+
+            this.Chat = new Chat(this);
         }
 
         public long Gold
@@ -77,7 +82,9 @@ namespace GameServer.Entities
         public void PostProcess(NetMessageResponse message)
         {
             Log.InfoFormat("PostProcess > Character: characterID:{0}{1}", this.Id, this.Info.Name);
+
             this.FriendManager.PostProcess(message);
+
             if(this.Team != null)
             {
                 Log.InfoFormat("PostProcess > Team: characterID:{0}:{1} {2}<{3}", this.Id, this.Info.Name, TeamUpdateTS, this.Team.timestamp);
@@ -87,6 +94,7 @@ namespace GameServer.Entities
                     this.Team.PostProcess(message);
                 }
             }
+
             if(this.Guild != null)
             {
                 Log.InfoFormat("PostProcess > Guild: characterID:{0}:{1} {2}<{3}", this.Id, this.Info.Name, GuildUpdateTS, this.Guild.timestamp);
@@ -102,8 +110,11 @@ namespace GameServer.Entities
                     this.Guild.PostProcess(this, message);
                 }
             }
+
             if (this.StatusManager.HasStatus)
                 this.StatusManager.PostProcess(message);
+
+            this.Chat.PostProcess(message);
         }
 
         /// <summary>

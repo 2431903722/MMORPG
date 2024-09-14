@@ -21,12 +21,6 @@ public class UIMain : MonoSingleton<UIMain> {
 		this.avatarLevel.text = User.Instance.CurrentCharacter.Level.ToString();
 	}
 
-	public void BackToCharSelect()
-	{
-		SceneManager.Instance.LoadScene("CharSelect");
-		Services.UserService.Instance.SendGameLeave();
-	}
-
 	public void OnClickBag()
 	{
 		UIManager.Instance.Show<UIBag>();
@@ -59,8 +53,8 @@ public class UIMain : MonoSingleton<UIMain> {
 
 	public void OnClickSetting()
 	{
-
-	}
+		UIManager.Instance.Show<UISetting>();
+    }
 
 	public void OnClickSkill()
 	{
