@@ -11,6 +11,7 @@ public class UIQuestInfo : MonoBehaviour
     public Text title;
     public Text[] targets;
     public Text description;
+    public Text overview;
     public UIIconItem rewardItems;
     public Text rewardMoney;
     public Text rewardExp;
@@ -18,15 +19,22 @@ public class UIQuestInfo : MonoBehaviour
     public void SetQuestInfo(Quest quest)
     {
         this.title.text = string.Format("[{0}]{1}", quest.Define.Type, quest.Define.Name);
-        if(quest.Info == null)
+
+        if (this.overview != null)
+            this.overview.text = quest.Define.Overview;
+
+        if(this.description != null)
         {
-            this.description.text = quest.Define.Dialog;
-        }
-        else
-        {
-            if(quest.Info.Status == SkillBridge.Message.QuestStatus.Complated)
+            if (quest.Info == null)
             {
-                this.description.text = quest.Define.DialogFinish;
+                this.description.text = quest.Define.Dialog;
+            }
+            else
+            {
+                if (quest.Info.Status == SkillBridge.Message.QuestStatus.Complated)
+                {
+                    this.description.text = quest.Define.DialogFinish;
+                }
             }
         }
 

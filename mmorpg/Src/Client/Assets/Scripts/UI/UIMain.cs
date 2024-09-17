@@ -48,8 +48,8 @@ public class UIMain : MonoSingleton<UIMain> {
 
 	public void OnClickRide()
 	{
-
-	}
+		UIManager.Instance.Show<UIRide>();
+    }
 
 	public void OnClickSetting()
 	{
