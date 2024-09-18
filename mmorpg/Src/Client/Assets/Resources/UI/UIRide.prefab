@@ -897,7 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Root: {fileID: 1788718300194904}
   descript: {fileID: 114156160914874222}
-  itemPrefab: {fileID: 1430885203553924}
+  itemPrefab: {fileID: 1284306289253064, guid: 9f7ccdb159e1d9a42b2ef89fa08fa869, type: 2}
   listMain: {fileID: 114817695681097056}
 --- !u!114 &114817695681097056
 MonoBehaviour:
