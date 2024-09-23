@@ -23,6 +23,7 @@ public class UILogin : MonoBehaviour
             // 登录成功，进入选择角色
             MessageBox.Show("登录成功" + message, "提示", MessageBoxType.Information);
             SceneManager.Instance.LoadScene("CharSelect");
+            SoundManager.Instance.PlayMusic(SoundDefine.Music_Select);
         }
         else
         {
@@ -42,6 +43,7 @@ public class UILogin : MonoBehaviour
             MessageBox.Show("请输入密码");
             return;
         }
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
 
         UserService.Instance.SendLogin(this.username.text, this.password.text);
     }

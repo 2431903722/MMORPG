@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0f6b95750c23243866db10a0b0b0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mountPoint: {fileID: 4985397345553070}
+  mountPoint: {fileID: 4592444039711228}
   rider: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
 --- !u!137 &137951158559153352

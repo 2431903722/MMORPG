@@ -89,6 +89,7 @@ public class UICharacterSelect : MonoBehaviour {
             return;
         }
 
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
         UserService.Instance.SendCharacterCreate(this.charName.text, this.charClass);
     }
 
@@ -104,6 +105,7 @@ public class UICharacterSelect : MonoBehaviour {
             names[i].text = DataManager.Instance.Characters[i + 1].Name;
         }
         descs.text = DataManager.Instance.Characters[charClass].Description;
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
 
     void OnCharacterCreate(Result result, string message)
@@ -128,13 +130,16 @@ public class UICharacterSelect : MonoBehaviour {
             UICharInfo ci = this.uiChars[i].GetComponent<UICharInfo>();
             ci.Selected = idx == i;
         }
+
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
     }
 
     public void OnClickPlay()
     {
+        SoundManager.Instance.PlaySound(SoundDefine.SFX_UI_Click);
+
         if (selectCharacterIdx >= 0)
-        {
-            //MessageBox.Show("进入游戏", "进入游戏", MessageBoxType.Confirm);
+        {            
             UserService.Instance.SendGameEnter(selectCharacterIdx);
         }
     }

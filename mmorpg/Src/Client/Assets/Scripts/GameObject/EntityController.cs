@@ -147,9 +147,9 @@ public class EntityController : MonoBehaviour , IEntityNotify
         }
     }
 
-    public void SetRidePotision(Vector3 positon)
-    {
-        this.anim.transform.position = position + (this.anim.transform.position - this.rideBone.position);
+    public void SetRidePotision(Vector3 Positon)
+    {        
+        this.anim.transform.position = Positon + (this.anim.transform.position - this.rideBone.position);
     }
 
     public void OnEntityChanged(Entity entity)
