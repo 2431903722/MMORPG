@@ -1,9 +1,11 @@
-﻿using Managers;
+﻿using Common.Battle;
+using Managers;
 using Models;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +21,14 @@ public class UICharEquip : UIWindow
     public Transform itemListRoot;
 
     public List<Transform> slots;
+
+    public Text hp;
+    public Slider hpBar;
+
+    public Text mp;
+    public Slider mpBar;
+
+    public Text[] attrs;
 
     void Start()
     {
@@ -37,7 +47,8 @@ public class UICharEquip : UIWindow
         InitAllEquipItems();
         ClearEquipedList();
         InitEquipedItems();
-        this.money.text = User.Instance.CurrentCharacter.Gold.ToString();
+        this.money.text = User.Instance.CurrentCharacterInfo.Gold.ToString();
+        InitAttributes();
     }
 
     /// <summary>
@@ -47,7 +58,7 @@ public class UICharEquip : UIWindow
     {
         foreach (var kv in ItemManager.Instance.Items)
         {
-            if (kv.Value.Define.Type == ItemType.Equip && kv.Value.Define.LimitClass == User.Instance.CurrentCharacter.Class)
+            if (kv.Value.Define.Type == ItemType.Equip && kv.Value.Define.LimitClass == User.Instance.CurrentCharacterInfo.Class)
             {
                 // 已装备则不再显示
                 if (EquipManager.Instance.Contains(kv.Key))
@@ -110,6 +121,25 @@ public class UICharEquip : UIWindow
     public void OnClickClose()
     {
         UIManager.Instance.Close(typeof(UICharEquip));
+    }
+
+    void InitAttributes()
+    {
+        var charattr = User.Instance.CurrentCharacter.Attributes;
+        this.hp.text = string.Format("{0}/{1}", charattr.HP, charattr.MaxHP);
+        this.mp.text = string.Format("{0}/{1}", charattr.MP, charattr.MaxMP);
+        this.hpBar.maxValue = charattr.MaxHP;
+        this.hpBar.value = charattr.HP;
+        this.mpBar.maxValue = charattr.MaxMP;
+        this.mpBar.value = charattr.MP;
+
+        for(int i = (int)AttributeType.STR; i < (int)AttributeType.MAX; i++)
+        {
+            if(i == (int)AttributeType.CRI)
+                this.attrs[i - 2].text = string.Format("{0:f2}%", charattr.Final.Data[i] * 100);
+            else
+                this.attrs[i - 2].text = ((int)charattr.Final.Data[i]).ToString();
+        }
     }
 }
 

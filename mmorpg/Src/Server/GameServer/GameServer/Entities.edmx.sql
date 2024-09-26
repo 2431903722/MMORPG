@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 08/30/2024 13:04:33
+-- Date Created: 09/25/2024 15:01:02
 -- Generated from EDMX file: E:\Project\MMO\mmorpg\Src\Server\GameServer\GameServer\Entities.edmx
 -- --------------------------------------------------
 
@@ -32,11 +32,11 @@ GO
 IF OBJECT_ID(N'[dbo].[FK_TCharacterTCharacterQuest]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[CharacterQuests] DROP CONSTRAINT [FK_TCharacterTCharacterQuest];
 GO
-IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildApply]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[TGuildApplies] DROP CONSTRAINT [FK_TGuildTGuildApply];
+IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildApply1]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[GuildApplies] DROP CONSTRAINT [FK_TGuildTGuildApply1];
 GO
-IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildMember]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[TGuildMembers] DROP CONSTRAINT [FK_TGuildTGuildMember];
+IF OBJECT_ID(N'[dbo].[FK_TGuildTGuildMember1]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[GuildMembers] DROP CONSTRAINT [FK_TGuildTGuildMember1];
 GO
 IF OBJECT_ID(N'[dbo].[FK_UserPlayer]', 'F') IS NOT NULL
     ALTER TABLE [dbo].[Users] DROP CONSTRAINT [FK_UserPlayer];
@@ -58,20 +58,20 @@ GO
 IF OBJECT_ID(N'[dbo].[Characters]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Characters];
 GO
+IF OBJECT_ID(N'[dbo].[GuildApplies]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[GuildApplies];
+GO
+IF OBJECT_ID(N'[dbo].[GuildMembers]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[GuildMembers];
+GO
+IF OBJECT_ID(N'[dbo].[Guilds]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Guilds];
+GO
 IF OBJECT_ID(N'[dbo].[Players]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Players];
 GO
 IF OBJECT_ID(N'[dbo].[TCharacterItems]', 'U') IS NOT NULL
     DROP TABLE [dbo].[TCharacterItems];
-GO
-IF OBJECT_ID(N'[dbo].[TGuildApplies]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[TGuildApplies];
-GO
-IF OBJECT_ID(N'[dbo].[TGuildMembers]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[TGuildMembers];
-GO
-IF OBJECT_ID(N'[dbo].[TGuilds]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[TGuilds];
 GO
 IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Users];
@@ -112,6 +112,8 @@ CREATE TABLE [dbo].[Characters] (
     [Exp] bigint  NOT NULL,
     [Level] int  NOT NULL,
     [GuildId] int  NOT NULL,
+    [HP] int  NOT NULL,
+    [MP] int  NOT NULL,
     [Player_ID] int  NOT NULL,
     [Bag_Id] int  NOT NULL
 );

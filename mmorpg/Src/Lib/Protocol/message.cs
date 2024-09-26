@@ -65,35 +65,56 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(7, Name = @"level")]
         public int Level { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::ProtoBuf.ProtoMember(8, Name = @"exp")]
+        public long Exp { get; set; }
+
+        [global::ProtoBuf.ProtoMember(9)]
+        public NAttributeDynamic attrDynamic { get; set; }
+
+        [global::ProtoBuf.ProtoMember(10)]
         public int mapId { get; set; }
 
-        [global::ProtoBuf.ProtoMember(9, Name = @"entity")]
+        [global::ProtoBuf.ProtoMember(11, Name = @"entity")]
         public NEntity Entity { get; set; }
 
-        [global::ProtoBuf.ProtoMember(10, Name = @"gold")]
+        [global::ProtoBuf.ProtoMember(12, Name = @"gold")]
         public long Gold { get; set; }
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::ProtoBuf.ProtoMember(13)]
         public global::System.Collections.Generic.List<NItemInfo> Items { get; } = new global::System.Collections.Generic.List<NItemInfo>();
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::ProtoBuf.ProtoMember(14)]
         public NBagInfo Bag { get; set; }
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::ProtoBuf.ProtoMember(15)]
         public byte[] Equips { get; set; }
 
-        [global::ProtoBuf.ProtoMember(14, Name = @"quests")]
+        [global::ProtoBuf.ProtoMember(16, Name = @"quests")]
         public global::System.Collections.Generic.List<NQuestInfo> Quests { get; } = new global::System.Collections.Generic.List<NQuestInfo>();
 
-        [global::ProtoBuf.ProtoMember(15, Name = @"friends")]
+        [global::ProtoBuf.ProtoMember(17, Name = @"friends")]
         public global::System.Collections.Generic.List<NFriendInfo> Friends { get; } = new global::System.Collections.Generic.List<NFriendInfo>();
 
-        [global::ProtoBuf.ProtoMember(16, Name = @"guild")]
+        [global::ProtoBuf.ProtoMember(18, Name = @"guild")]
         public NGuildInfo Guild { get; set; }
 
-        [global::ProtoBuf.ProtoMember(17, Name = @"ride")]
+        [global::ProtoBuf.ProtoMember(19, Name = @"ride")]
         public int Ride { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class NAttributeDynamic : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"HP")]
+        public int Hp { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"MP")]
+        public int Mp { get; set; }
 
     }
 
@@ -1619,10 +1640,12 @@ namespace SkillBridge.Message
         Money = 0,
         [global::ProtoBuf.ProtoEnum(Name = @"EXP")]
         Exp = 1,
+        [global::ProtoBuf.ProtoEnum(Name = @"LEVEL")]
+        Level = 2,
         [global::ProtoBuf.ProtoEnum(Name = @"SKILL_POINT")]
-        SkillPoint = 2,
+        SkillPoint = 3,
         [global::ProtoBuf.ProtoEnum(Name = @"ITEM")]
-        Item = 3,
+        Item = 4,
     }
 
     [global::ProtoBuf.ProtoContract(Name = @"STATUS_SPURCE")]
