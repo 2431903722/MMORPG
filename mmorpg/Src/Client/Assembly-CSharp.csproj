@@ -132,6 +132,10 @@
      <Compile Include="Assets\Scripts\UI\Ride\UIRideItem.cs" />
      <Compile Include="Assets\Scripts\UI\Shop\UIShop.cs" />
      <Compile Include="Assets\Scripts\UI\Shop\UIShopItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Skill\UISkill.cs" />
+     <Compile Include="Assets\Scripts\UI\Skill\UISkillItem.cs" />
+     <Compile Include="Assets\Scripts\UI\Skill\UISkillSlot.cs" />
+     <Compile Include="Assets\Scripts\UI\Skill\UISkillSlots.cs" />
      <Compile Include="Assets\Scripts\UI\SpriteManager.cs" />
      <Compile Include="Assets\Scripts\UI\TabView\TabButton.cs" />
      <Compile Include="Assets\Scripts\UI\TabView\TabView.cs" />
