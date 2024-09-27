@@ -16,11 +16,11 @@ public class UISkillSlots : MonoBehaviour
 
     void RefreshUI()
     {
-        var Skills = DataManager.Instance.Skills[(int)User.Instance.CurrentCharacterInfo.Class];
+        var Skills = User.Instance.CurrentCharacter.SkillMgr.Skills;
         int skillIdx = 0;
-        foreach(var kv in Skills)
+        foreach(var skill in Skills)
         {
-            slots[skillIdx].SetSkill(kv.Value);
+            slots[skillIdx].SetSkill(skill);
             skillIdx++;
         }
     }

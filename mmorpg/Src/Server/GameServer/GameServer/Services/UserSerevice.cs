@@ -101,7 +101,7 @@ namespace GameServer.Services
                 Name = request.Name,
                 Class = (int)request.Class,
                 TID = (int)request.Class,
-                Level = 1,
+                Level = 5,
                 MapID = 1,
                 MapPosX = 5000,
                 MapPosY = 4000,
