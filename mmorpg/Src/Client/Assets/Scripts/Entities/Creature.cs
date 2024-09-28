@@ -14,17 +14,30 @@ namespace Entities
     public class Creature : Entity
     {
         public NCharacterInfo Info;
-
         public Common.Data.CharacterDefine Define;
-
         public Attributes Attributes;
-
         public SkillManager SkillMgr;
+
+        bool battleState = false;
+        public bool BattleStats
+        {
+            get { return battleState; }
+            set
+            {
+                if (battleState != value)
+                {
+                    battleState = value;
+                    this.SetStandby(value);
+                }
+            }
+        }
 
         public int Id
         {
             get { return this.Info.Id; }
         }
+
+        public Skill CastringSkill = null;
 
         public string Name
         {
@@ -95,6 +108,31 @@ namespace Entities
         {
             //Debug.LogFormat("SetPosition:{0}", position);
             this.position = position;
+        }
+
+        public void CastSkill(int skillId, Creature target, NVector3 pos)
+        {
+            this.SetStandby(true);
+            var skill = this.SkillMgr.GetSkill(skillId);
+            skill.BeginCast();
+        }
+
+        public void PlayAnim(string name)
+        {
+            if (this.Controller != null)
+                this.Controller.PlayAnim(name);
+        }
+
+        public void SetStandby(bool standby)
+        {
+            if (this.Controller != null)
+                this.Controller.SetStandby(standby);
+        }
+
+        public override void OnUpdate(float delta)
+        {
+            base.OnUpdate(delta);
+            this.SkillMgr.OnUpdate(delta);
         }
     }
 }

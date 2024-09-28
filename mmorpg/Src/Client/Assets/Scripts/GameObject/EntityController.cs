@@ -6,7 +6,7 @@ using Entities;
 using Managers;
 
 
-public class EntityController : MonoBehaviour , IEntityNotify
+public class EntityController : MonoBehaviour , IEntityNotify, IEntityController
 {
 
     public Animator anim;
@@ -155,5 +155,20 @@ public class EntityController : MonoBehaviour , IEntityNotify
     public void OnEntityChanged(Entity entity)
     {
         Debug.LogFormat("OnEntityChanger: ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.entityId, entity.position, entity.direction, entity.speed);
+    }
+
+    void OnMouseDown()
+    {
+        BattleManager.Instance.CurrentTarget = this.entity as Creature;
+    }
+
+    public void PlayAnim(string name)
+    {
+        this.anim.SetTrigger(name);
+    }
+
+    public void SetStandby(bool standy)
+    {
+        this.anim.SetBool("Standby", standy);
     }
 }

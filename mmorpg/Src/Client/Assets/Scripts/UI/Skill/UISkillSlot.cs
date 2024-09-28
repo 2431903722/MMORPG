@@ -1,6 +1,8 @@
 ﻿using Battle;
 using Common.Battle;
 using Common.Data;
+using Managers;
+using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,22 +23,26 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
 
     void Start()
     {
-        
+        overlay.enabled = false;
+        cdText.enabled = false;
     }
 
     void Update()
     {
-        if (overlay.fillAmount > 0)
+        if (this.skill.CD > 0)
         {
-            overlay.fillAmount = this.cdRemain / this.skill.Define.CD;
-            this.cdText.text = ((int)Math.Ceiling(this.cdRemain)).ToString();
-            this.cdRemain -= Time.deltaTime;
+            if(!overlay.enabled)
+                overlay.enabled = true;
+            if(!cdText.enabled)
+                cdText.enabled = true;
+
+            overlay.fillAmount = this.skill.CD / this.skill.Define.CD;
+            this.cdText.text = ((int)Math.Ceiling(this.skill.CD)).ToString();
         }
         else
         {
             if (overlay.enabled)
                 overlay.enabled = false;
-
             if (this.cdText.enabled)
                 this.cdText.enabled = false;
         }
@@ -44,38 +50,20 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        SkillResult result = this.skill.CanCast();
+        SkillResult result = this.skill.CanCast(BattleManager.Instance.CurrentTarget);
         switch (result)
         {
-            case SkillResult.InvalidTarget:
-                MessageBox.Show("技能" + this.skill.Define.Name + "目标无效");
+            case SkillResult.InvalidTaeget:
+                MessageBox.Show("技能:[" + this.skill.Define.Name + "]无效目标");
                 return;
-            case SkillResult.OutOfMP:
-                MessageBox.Show("技能" + this.skill.Define.Name + "MP不足");
+            case SkillResult.CoolDown:
+                MessageBox.Show("技能:[" + this.skill.Define.Name + "]冷却中");
                 return;
-            case SkillResult.Cooldown:
-                MessageBox.Show("技能" + this.skill.Define.Name + "冷却中");
+            case SkillResult.OutOfMp:
+                MessageBox.Show("技能:[" + this.skill.Define.Name + "]MP不足");
                 return;
         }
-
-        MessageBox.Show("释放技能" + this.skill.Define.Name);
-        this.SetCD(this.skill.Define.CD);
-        this.skill.Cast();
-    }
-
-    public void SetCD(float cd)
-    {
-        if (!overlay.enabled)
-            overlay.enabled = true;
-
-        if (!cdText.enabled)
-            cdText.enabled = true;
-
-        this.cdText.text = ((int)Math.Floor(this.cdRemain)).ToString();
-
-        overlay.fillAmount = 1f;
-        overlaySpeed = 1f / cd;
-        cdRemain = cd;
+        BattleManager.Instance.CastSkill(this.skill);
     }
 
     internal void SetSkill(Skill value)
@@ -83,7 +71,6 @@ public class UISkillSlot : MonoBehaviour, IPointerClickHandler
         this.skill = value;
         if (this.icon != null)
             this.icon.overrideSprite = Resloader.Load<Sprite>(this.skill.Define.Icon);
-        this.SetCD(this.skill.Define.CD);
     }
 }
 

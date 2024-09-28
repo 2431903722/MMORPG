@@ -149,6 +149,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Services\BagService.cs" />
+    <Compile Include="Services\BattleService.cs" />
     <Compile Include="Services\ChatService.cs" />
     <Compile Include="Services\DBService.cs" />
     <Compile Include="Services\FriendService.cs" />

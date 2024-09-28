@@ -1,51 +1,16 @@
-2024-09-14 16:09:47,850 [ 1] INFO  Unity: LoadingManager start
-2024-09-14 16:09:51,096 [ 1] INFO  Unity: DataManager > DataManager()
-2024-09-14 16:09:52,196 [ 1] INFO  Unity: 正在加载
-2024-09-14 16:09:56,264 [ 1] INFO  Unity: UserLoginRequest::user :009 psw:123
-2024-09-14 16:09:56,264 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-09-14 16:09:56,266 [ 1] INFO  Unity: DoConnect
-2024-09-14 16:09:56,266 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-09-14 16:09:56,267 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2024-09-14 16:09:56,269 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-09-14 16:09:56,312 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-09-14 16:09:56,314 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-09-14 16:09:56,466 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-09-14 16:09:57,114 [ 1] INFO  Unity: Select Char:[9]009[Warrior]
-2024-09-14 16:09:57,763 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-09-14 16:09:57,800 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-09-14 16:09:57,801 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-09-14 16:09:57,801 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-09-14 16:09:57,804 [ 1] INFO  Unity: OnGuild: Success 8:0010
-2024-09-14 16:09:57,804 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2024-09-14 16:09:57,805 [ 1] INFO  Unity: AddCharacter:10:010 Map:1 Entity:(1:pos:(5245,4000,820),dir:(100,0,0),spd:0
-2024-09-14 16:09:57,805 [ 1] INFO  Unity: AddCharacter:9:009 Map:1 Entity:(2:pos:(5000,4000,820),dir:(100,0,0),spd:0
-2024-09-14 16:09:57,805 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-09-14 16:09:58,047 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-09-14 16:09:58,047 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-09-14 16:09:58,064 [ 1] WARN  Unity: GameObjectManager[20150] Awake
-
-2024-09-14 16:09:58,066 [ 1] WARN  Unity: MainPlayerCamera[20302] Awake
-
-2024-09-14 16:09:58,066 [ 1] WARN  Unity: UIMain[20308] Awake
-
-2024-09-14 16:09:58,067 [ 1] WARN  Unity: UIWorldElementManager[20420] Awake
-
-2024-09-14 16:09:58,069 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-09-14 16:09:58,073 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UnityEngine.UI.LayoutRebuilder.Initialize (UnityEngine.RectTransform controller)
-UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (UnityEngine.RectTransform layoutRoot)
-UnityEngine.UI.ScrollRect.SetLayoutHorizontal ()
-UnityEngine.UI.LayoutRebuilder.<Rebuild>m__3 (UnityEngine.Component e)
-UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1 action)
-UnityEngine.UI.LayoutRebuilder.Rebuild (CanvasUpdate executing)
-UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate ()
-UnityEngine.Canvas:SendWillRenderCanvases()
+2024-09-17 19:39:09,912 [ 1] INFO  Unity: LoadingManager start
+2024-09-17 19:39:13,191 [ 1] INFO  Unity: DataManager > DataManager()
+2024-09-17 19:39:13,270 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{IsolatedStorageException: Could not find file "E:\Project\MMO\Bin\Data\RideDefine.txt"., System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options)
+System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share)
+System.IO.File.OpenRead (System.String path)
+System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding)
+System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding)
+System.IO.File.ReadAllText (System.String path)
+DataManager+<LoadData>c__Iterator0.MoveNext ()
+UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress)
 }</args></log4net.Error>
-2024-09-14 16:09:58,093 [ 1] INFO  Unity: Set Channel:Local
-2024-09-14 16:10:01,747 [ 1] INFO  Unity: Set Channel:World
-2024-09-14 16:11:25,334 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-09-14 16:11:25,334 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-09-17 19:39:42,638 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-09-17 19:39:42,638 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 
-2024-09-14 16:11:25,334 [ 1] INFO  Unity: Character_10_010 OnDestroy :ID:1 POS:(5245, 4000, 820) DIR:(100, 0, 0) SPD:0 
-2024-09-14 16:11:25,334 [ 1] INFO  Unity: Character_9_009 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
