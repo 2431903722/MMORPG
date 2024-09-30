@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Managers;
+using Models;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,13 +10,21 @@ public class UIMain : MonoSingleton<UIMain> {
 	public Text avatarName;
 	public Text avatarLevel;
 	public UITeam TeamWindow;
+	public UICreatureInfo targetUI;
 
 	protected override void OnStart () 
 	{
 		this.UpdateAvatar();
-	}
-	
-	void UpdateAvatar()
+		this.targetUI.gameObject.SetActive(false);
+        BattleManager.Instance.OnTargetChanged += OnTargetChanged;
+    }
+
+    private void Instance_OnTargetChanged(Entities.Creature target)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    void UpdateAvatar()
 	{
 		this.avatarName.text = string.Format("{0}[{1}]", User.Instance.CurrentCharacterInfo.Name, User.Instance.CurrentCharacterInfo.Id);
 		this.avatarLevel.text = User.Instance.CurrentCharacterInfo.Level.ToString();
@@ -65,4 +74,18 @@ public class UIMain : MonoSingleton<UIMain> {
     {
 		TeamWindow.ShowTeam(show);
     }
+
+	private void OnTargetChanged(Entities.Creature target)
+	{
+		if (target != null)
+		{
+			if (!targetUI.isActiveAndEnabled)
+				targetUI.gameObject.SetActive(true);
+			targetUI.Target = target;
+        }
+		else
+		{
+			targetUI.gameObject.SetActive(false);
+        }
+	}
 }

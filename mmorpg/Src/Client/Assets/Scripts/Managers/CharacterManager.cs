@@ -44,18 +44,15 @@ namespace Managers
             this.Characters.Clear();
         }
 
-        public void AddCharacter(SkillBridge.Message.NCharacterInfo cha)
+        public void AddCharacter(Character character)
         {
-            Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", cha.Id, cha.Name, cha.mapId, cha.Entity.String());
-            Character character = new Character(cha);
-            this.Characters[cha.EntityId] = character;
+            Debug.LogFormat("AddCharacter:{0}:{1} Map:{2} Entity:{3}", character.Id, character.Name , character.Info.mapId, character.entityId);
+            this.Characters[character.entityId]= character;
             EntityManager.Instance.AddEntity(character);
-            if(OnCharacterEnter!=null)
+            if (OnCharacterEnter != null)
             {
                 OnCharacterEnter(character);
             }
-            if (cha.EntityId == User.Instance.CurrentCharacterInfo.EntityId)
-                User.Instance.CurrentCharacter = character;
         }
 
         public void RemoveCharacter(int entityId)

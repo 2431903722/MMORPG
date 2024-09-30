@@ -1,4 +1,5 @@
 ﻿using Common.Data;
+using Entities;
 using Managers;
 using Models;
 using Network;
@@ -42,9 +43,16 @@ namespace Services
                 if (User.Instance.CurrentCharacterInfo == null || (cha.Type == CharacterType.Player) && User.Instance.CurrentCharacterInfo.Id == cha.Id)
                 {   // 当前角色切换地图
                     User.Instance.CurrentCharacterInfo = cha;
+                    if(User.Instance.CurrentCharacter == null)
+                        User.Instance.CurrentCharacter = new Character(cha);
+                    else
+                        User.Instance.CurrentCharacter.UpdateInfo(cha);
+
+                    CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
+                    continue;
                 }
                 // 将当前场景所有角色添加管理
-                CharacterManager.Instance.AddCharacter(cha);
+                CharacterManager.Instance.AddCharacter(new Character(cha));
             }
             // 切换地图逻辑
             if (CurrentMapId != response.mapId)
