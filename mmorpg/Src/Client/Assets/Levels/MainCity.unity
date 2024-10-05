@@ -44793,7 +44793,7 @@ MonoBehaviour:
   avatarName: {fileID: 282546785}
   avatarLevel: {fileID: 667941274}
   TeamWindow: {fileID: 2122973009}
-  targetUI: {fileID: 0}
+  targetUI: {fileID: 1182520339}
 --- !u!114 &1415483397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59854,22 +59854,22 @@ Prefab:
     - target: {fileID: 224746274998545846, guid: 25f6ee9ed0f98664884fd7862928b5bf,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00000016806204
+      value: -0.00006236115
       objectReference: {fileID: 0}
     - target: {fileID: 224293119348137770, guid: 25f6ee9ed0f98664884fd7862928b5bf,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 82.4557
+      value: 82.59825
       objectReference: {fileID: 0}
     - target: {fileID: 224764298033132378, guid: 25f6ee9ed0f98664884fd7862928b5bf,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 209.54431
+      value: 209.40176
       objectReference: {fileID: 0}
     - target: {fileID: 224746274998545846, guid: 25f6ee9ed0f98664884fd7862928b5bf,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 16.825706
+      value: 16.891497
       objectReference: {fileID: 0}
     - target: {fileID: 224793140868627946, guid: 25f6ee9ed0f98664884fd7862928b5bf,
         type: 2}

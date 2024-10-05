@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SceneManager : MonoSingleton<SceneManager> // 单例
+public class SceneManager : MonoSingleton<SceneManager> 
 {
     UnityAction<float> onProgress = null; // 通知进度事件
 
-    // Use this for initialization
     protected override void OnStart()
     {
         
     }
 
-    // Update is called once per frame
     void Update () {
 		
  	}
@@ -28,6 +26,7 @@ public class SceneManager : MonoSingleton<SceneManager> // 单例
         Debug.LogFormat("LoadLevel: {0}", name);
         AsyncOperation async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(name);
         async.allowSceneActivation = true;
+
         async.completed += LevelLoadCompleted;
         while (!async.isDone)
         {

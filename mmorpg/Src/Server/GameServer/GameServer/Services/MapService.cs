@@ -67,6 +67,7 @@ namespace GameServer.Services
             character.Position = target.Position;
             character.Direction = target.Direction;
             MapManager.Instance[target.MapID].CharacterEnter(sender, character);
+            Log.InfoFormat("LinkTo TeleporterID : [{0}]  TeleporterPosition : [{1}]", target.ID, target.Position.String());
         }
     }
 }

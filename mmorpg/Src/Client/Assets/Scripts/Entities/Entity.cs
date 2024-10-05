@@ -18,12 +18,12 @@ namespace Entities
         private NEntity entityData;
         public NEntity EntityData
         {
-            get 
+            get
             {
                 UpdateEntityData();
                 return entityData;
             }
-            set 
+            set
             {
                 entityData = value;
                 this.SetEntityData(value);

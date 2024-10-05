@@ -61,7 +61,7 @@ namespace Managers
             if (this.Characters.ContainsKey(entityId))
             {
                 EntityManager.Instance.RemoveEntity(this.Characters[entityId].Info.Entity);
-                if(OnCharacterLeave != null)
+                if (OnCharacterLeave != null)
                 {
                     OnCharacterLeave(this.Characters[entityId]);
                 }

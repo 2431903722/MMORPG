@@ -45,19 +45,22 @@ namespace GameServer.Models
         /// </summary>
         SpawnManager SpawnManager = new SpawnManager();
 
-        public MonsterManager MonsterManager = new MonsterManager();
+        public Battle.Battle Battle;
 
+        public MonsterManager MonsterManager = new MonsterManager();
 
         internal Map(MapDefine define)
         {
             this.Define = define;
             this.SpawnManager.Init(this);
             this.MonsterManager.Init(this);
+            this.Battle = new Battle.Battle(this);
         }
 
         internal void Update()
         {
             SpawnManager.Update();
+            this.Battle.Update();
         }
 
         /// <summary>
@@ -69,7 +72,7 @@ namespace GameServer.Models
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
 
             character.Info.mapId = this.ID;
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+            this.MapCharacters[character.Id] = new MapCharacter(conn, character);            
 
             conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
             conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;

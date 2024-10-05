@@ -90,25 +90,25 @@ namespace Entities
 
         public void MoveForward()
         {
-            Debug.LogFormat("MoveForward");
+            //Debug.LogFormat("MoveForward");
             this.speed = this.Define.Speed;
         }
 
         public void MoveBack()
         {
-            Debug.LogFormat("MoveBack");
+            //Debug.LogFormat("MoveBack");
             this.speed = -this.Define.Speed;
         }
 
         public void Stop()
         {
-            Debug.LogFormat("Stop");
+            //Debug.LogFormat("Stop");
             this.speed = 0;
         }
 
         public void SetDirection(Vector3Int direction)
         {
-            Debug.LogFormat("SetDirection:{0}", direction);
+            //Debug.LogFormat("SetDirection:{0}", direction);
             this.direction = direction;
         }
 
@@ -118,11 +118,11 @@ namespace Entities
             this.position = position;
         }
 
-        public void CastSkill(int skillId, Creature target, NVector3 pos)
+        public void CastSkill(int skillId, Creature target, NVector3 pos, NDamageInfo damage)
         {
             this.SetStandby(true);
             var skill = this.SkillMgr.GetSkill(skillId);
-            skill.BeginCast();
+            skill.BeginCast(damage);
         }
 
         public void PlayAnim(string name)
@@ -141,6 +141,13 @@ namespace Entities
         {
             base.OnUpdate(delta);
             this.SkillMgr.OnUpdate(delta);
+        }
+
+        public void DoDamage(NDamageInfo damage)
+        {
+            Debug.LogFormat("DoDamage:{0}", damage);
+            this.Attributes.HP -= damage.Damage;
+            this.PlayAnim("Hurt");
         }
     }
 }

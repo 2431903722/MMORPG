@@ -774,6 +774,7 @@ enum SKILL_RESULT
 	OUT_OF_MP = 1;			// MP不足
 	COOL_DOWN = 2;			// 冷却中
 	INVALID_TAEGET = 3; 	// 无效目标
+	OUT_OF_RANGE = 4; 		// 超出技能范围
 }
 
 message NSkillCastInfo
@@ -782,6 +783,13 @@ message NSkillCastInfo
 	int32 casterId = 2;
 	int32 targetId = 3;
 	NVector3 position = 4;
+}
+
+message NDamageInfo
+{
+	int32 entityId = 1; 	// Entity ID	
+	int32 damage = 2;		// 伤害
+	bool will_dead = 3;		// 此次伤害后死亡
 }
 
 message SkillCastRequest
@@ -794,4 +802,5 @@ message SkillCastResponse
 	RESULT result = 1;
 	string errormsg = 2;
 	NSkillCastInfo castInfo = 3;
+	NDamageInfo damage = 4;
 }

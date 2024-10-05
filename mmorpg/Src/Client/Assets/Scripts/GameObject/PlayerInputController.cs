@@ -11,7 +11,7 @@ using System;
 public class PlayerInputController : MonoBehaviour {
 
     public Rigidbody rb;
-    SkillBridge.Message.CharacterState state;
+    CharacterState state;
 
     public Character character;
 
@@ -49,16 +49,15 @@ public class PlayerInputController : MonoBehaviour {
 
             if (entityController != null) entityController.entity = this.character;
         }
-
-        if(agent == null)
-        {
-            agent = this.gameObject.AddComponent<NavMeshAgent>();
-            agent.stoppingDistance = 0.3f;
-        }
     }
 
     public void StartNav(Vector3 target)
     {
+        if (agent == null)
+        {
+            agent = this.gameObject.AddComponent<NavMeshAgent>();
+            agent.stoppingDistance = 4f;
+        }
         StartCoroutine(BeginNav(target));
     }
 
@@ -112,15 +111,15 @@ public class PlayerInputController : MonoBehaviour {
 
         NavPathRenderer.Instance.SetPath(agent.path, agent.destination);
 
-        if(agent.isStopped || agent.remainingDistance <= 0.3f)
+        if(agent.isStopped || agent.remainingDistance <= 4.5f)
         {
             StopNav();
             return;
         }
     }
 
-        void FixedUpdate()
-        {
+    void FixedUpdate()
+    {
         // 判断是否有实际角色绑定
         if (character == null)
             return;
@@ -137,19 +136,19 @@ public class PlayerInputController : MonoBehaviour {
         float v = Input.GetAxis("Vertical");
         if (v > 0.01)
         {
-            if (state != SkillBridge.Message.CharacterState.Move)
+            if (state != CharacterState.Move)
             {
-                state = SkillBridge.Message.CharacterState.Move;
-                this.character.MoveForward();
+                state = CharacterState.Move;
+                this.character.MoveForward(); // 角色移动，设置角色速度为Define速度
                 this.SendEntityEvent(EntityEvent.MoveFwd);
             }
-            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f;
+            this.rb.velocity = this.rb.velocity.y * Vector3.up + GameObjectTool.LogicToWorld(character.direction) * (this.character.speed + 9.81f) / 100f; // 设置刚体速度
         }
         else if (v < -0.01)
         {
-            if (state != SkillBridge.Message.CharacterState.Move)
+            if (state != CharacterState.Move)
             {
-                state = SkillBridge.Message.CharacterState.Move;
+                state = CharacterState.Move;
                 this.character.MoveBack();
                 this.SendEntityEvent(EntityEvent.MoveBack);
             }
@@ -157,9 +156,9 @@ public class PlayerInputController : MonoBehaviour {
         }
         else
         {
-            if (state != SkillBridge.Message.CharacterState.Idle)
+            if (state != CharacterState.Idle)
             {
-                state = SkillBridge.Message.CharacterState.Idle;
+                state = CharacterState.Idle;
                 this.rb.velocity = Vector3.zero;
                 this.character.Stop();
                 this.SendEntityEvent(EntityEvent.Idle);

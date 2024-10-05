@@ -62,7 +62,7 @@ public class EntityController : MonoBehaviour , IEntityNotify, IEntityController
         if (entity != null)
             Debug.LogFormat("{0} OnDestroy :ID:{1} POS:{2} DIR:{3} SPD:{4} ", this.name, entity.entityId, entity.position, entity.direction, entity.speed);
 
-        if(UIWorldElementManager.Instance!=null)
+        if (UIWorldElementManager.Instance != null)
         {
             UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
         }
@@ -84,7 +84,7 @@ public class EntityController : MonoBehaviour , IEntityNotify, IEntityController
 
     public void OneEntityRemoved()
     {
-        if(UIWorldElementManager.Instance != null)
+        if (UIWorldElementManager.Instance != null)
         {
             UIWorldElementManager.Instance.RemoveCharacterNameBar(this.transform);
         }

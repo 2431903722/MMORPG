@@ -40,8 +40,9 @@ namespace Services
             Debug.LogFormat("OnMapCharacterEnter:Map:{0} Count:{1}", response.mapId, response.Characters.Count);
             foreach (var cha in response.Characters)
             {
+                // 对当前角色切换地图处理
                 if (User.Instance.CurrentCharacterInfo == null || (cha.Type == CharacterType.Player) && User.Instance.CurrentCharacterInfo.Id == cha.Id)
-                {   // 当前角色切换地图
+                {   
                     User.Instance.CurrentCharacterInfo = cha;
                     if(User.Instance.CurrentCharacter == null)
                         User.Instance.CurrentCharacter = new Character(cha);
@@ -51,7 +52,7 @@ namespace Services
                     CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
                     continue;
                 }
-                // 将当前场景所有角色添加管理
+                // 将当前进入场景角色添加管理
                 CharacterManager.Instance.AddCharacter(new Character(cha));
             }
             // 切换地图逻辑
@@ -65,7 +66,7 @@ namespace Services
         private void OnMapCharacterLeave(object sender, MapCharacterLeaveResponse response)
         {
             Debug.LogFormat("OnMapCharacterLeave: CharID:{0}", response.entityId);
-            if(response.entityId != User.Instance.CurrentCharacterInfo.EntityId)
+            if (response.entityId != User.Instance.CurrentCharacterInfo.EntityId)
             {
                 CharacterManager.Instance.RemoveCharacter(response.entityId);
             }
@@ -93,7 +94,7 @@ namespace Services
 
         public void SendMapEntitySync(EntityEvent entityEvent, NEntity entity, int param)
         {
-            Debug.LogFormat("MapEntityUpdateRequest: ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.Id, entity.Position.String(), entity.Direction.String(), entity.Speed);
+            //Debug.LogFormat("MapEntityUpdateRequest: ID:{0} POS:{1} DIR:{2} SPD:{3}", entity.Id, entity.Position.String(), entity.Direction.String(), entity.Speed);
             NetMessage message = new NetMessage();
             message.Request = new NetMessageRequest();
             message.Request.mapEntitySync = new MapEntitySyncRequest();
@@ -118,7 +119,7 @@ namespace Services
                 sb.AppendFormat("[{0}]evt:{1} entity:{2}", entity.Id, entity.Event, entity.Entity.String());
                 sb.AppendLine();
             }
-            Debug.Log(sb.ToString());
+            //Debug.Log(sb.ToString());
         }
 
         internal void SendMapTeleport(int teleporterID)

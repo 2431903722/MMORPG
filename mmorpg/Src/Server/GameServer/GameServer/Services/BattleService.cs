@@ -25,14 +25,8 @@ namespace GameServer.Services
 
         void OnSkillCast(NetConnection<NetSession> sender, SkillCastRequest request)
         {
-            Character character = sender.Session.Character;
             Log.InfoFormat("OnSkillCast: skill:{0} caster:{1} targer:{2} pos:{3}", request.castInfo.skillId, request.castInfo.casterId, request.castInfo.targetId, request.castInfo.Position);
-
-            sender.Session.Response.skillCast = new SkillCastResponse();
-            sender.Session.Response.skillCast.Result = Result.Success;
-            sender.Session.Response.skillCast.castInfo = request.castInfo;
-
-            MapManager.Instance[character.Info.mapId].BroadcastBattleResponse(sender.Session.Response);
+            BattleManger.Instance.ProcessBattleMessage(sender, request);
         }
     }
 }
