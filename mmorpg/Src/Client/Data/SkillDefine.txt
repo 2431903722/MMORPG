@@ -13,6 +13,9 @@
       "MPCost": 0,
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
       "AP": 0.0,
       "ADFator": 1.0
     },
@@ -75,6 +78,9 @@
       "MPCost": 15,
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.9
+      ],
       "AD": 100.0,
       "AP": 0.0,
       "ADFator": 0.2
@@ -112,6 +118,9 @@
       "MPCost": 20,
       "AOERange": 0,
       "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.6
+      ],
       "AD": 0.0,
       "AP": 80.0,
       "APFator": 0.125
@@ -174,6 +183,9 @@
       "BulletSpeed": 1000.0,
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.8
+      ],
       "ADFator": 1.0
     },
     "302": {
@@ -190,6 +202,9 @@
       "MPCost": 15,
       "AOERange": 0,
       "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.8
+      ],
       "Buff": [
         5
       ],
@@ -211,6 +226,9 @@
       "MPCost": 25,
       "AOERange": 300,
       "SkillAnim": "SkillB",
+      "HitTimes": [
+        0.8
+      ],
       "Buff": [
         6
       ],
@@ -234,6 +252,11 @@
       "BulletSpeed": 1000.0,
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.6,
+        1.25,
+        2.0
+      ],
       "AD": 70.0,
       "AP": 0.0,
       "ADFator": 0.2

@@ -255,6 +255,7 @@ namespace Services
             Debug.LogFormat("OnGameLeave:{0} [{1}]", response.Result, response.Errormsg);
             MapService.Instance.CurrentMapId = 0;
             User.Instance.CurrentCharacterInfo = null;
+            User.Instance.CurrentCharacter = null;
             if (this.isQuitGame)
             {
 #if UNITY_EDITOR
@@ -263,14 +264,6 @@ namespace Services
                 Application.Quit();
 #endif
             }
-        }
-
-        void OnCharacterEnter(object sender, MapCharacterEnterResponse message)
-        {
-            //Debug.LogFormat("OnCharacterEnter:{0}", message.mapId);
-            //NCharacterInfo info = message.Characters[0];
-            //User.Instance.CurrentCharacter = info;
-            //SceneManager.Instance.LoadScene(DataManager.Instance.Maps[message.mapId].Resource);         
         }
     }
 }

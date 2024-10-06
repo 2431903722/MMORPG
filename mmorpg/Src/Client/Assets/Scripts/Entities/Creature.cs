@@ -125,6 +125,12 @@ namespace Entities
             skill.BeginCast(damage);
         }
 
+        internal void DoSkillHit(int skillId, int hitId, List<NDamageInfo> damages)
+        {
+            var skill = this.SkillMgr.GetSkill(skillId);
+            skill.DoHit(hitId, damages);
+        }
+
         public void PlayAnim(string name)
         {
             if (this.Controller != null)
@@ -148,6 +154,11 @@ namespace Entities
             Debug.LogFormat("DoDamage:{0}", damage);
             this.Attributes.HP -= damage.Damage;
             this.PlayAnim("Hurt");
+        }
+
+        internal int Distance(Creature target)
+        {
+            return (int)Vector3Int.Distance(this.position, target.position);
         }
     }
 }

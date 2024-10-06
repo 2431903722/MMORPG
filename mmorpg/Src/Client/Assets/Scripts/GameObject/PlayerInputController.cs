@@ -30,8 +30,8 @@ public class PlayerInputController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        state = SkillBridge.Message.CharacterState.Idle;
-        if(this.character == null)
+        state = CharacterState.Idle;
+        if (this.character == null)
         {
             DataManager.Instance.Load();
             NCharacterInfo cinfo = new NCharacterInfo();

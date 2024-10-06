@@ -158,7 +158,12 @@ namespace GameServer.Models
         {
             foreach (var kv in this.MapCharacters)
             {
-                kv.Value.connection.Session.Response.skillCast = response.skillCast;
+                if (response.skillCast != null)
+                    kv.Value.connection.Session.Response.skillCast = response.skillCast;
+
+                if (response.skllHits != null)
+                    kv.Value.connection.Session.Response.skllHits = response.skllHits;
+
                 kv.Value.connection.SendResponse();
             }
         }

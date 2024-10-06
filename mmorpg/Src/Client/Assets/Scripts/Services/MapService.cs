@@ -49,6 +49,7 @@ namespace Services
                     else
                         User.Instance.CurrentCharacter.UpdateInfo(cha);
 
+                    User.Instance.CharacterInited();
                     CharacterManager.Instance.AddCharacter(User.Instance.CurrentCharacter);
                     continue;
                 }

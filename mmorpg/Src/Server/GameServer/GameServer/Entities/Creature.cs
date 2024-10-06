@@ -1,4 +1,5 @@
-﻿using Common.Battle;
+﻿using Common;
+using Common.Battle;
 using Common.Data;
 using GameServer.Battle;
 using GameServer.Core;
@@ -6,6 +7,7 @@ using GameServer.Managers;
 using SkillBridge.Message;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,9 +48,20 @@ namespace GameServer.Entities
             this.Info.attrDynamic = this.Attributes.DynamicAttr;
         }
 
+        internal int Distance(Creature target)
+        {
+            return (int)Vector3Int.Distance(this.Position, target.Position);
+        }
+
+        internal int Distance(Vector3Int position)
+        {
+            return (int)Vector3Int.Distance(this.Position, position);
+        }
+
         internal void DoDamage(NDamageInfo damage)
         {
             this.Attributes.HP -= damage.Damage;
+            Log.InfoFormat("[{0}] be damaged  DamageValue:[{1}]  RemainHP:[{2}]", this.Name, damage.Damage, this.Attributes.HP);
             if (this.Attributes.HP < 0)
             {
                 this.IsDeath = true;
