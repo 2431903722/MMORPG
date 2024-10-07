@@ -122,7 +122,7 @@ namespace Entities
         {
             this.SetStandby(true);
             var skill = this.SkillMgr.GetSkill(skillId);
-            skill.BeginCast(damage);
+            skill.BeginCast(target);
         }
 
         internal void DoSkillHit(int skillId, int hitId, List<NDamageInfo> damages)
@@ -154,6 +154,12 @@ namespace Entities
             Debug.LogFormat("DoDamage:{0}", damage);
             this.Attributes.HP -= damage.Damage;
             this.PlayAnim("Hurt");
+        }
+
+        internal void DoSkillHit(NSkillHitInfo hit)
+        {
+            var skill = this.SkillMgr.GetSkill(hit.skillId);
+            skill.DoHit(hit);
         }
 
         internal int Distance(Creature target)

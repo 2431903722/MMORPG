@@ -99,9 +99,12 @@
       "CD": 3.0,
       "MPCost": 0,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
       "APFator": 1.0
     },
     "202": {
@@ -180,7 +183,7 @@
       "CD": 3.0,
       "MPCost": 0,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "Attack",
       "HitTimes": [
@@ -200,6 +203,7 @@
       "CastTime": 1.0,
       "CD": 8.0,
       "MPCost": 15,
+      "Bullet": true,
       "AOERange": 0,
       "SkillAnim": "SkillA",
       "HitTimes": [
@@ -249,7 +253,7 @@
       "CD": 12.0,
       "MPCost": 20,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "SkillC",
       "HitTimes": [

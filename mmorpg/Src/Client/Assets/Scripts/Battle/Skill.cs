@@ -15,19 +15,20 @@ namespace Battle
     {
         public NSkillInfo Info;
         public Creature Owner;
+        public Creature Target;
         public SkillDefine Define;
         private float cd= 0;
 
-        public NDamageInfo Damage { get; private set; }
-
         private float castTime = 0;
-        private float skllTime;
-        private int Hit = 0;
+        private float skllTime = 0;
+        public int Hit = 0;
         private SkillStatus Status;
 
         public bool IsCasting = false;
 
         Dictionary<int, List<NDamageInfo>> HitMap = new Dictionary<int, List<NDamageInfo>>();
+
+        List<Bullet> Bullets = new List<Bullet>();
 
         public float CD
         {
@@ -74,15 +75,17 @@ namespace Battle
             return SkillResult.Ok;
         }
 
-        public void BeginCast(NDamageInfo damage)
+        public void BeginCast(Creature target)
         {
             this.IsCasting = true;
             this.castTime = 0;
             this.skllTime = 0;
             this.Hit = 0;
             this.cd = this.Define.CD;
-            this.Damage = damage;
+            this.Target = target;
             this.Owner.PlayAnim(this.Define.SkillAnim);
+            this.Bullets.Clear();
+            this.HitMap.Clear();
 
             if (this.Define.CastTime > 0)
             {
@@ -155,6 +158,29 @@ namespace Battle
                 // 技能结束
                 else
                 {
+                    if (!this.Define.Bullet)
+                    {
+                        this.Status = SkillStatus.None;
+                        this.IsCasting = false;
+                        Debug.LogFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
+                    }
+                }
+            }
+
+            if (this.Define.Bullet)
+            {
+                bool finish = true;
+                foreach (Bullet bullet in this.Bullets)
+                {
+                    bullet.Update();
+                    if (!bullet.Stoped)
+                    {
+                        finish = false;
+                    }
+                }
+
+                if (finish && this.Hit >= this.Define.HitTimes.Count)
+                {
                     this.Status = SkillStatus.None;
                     this.IsCasting = false;
                     Debug.LogFormat("Skill[{0}].UpdateSkill Finish", this.Define.Name);
@@ -164,12 +190,29 @@ namespace Battle
 
         private void DoHit()
         {
+            if (this.Define.Bullet)
+            {
+                this.CastBullet();
+            }
+            else
+                this.DoHitDamages(this.Hit);
+            this.Hit++;
+        }
+
+        public void DoHitDamages(int hit)
+        {
             List<NDamageInfo> damages;
-            if (this.HitMap.TryGetValue(this.Hit, out damages))
+            if (this.HitMap.TryGetValue(hit, out damages))
             {
                 DoHitDamages(damages);
             }
-            this.Hit++;
+        }
+
+        private void CastBullet()
+        {
+            Bullet bullet = new Bullet(this);
+            Debug.LogFormat("Skill[{0}].CastBullet[{1}] Target:{2}", this.Define.Name, this.Define.Bullet, this.Target.Name);
+            this.Bullets.Add(bullet);
         }
 
         private void UpdateCD(float delta)
@@ -178,26 +221,37 @@ namespace Battle
             {
                 this.cd -= delta;
             }
-
             if (cd < 0)
             {
                 this.cd = 0;
             }
         }
 
+        internal void DoHit(NSkillHitInfo hit)
+        {
+            if (hit.isBullet || !this.Define.Bullet)
+            {
+                this.DoHit(hit.hitId, hit.Damages);
+            }
+        }
+
         internal void DoHit(int hitId, List<NDamageInfo> damages)
         {
-            if (hitId <= this.Hit)
+            if (hitId < this.Hit)
+            {
                 this.HitMap[hitId] = damages;
+            }
             else
+            {
                 DoHitDamages(damages);
+            }
         }
 
         internal void DoHitDamages(List<NDamageInfo> damages)
         {
             foreach (var dmg in damages)
             {
-                Creature target = EntityManager.Instance.GetEntity(dmg.entityId) as Creature;
+                Creature target = (Creature)EntityManager.Instance.GetEntity(dmg.entityId);
                 if (target == null) continue;
                 target.DoDamage(dmg);
             }
