@@ -15,7 +15,7 @@ namespace Common.Data
         public SkillType Type { get; set; }
         public TargetType CastTarget { get; set; }
         public int UnlockLevel { get; set; }
-        public float CastRange { get; set; }
+        public int CastRange { get; set; }
         public float CastTime { get; set; }
         public float CD { get; set; }
         public float MPCost { get; set; }

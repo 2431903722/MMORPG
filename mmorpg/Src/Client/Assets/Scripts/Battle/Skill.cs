@@ -59,6 +59,7 @@ namespace Battle
 
             if (this.Define.CastTarget == TargetType.Position && BattleManager.Instance.CurrentPosition == null)
             {
+                Debug.LogFormat("TargetPosition:[{0}]", target.position);
                 return SkillResult.InvalidTaeget;
             }
 
@@ -237,7 +238,7 @@ namespace Battle
 
         internal void DoHit(int hitId, List<NDamageInfo> damages)
         {
-            if (hitId < this.Hit)
+            if (hitId >= this.Hit)
             {
                 this.HitMap[hitId] = damages;
             }

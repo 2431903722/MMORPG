@@ -1,4 +1,5 @@
-﻿using GameServer.Core;
+﻿using Common;
+using GameServer.Core;
 using GameServer.Entities;
 using GameServer.Managers;
 using GameServer.Models;
@@ -70,6 +71,8 @@ namespace GameServer.Battle
             BattleContext context = new BattleContext(this);
             context.Caster = EntityManager.Instance.GetCreature(cast.casterId);
             context.Target = EntityManager.Instance.GetCreature(cast.targetId);
+            context.Position = cast.Position;
+
             context.CastSkill = cast;
             if (context.CastSkill != null)
                 this.JoinBattle(context.Caster);

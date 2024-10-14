@@ -78,6 +78,7 @@ namespace GameServer.Battle
 
                 if (this.Owner.Distance(context.Position) > this.Define.CastRange)
                 {
+                    Log.InfoFormat("CasterPosition:[{0}]  TargetPosition:[{1}]  Distance:[{2}]  CastRange:[{3}]", this.Owner.Position, context.Position, this.Owner.Distance(context.Position), this.Define.CastRange);
                     return SkillResult.OutOfRange;
                 }
             }

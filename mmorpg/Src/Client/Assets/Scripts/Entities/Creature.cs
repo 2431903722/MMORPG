@@ -151,13 +151,14 @@ namespace Entities
 
         public void DoDamage(NDamageInfo damage)
         {
-            Debug.LogFormat("DoDamage:{0}", damage);
+            Debug.LogFormat("DoDamage:{0} DMG:{1} CRIT:{2}", this.Name, damage.Damage, damage.Crit);
             this.Attributes.HP -= damage.Damage;
             this.PlayAnim("Hurt");
         }
 
         internal void DoSkillHit(NSkillHitInfo hit)
         {
+            Debug.LogFormat("DoSkillhit: Caster:{0} Skill:{1} Hit:{2} IsBullet:{3}", hit.casterId, hit.skillId, hit.hitId, hit.isBullet);
             var skill = this.SkillMgr.GetSkill(hit.skillId);
             skill.DoHit(hit);
         }

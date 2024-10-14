@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\GameObject\PlayerInputController.cs" />
      <Compile Include="Assets\Scripts\GameObject\RideController.cs" />
      <Compile Include="Assets\Scripts\GameObject\SpawnPoint.cs" />
+     <Compile Include="Assets\Scripts\GameObject\TargetSelector.cs" />
      <Compile Include="Assets\Scripts\GameObject\TeleporterObject.cs" />
      <Compile Include="Assets\Scripts\LoadingManager.cs" />
      <Compile Include="Assets\Scripts\Log\UnityLogger.cs" />
@@ -203,17 +204,29 @@
      <Compile Include="Assets\ThirdParty\Candlelight\Library\Visuals\ColorHSV.cs" />
      <Compile Include="Assets\ThirdParty\Candlelight\Library\Visuals\ColorTween.cs" />
      <Compile Include="Assets\ThirdParty\Candlelight\Library\Visuals\TextureX.cs" />
+     <None Include="Assets\_Package\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Shader\UITest.shader" />
      <None Include="Assets\Shader\Lightmap\Lightmap.shader" />
      <None Include="Assets\ThirdParty\Candlelight\Asset Store Products\HyperText\Documentation\Readme.txt" />
      <None Include="Assets\Shader\Particle\ParticleAdditive.shader" />
+     <None Include="Assets\Shader\Projector.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\Projectors\Guidelines.txt" />
      <None Include="Assets\References\log4net.xml" />
+     <None Include="Assets\_Package\Standard Assets\Effects\ImageEffects\Readme.txt" />
      <None Include="Assets\Resources\log4net.xml" />
      <None Include="Assets\Shader\DepthBloom.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Shader\MyMobile Particles AddNoMask Diff.shader" />
      <None Include="Assets\ThirdParty\Candlelight\Asset Store Products\HyperText\Documentation\Changelog.txt" />
      <None Include="Assets\JsonDotNet\link.xml" />
+     <None Include="Assets\_Package\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Shader\MyMobile VertexLit Diffuse.shader" />
+     <None Include="Assets\_Package\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\References\protobuf-net.xml" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>E:/Project/MMO/mmorpg/Src/Client/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
