@@ -13,8 +13,8 @@ namespace Common.Battle
         AttributeData Initial = new AttributeData();
         AttributeData Growth = new AttributeData();
         AttributeData Equip = new AttributeData();
-        AttributeData Basic = new AttributeData();
-        AttributeData Buff = new AttributeData();
+        public AttributeData Basic = new AttributeData();
+        public AttributeData Buff = new AttributeData();
         public AttributeData Final = new AttributeData();
 
         int Level;

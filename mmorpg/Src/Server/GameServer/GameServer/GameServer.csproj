@@ -89,7 +89,10 @@
   <ItemGroup>
     <Compile Include="Battle\Battle.cs" />
     <Compile Include="Battle\BattleContext.cs" />
+    <Compile Include="Battle\Buff.cs" />
+    <Compile Include="Battle\BuffManager.cs" />
     <Compile Include="Battle\Bullet.cs" />
+    <Compile Include="Battle\EffectManager.cs" />
     <Compile Include="Battle\Skill.cs" />
     <Compile Include="Battle\SkillManager.cs" />
     <Compile Include="CommandHelper.cs" />

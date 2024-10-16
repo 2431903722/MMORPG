@@ -74,6 +74,14 @@ namespace Common.Battle
     public enum BuffEffect
     {
         None = 0,
-        Stun = 1
+        Stun = 1,
+        Invincible = 2,
+    }
+
+    public enum TriggerType
+    {
+        None = 0,
+        SkillCast = 1, // 技能释放
+        SkillHit = 2, // 技能命中
     }
 }

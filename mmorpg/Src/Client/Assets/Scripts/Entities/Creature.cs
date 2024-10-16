@@ -118,7 +118,7 @@ namespace Entities
             this.position = position;
         }
 
-        public void CastSkill(int skillId, Creature target, NVector3 pos, NDamageInfo damage)
+        public void CastSkill(int skillId, Creature target, NVector3 pos)
         {
             this.SetStandby(true);
             var skill = this.SkillMgr.GetSkill(skillId);

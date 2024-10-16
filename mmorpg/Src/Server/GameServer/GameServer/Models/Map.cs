@@ -164,6 +164,9 @@ namespace GameServer.Models
                 if (response.skllHits != null)
                     kv.Value.connection.Session.Response.skllHits = response.skllHits;
 
+                if (response.buffRes != null)                
+                    kv.Value.connection.Session.Response.buffRes = response.buffRes;
+                
                 kv.Value.connection.SendResponse();
             }
         }
