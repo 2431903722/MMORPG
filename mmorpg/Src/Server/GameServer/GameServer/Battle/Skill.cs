@@ -227,7 +227,7 @@ namespace GameServer.Battle
             }
         }
 
-        void HitTarget(Creature target, NSkillHitInfo hit)
+        public void HitTarget(Creature target, NSkillHitInfo hit)
         {
             if (this.Define.CastTarget == Common.Battle.TargetType.Self && (target != Context.Caster)) return;
             else if (target == Context.Caster) return;

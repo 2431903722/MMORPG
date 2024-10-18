@@ -15,40 +15,37 @@ namespace GameServer.Battle
 
         Dictionary<BuffEffect, int> Effects = new Dictionary<BuffEffect, int>();
 
-        public EffectManager(Creature creature)
+        public EffectManager(Creature owner)
         {
-            this.Owner = creature;
+            this.Owner = owner;
         }
 
         internal bool HasEffect(BuffEffect effect)
         {
-            if (this.Effects.TryGetValue(effect, out int val))
-            {
+            if (this.Effects.TryGetValue(effect, out int val))            
                 return val > 0;
-            }
+            
             return false;
         }
 
         internal void AddEffect(BuffEffect effect)
         {
             Log.InfoFormat("[{0}].AddEffect {1}", this.Owner.Name, effect);
-            if (!this.Effects.ContainsKey(effect))
-            {
-                this.Effects[effect] = 1;
-            }
-            else
-            {
+
+            if (!this.Effects.ContainsKey(effect))            
+                this.Effects[effect] = 1;            
+            else            
                 this.Effects[effect]++;
-            }
+            
         }
 
         internal void RemoveEffect(BuffEffect effect)
         {
             Log.InfoFormat("[{0}].RemoveEffect {1}", this.Owner.Name, effect);
-            if (this.Effects[effect] > 0)
-            {
+
+            if (this.Effects[effect] > 0)            
                 this.Effects[effect]--;
-            }
+            
         }
     }
 }

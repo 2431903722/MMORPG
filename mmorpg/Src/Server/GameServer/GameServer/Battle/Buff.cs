@@ -15,7 +15,7 @@ namespace GameServer.Battle
         public int BuffID;
         private Creature Owner;
         private BuffDefine Define;
-        private BattleContext Context;
+        private BattleContext context;
         private float time = 0;
         private int hit;
 
@@ -26,7 +26,7 @@ namespace GameServer.Battle
             this.BuffID = buffID;
             this.Owner = owner;
             this.Define = define;
-            this.Context = context;
+            this.context = context;
 
             this.OnAdd();
         }
@@ -44,11 +44,11 @@ namespace GameServer.Battle
             {
                 buffId = this.BuffID,
                 buffType = this.Define.ID,
-                casterId = this.Context.Caster.entityId,
+                casterId = this.context.Caster.entityId,
                 ownerId = this.Owner.entityId,
                 Action = BuffAction.Add
             };
-            Context.Battle.AddBuffAction(buff);
+            context.Battle.AddBuffAction(buff);
         }
 
         private void OnRemove()
@@ -65,11 +65,11 @@ namespace GameServer.Battle
             {
                 buffId = this.BuffID,
                 buffType = this.Define.ID,
-                casterId = this.Context.Caster.entityId,
+                casterId = this.context.Caster.entityId,
                 ownerId = this.Owner.entityId,
                 Action = BuffAction.Remove
             };
-            Context.Battle.AddBuffAction(buff);
+            context.Battle.AddBuffAction(buff);
         }
 
         private void AddAttr()
@@ -131,7 +131,7 @@ namespace GameServer.Battle
         {
             this.hit++;
 
-            NDamageInfo damage = this.CalcBuffDamage(Context.Caster);
+            NDamageInfo damage = this.CalcBuffDamage(context.Caster);
             Log.InfoFormat("Buff[{0}].DoBuffDamgage[{1}]  Damgae:{2}  Crit:{3}", this.Define.Name, this.Owner.Name, damage.Damage, damage.Crit);
             this.Owner.DoDamage(damage);
 
@@ -139,12 +139,12 @@ namespace GameServer.Battle
             {
                 buffId = this.BuffID,
                 buffType = this.Define.ID,
-                casterId = this.Context.Caster.entityId,
+                casterId = this.context.Caster.entityId,
                 ownerId = this.Owner.entityId,
                 Action = BuffAction.Hit,
                 Damage = damage
             };
-            Context.Battle.AddBuffAction(buff);
+            context.Battle.AddBuffAction(buff);
         }
     }
 }

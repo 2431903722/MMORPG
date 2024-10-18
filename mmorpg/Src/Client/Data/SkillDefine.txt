@@ -204,6 +204,7 @@
       "CD": 8.0,
       "MPCost": 15,
       "Bullet": true,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "SkillA",
       "HitTimes": [

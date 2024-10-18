@@ -37,7 +37,7 @@
     "Target": "Target",
     "Trigger": "SkillHit",
     "Duration": 5.0,
-    "Interval ": 1.0,
+    "Interval": 1.0,
     "APFator": 0.25
   },
   "5": {
@@ -47,8 +47,8 @@
     "Icon": "UI/Skill/archer_debuff_lx",
     "Target": "Target",
     "Trigger": "SkillHit",
-    "Duration": 3.0,
-    "Interval ": 1.0,
+    "Duration": 5.0,
+    "Interval": 1.0,
     "ADFator": 0.125
   },
   "6": {
@@ -59,7 +59,7 @@
     "Target": "Target",
     "Trigger": "SkillHit",
     "Duration": 5.0,
-    "Interval ": 1.0,
+    "Interval": 1.0,
     "APFator": 0.16667
   }
 }

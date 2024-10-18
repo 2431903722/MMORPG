@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UINameBar : MonoBehaviour {
-
+public class UINameBar : MonoBehaviour 
+{
     public Text avaverName;
     public Character character;
+    public UIBuffIcons buffIcons;
 
     void Start () 
     {
 		if(this.character!=null)
         {
-            
+            buffIcons.SetOwner(this.character);
         }
 	}
 	
