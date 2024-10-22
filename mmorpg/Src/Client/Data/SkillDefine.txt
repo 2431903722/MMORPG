@@ -53,7 +53,7 @@
       "CastTime": 0.0,
       "CD": 7.0,
       "MPCost": 20,
-      "AOERange": 200,
+      "AOERange": 300,
       "SkillAnim": "SkillB",
       "Duration": 3.5,
       "Interval ": 0.8,
@@ -116,9 +116,11 @@
       "UnlockLevel": 5,
       "CastTarget": "Target",
       "CastRange": 1000,
-      "CastTime": 1.0,
+      "CastTime": 0.0,
       "CD": 3.0,
       "MPCost": 20,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "SkillA",
       "HitTimes": [
@@ -140,7 +142,7 @@
       "CastTime": 1.2,
       "CD": 12.0,
       "MPCost": 30,
-      "AOERange": 300,
+      "AOERange": 500,
       "SkillAnim": "SkillB",
       "Duration": 3.5,
       "Interval ": 0.8,
@@ -162,6 +164,9 @@
       "MPCost": 25,
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.8
+      ],
       "Buff": [
         4
       ],
@@ -184,11 +189,13 @@
       "MPCost": 0,
       "Bullet": true,
       "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "Attack",
       "HitTimes": [
         0.8
       ],
+      "HitEffect": "FX_Hit_1",
       "ADFator": 1.0
     },
     "302": {
@@ -200,15 +207,16 @@
       "UnlockLevel": 5,
       "CastTarget": "Target",
       "CastRange": 1000,
-      "CastTime": 1.0,
+      "CastTime": 0.5,
       "CD": 8.0,
       "MPCost": 15,
       "Bullet": true,
       "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "SkillA",
       "HitTimes": [
-        0.8
+        0.3
       ],
       "Buff": [
         5
@@ -229,7 +237,8 @@
       "CastTime": 1.2,
       "CD": 7.0,
       "MPCost": 25,
-      "AOERange": 300,
+      "AOERange": 500,
+      "AOEEffect": "FX_AOE_01",
       "SkillAnim": "SkillB",
       "HitTimes": [
         0.8
@@ -250,11 +259,12 @@
       "UnlockLevel": 15,
       "CastTarget": "Target",
       "CastRange": 800,
-      "CastTime": 1.5,
+      "CastTime": 0.5,
       "CD": 12.0,
       "MPCost": 20,
       "Bullet": true,
       "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "SkillC",
       "HitTimes": [

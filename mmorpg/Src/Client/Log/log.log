@@ -1,305 +1,240 @@
-2024-10-18 17:36:55,959 [ 1] INFO  Unity: LoadingManager start
-2024-10-18 17:36:58,967 [ 1] INFO  Unity: DataManager > DataManager()
-2024-10-18 17:37:00,337 [ 1] INFO  Unity: 正在加载
-2024-10-18 17:37:12,574 [ 1] INFO  Unity: UserLoginRequest::user :002 psw:123
-2024-10-18 17:37:12,575 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-10-18 17:37:12,577 [ 1] INFO  Unity: DoConnect
-2024-10-18 17:37:12,578 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-10-18 17:37:12,580 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-10-22 18:02:54,082 [ 1] INFO  Unity: LoadingManager start
+2024-10-22 18:02:57,097 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-22 18:02:58,417 [ 1] INFO  Unity: 正在加载
+2024-10-22 18:03:01,019 [ 1] INFO  Unity: UserLoginRequest::user :002 psw:123
+2024-10-22 18:03:01,020 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-22 18:03:01,022 [ 1] INFO  Unity: DoConnect
+2024-10-22 18:03:01,023 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-22 18:03:01,025 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-10-18 17:37:12,582 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-10-18 17:37:13,062 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-10-18 17:37:13,066 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-10-18 17:37:13,229 [ 1] WARN  Unity: Asset 'Archer': Transition 'AnyState -> Standby' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+2024-10-22 18:03:01,027 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-22 18:03:01,107 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-10-22 18:03:01,111 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-10-22 18:03:01,278 [ 1] WARN  Unity: Asset 'Archer': Transition 'AnyState -> Standby' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
 
-2024-10-18 17:37:13,238 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-18 17:37:13,255 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,267 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,289 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,300 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,300 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,316 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,317 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,333 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,333 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,350 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,350 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,366 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,367 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,382 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,383 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,399 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,399 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,416 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,416 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,432 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,433 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,449 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,449 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,465 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,466 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,482 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,482 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,499 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,499 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,515 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,516 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,532 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,532 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,548 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,549 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,565 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,565 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,582 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,582 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,598 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,598 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,614 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,615 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,631 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,631 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,648 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,648 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,664 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,665 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,680 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,681 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,697 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,698 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,714 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,714 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,731 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,731 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,747 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,747 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,763 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,764 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,780 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,781 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,797 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,797 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,813 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,814 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,829 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,830 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,846 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,847 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,863 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,864 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,880 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,880 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,896 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,896 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,913 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,913 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,929 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,930 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,946 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,947 [ 1] INFO  Unity: Select Char:[2]002[Archer]
-2024-10-18 17:37:13,949 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,963 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,963 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,979 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,979 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,995 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:13,996 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,012 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,013 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,029 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,029 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,045 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,045 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,061 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,062 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,078 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,079 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,095 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,095 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,112 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,112 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,128 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,128 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,145 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,145 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,161 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,162 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,178 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,178 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,194 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,195 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,211 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,211 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,227 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,228 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,244 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,245 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,261 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,261 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,277 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,277 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,294 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,294 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,311 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,311 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,327 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,327 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,343 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,344 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,360 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,360 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,376 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,377 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,393 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,394 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,410 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,411 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,426 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,443 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,443 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,459 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,460 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,476 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,477 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,492 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,493 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,509 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,509 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,526 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,526 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,543 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,543 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,559 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,559 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,575 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,576 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-10-18 17:37:14,577 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,592 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,592 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,608 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,609 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,625 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,626 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,641 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,642 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,658 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:14,664 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-10-18 17:37:14,665 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-10-18 17:37:14,665 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-10-18 17:37:14,670 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
-2024-10-18 17:37:14,672 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:1
-2024-10-18 17:37:14,673 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-10-18 17:37:14,972 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,180 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,180 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,180 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,181 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,181 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,181 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,182 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,190 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,190 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,212 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,212 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,213 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
-2024-10-18 17:37:15,230 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
-2024-10-18 17:37:15,277 [ 1] WARN  Unity: MainPlayerCamera[-71968] Awake
+2024-10-22 18:03:01,287 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-22 18:03:01,304 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,318 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,335 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,346 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,346 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,347 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,362 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,363 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,379 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,379 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,395 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,396 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,412 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,413 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,429 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,429 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,445 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,446 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,462 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,462 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,478 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,479 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,495 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,495 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,511 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,512 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,528 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,529 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,545 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,545 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,561 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,562 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,578 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,594 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,595 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,611 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,612 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,627 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,628 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,644 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,644 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,660 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,661 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,677 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,678 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,694 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,695 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,710 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,711 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,727 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,727 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,743 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,744 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,760 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,761 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,776 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,777 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,793 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,793 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,810 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,810 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,826 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,827 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,843 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,844 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,859 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,860 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,876 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,877 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,892 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,893 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,909 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,910 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,925 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,926 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,942 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,943 [ 1] INFO  Unity: Select Char:[2]002[Archer]
+2024-10-22 18:03:01,945 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,959 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,959 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,975 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,976 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,992 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:01,993 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,008 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,009 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,025 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,025 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,042 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,042 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,058 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,059 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,075 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,075 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,091 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,092 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,108 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,108 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,124 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,125 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,141 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,142 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,158 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,158 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,174 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,175 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,191 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,191 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,207 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,208 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,223 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,224 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,240 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,241 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,257 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,258 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,274 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,274 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,291 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,291 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,306 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,307 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,323 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,324 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,340 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,340 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,356 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,357 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,373 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,373 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,389 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,390 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,406 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,407 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,423 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,423 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,440 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,440 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,455 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,456 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,472 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,473 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,489 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,490 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,506 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,507 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-10-22 18:03:02,508 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,522 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,522 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,538 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:02,544 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-22 18:03:02,545 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-10-22 18:03:02,546 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-10-22 18:03:02,550 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-22 18:03:02,552 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:12
+2024-10-22 18:03:02,553 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-22 18:03:02,851 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,062 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,062 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,063 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,063 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,063 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,063 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,064 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,074 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,074 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,090 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,090 [ 1] INFO  Unity: There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+2024-10-22 18:03:03,104 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-10-22 18:03:03,153 [ 1] WARN  Unity: MainPlayerCamera[-391542] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-18 17:37:15,278 [ 1] WARN  Unity: GameObjectManager[-70700] Awake
+2024-10-22 18:03:03,154 [ 1] WARN  Unity: GameObjectManager[-390272] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-18 17:37:15,280 [ 1] WARN  Unity: UIMain[59896] Awake
+2024-10-22 18:03:03,156 [ 1] WARN  Unity: UIMain[133616] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-18 17:37:15,282 [ 1] WARN  Unity: UIWorldElementManager[60856] Awake
+2024-10-22 18:03:03,158 [ 1] WARN  Unity: UIWorldElementManager[134584] Awake
 UnityEngine.Debug:LogWarningFormat(String, Object[])
 MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
 
-2024-10-18 17:37:15,300 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-18 17:37:15,324 [ 1] INFO  Unity: Set Channel:Local
-2024-10-18 17:37:23,562 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[出城传入点2:4]
-2024-10-18 17:37:25,981 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[主城->野外:3]
-2024-10-18 17:37:25,981 [ 1] INFO  Unity: MapTeleportRequest: teleporterID: 3
-2024-10-18 17:37:26,014 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:1
-2024-10-18 17:37:26,015 [ 1] INFO  Unity: RemoveCharacter:1
-2024-10-18 17:37:26,017 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
-2024-10-18 17:37:26,017 [ 1] INFO  Unity: AddCharacter:2:002 Map:2 Entity:1
-2024-10-18 17:37:26,022 [ 1] INFO  Unity: LoadLevel: Map01
-2024-10-18 17:37:26,160 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(3076, 3988, 78) DIR:(0, 100, 0) SPD:300 
-2024-10-18 17:37:26,432 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-18 17:37:26,434 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[野外传入点:6]
-2024-10-18 17:37:53,101 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
-2024-10-18 17:37:53,102 [ 1] INFO  Unity: AddCharacter:0:恶鬼 Map:2 Entity:2
-2024-10-18 17:37:53,109 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
-2024-10-18 17:37:53,109 [ 1] INFO  Unity: AddCharacter:0:山丘巨人 Map:2 Entity:3
-2024-10-18 17:37:53,114 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
-2024-10-18 17:37:53,115 [ 1] INFO  Unity: AddCharacter:0:小恶魔 Map:2 Entity:4
-2024-10-18 17:37:53,122 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
-2024-10-18 17:37:53,123 [ 1] INFO  Unity: AddCharacter:0:死神 Map:2 Entity:5
-2024-10-18 17:43:56,156 [ 1] INFO  Unity: BattleManager.SetTarget[4:小恶魔]
-2024-10-18 17:44:17,499 [ 1] INFO  Unity: BattleManager.SetTarget[4:小恶魔]
-2024-10-18 17:44:19,611 [ 1] INFO  Unity: SendSkillCast: skillId:302 casterId:1 targetId:4 position:(0,0,0)
-2024-10-18 17:44:19,678 [ 1] INFO  Unity: OnSkillCast: skillId:302 casterId:1 targetId:4 position:(0,0,0) result:Success
-2024-10-18 17:44:20,703 [ 1] INFO  Unity: SKill[流血箭.UpdateCasting Finish]
-2024-10-18 17:44:21,485 [ 1] INFO  Unity: OnSkillHit: cout:1
-2024-10-18 17:44:21,486 [ 1] INFO  Unity: DoSkillhit: Caster:1 Skill:302 Hit:0 IsBullet:False
-2024-10-18 17:44:21,499 [ 1] INFO  Unity: Skill[流血箭].CastBullet[True] Target:小恶魔
-2024-10-18 17:44:22,297 [ 1] INFO  Unity: OnSkillHit: cout:1
-2024-10-18 17:44:22,297 [ 1] INFO  Unity: DoSkillhit: Caster:1 Skill:302 Hit:0 IsBullet:True
-2024-10-18 17:44:22,298 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:22,298 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:22,299 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Add]
-2024-10-18 17:44:22,299 [ 1] INFO  Unity: Buff[1:流血] OnAdd
-2024-10-18 17:44:22,360 [ 1] INFO  Unity: Skill[流血箭].UpdateSkill Finish
-2024-10-18 17:44:23,189 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:23,189 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:23,190 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:24,199 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:24,200 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:24,200 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:25,210 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:25,210 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:25,211 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:26,204 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:26,205 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:26,205 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:27,215 [ 1] INFO  Unity: OnBuff: cout:2
-2024-10-18 17:44:27,215 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:27,215 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:27,216 [ 1] INFO  Unity:     Buff: ID:[1]  Type:[5]  Action:[Remove]
-2024-10-18 17:44:27,216 [ 1] INFO  Unity: Buff[1:流血] OnRemove
-2024-10-18 17:44:35,737 [ 1] INFO  Unity: SendSkillCast: skillId:302 casterId:1 targetId:4 position:(0,0,0)
-2024-10-18 17:44:35,837 [ 1] INFO  Unity: OnSkillCast: skillId:302 casterId:1 targetId:4 position:(0,0,0) result:Success
-2024-10-18 17:44:36,846 [ 1] INFO  Unity: SKill[流血箭.UpdateCasting Finish]
-2024-10-18 17:44:37,642 [ 1] INFO  Unity: OnSkillHit: cout:1
-2024-10-18 17:44:37,642 [ 1] INFO  Unity: DoSkillhit: Caster:1 Skill:302 Hit:0 IsBullet:False
-2024-10-18 17:44:37,659 [ 1] INFO  Unity: Skill[流血箭].CastBullet[True] Target:小恶魔
-2024-10-18 17:44:38,156 [ 1] INFO  Unity: OnSkillHit: cout:1
-2024-10-18 17:44:38,156 [ 1] INFO  Unity: DoSkillhit: Caster:1 Skill:302 Hit:0 IsBullet:True
-2024-10-18 17:44:38,156 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:38,157 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:38,157 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Add]
-2024-10-18 17:44:38,157 [ 1] INFO  Unity: Buff[2:流血] OnAdd
-2024-10-18 17:44:38,188 [ 1] INFO  Unity: Skill[流血箭].UpdateSkill Finish
-2024-10-18 17:44:39,050 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:39,050 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:39,051 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:39,481 [ 1] INFO  Unity: BattleManager.SetTarget[3:山丘巨人]
-2024-10-18 17:44:40,061 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:40,061 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:40,062 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:41,071 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:41,072 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:41,072 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:42,065 [ 1] INFO  Unity: OnBuff: cout:1
-2024-10-18 17:44:42,066 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:42,066 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:42,115 [ 1] INFO  Unity: BattleManager.SetTarget[4:小恶魔]
-2024-10-18 17:44:43,076 [ 1] INFO  Unity: OnBuff: cout:2
-2024-10-18 17:44:43,076 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Hit]
-2024-10-18 17:44:43,076 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
-2024-10-18 17:44:43,077 [ 1] INFO  Unity:     Buff: ID:[2]  Type:[5]  Action:[Remove]
-2024-10-18 17:44:43,077 [ 1] INFO  Unity: Buff[2:流血] OnRemove
+2024-10-22 18:03:03,177 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-22 18:03:03,201 [ 1] INFO  Unity: Set Channel:Local
+2024-10-22 18:03:10,976 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[出城传入点2:4]
+2024-10-22 18:03:13,394 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[主城->野外:3]
+2024-10-22 18:03:13,395 [ 1] INFO  Unity: MapTeleportRequest: teleporterID: 3
+2024-10-22 18:03:13,428 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:12
+2024-10-22 18:03:13,429 [ 1] INFO  Unity: RemoveCharacter:12
+2024-10-22 18:03:13,430 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:5
+2024-10-22 18:03:13,431 [ 1] INFO  Unity: AddCharacter:2:002 Map:2 Entity:12
+2024-10-22 18:03:13,436 [ 1] INFO  Unity: AddCharacter:0:恶鬼 Map:2 Entity:2
+2024-10-22 18:03:13,443 [ 1] INFO  Unity: AddCharacter:0:山丘巨人 Map:2 Entity:3
+2024-10-22 18:03:13,448 [ 1] INFO  Unity: AddCharacter:0:小恶魔 Map:2 Entity:4
+2024-10-22 18:03:13,456 [ 1] INFO  Unity: AddCharacter:0:死神 Map:2 Entity:5
+2024-10-22 18:03:13,468 [ 1] INFO  Unity: LoadLevel: Map01
+2024-10-22 18:03:13,607 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:12 POS:(3076, 3988, 78) DIR:(0, 100, 0) SPD:300 
+2024-10-22 18:03:13,864 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-22 18:03:13,866 [ 1] INFO  Unity: TeleporterObject: Character [002] Enter Teleporter[野外传入点:6]
+2024-10-22 18:03:16,675 [ 1] INFO  Unity: BattleManager.SetTarget[4:小恶魔]
+2024-10-22 18:03:19,906 [ 1] INFO  Unity: SendSkillCast: skillId:301 casterId:12 targetId:4 position:(0,0,0)
+2024-10-22 18:03:19,939 [ 1] INFO  Unity: OnSkillCast: skillId:301 casterId:12 targetId:4 position:(0,0,0) result:Success
+2024-10-22 18:03:20,653 [ 1] INFO  Unity: OnSkillHit: cout:1
+2024-10-22 18:03:20,654 [ 1] INFO  Unity: DoSkillhit: Caster:12 Skill:301 Hit:0 IsBullet:False
+2024-10-22 18:03:20,667 [ 1] INFO  Unity: AnimationEventController:PlayEffect:Archer : 子弹特效
+2024-10-22 18:03:20,668 [ 1] INFO  Unity: PlayEffect:Character_2_002 : 子弹特效
+2024-10-22 18:03:20,750 [ 1] INFO  Unity: Skill[普通攻击].CastBullet[True] Target:小恶魔
+2024-10-22 18:03:21,347 [ 1] INFO  Unity: OnSkillHit: cout:1
+2024-10-22 18:03:21,348 [ 1] INFO  Unity: DoSkillhit: Caster:12 Skill:301 Hit:0 IsBullet:True
+2024-10-22 18:03:21,349 [ 1] INFO  Unity: DoDamage:小恶魔 DMG:1 CRIT:False
+2024-10-22 18:03:21,495 [ 1] INFO  Unity: Skill[普通攻击].UpdateSkill Finish
+2024-10-22 18:03:22,800 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:12 POS:(4295, 3233, 71) DIR:(79, -60, -10) SPD:0 
+2024-10-22 18:03:22,801 [ 1] INFO  Unity: Character_0_恶鬼 OnDestroy :ID:2 POS:(5887, 1573, 7) DIR:(9, 100, 0) SPD:0 
+2024-10-22 18:03:22,801 [ 1] INFO  Unity: Character_0_山丘巨人 OnDestroy :ID:3 POS:(5540, 1682, 4) DIR:(20, 98, 0) SPD:0 
+2024-10-22 18:03:22,801 [ 1] INFO  Unity: Character_0_小恶魔 OnDestroy :ID:4 POS:(4775, 2865, 14) DIR:(-30, 95, 0) SPD:0 
+2024-10-22 18:03:22,801 [ 1] INFO  Unity: Character_0_死神 OnDestroy :ID:5 POS:(5683, 4173, 0) DIR:(28, -96, 0) SPD:0 
+2024-10-22 18:03:22,802 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-22 18:03:22,802 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:176)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:171)
+
