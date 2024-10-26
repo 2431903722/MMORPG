@@ -14,7 +14,9 @@ namespace GameServer.Battle
         private Creature Owner;
 
         public List<Skill> Skills { get; private set; }
-        public List<NSkillInfo> Infos { get; private set; }
+        public List<NSkillInfo> Infos { get; private set; } 
+
+        public Skill NormalSkill { get; private set; }
 
         public SkillManager(Creature owner)
         {
@@ -48,6 +50,10 @@ namespace GameServer.Battle
                 }
                 this.Infos.Add(info);
                 Skill skill = new Skill(info, this.Owner);
+                if (define.Value.Type == Common.Battle.SkillType.Normal)
+                {
+                    this.NormalSkill = skill;
+                }
                 this.AddSkill(skill);
             }
         }

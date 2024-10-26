@@ -21,6 +21,8 @@ namespace GameServer.Battle
 
         Queue<NSkillCastInfo> Actions = new Queue<NSkillCastInfo>();
 
+        List<NSkillCastInfo> CastSkills = new List<NSkillCastInfo>();
+
         List<NSkillHitInfo> Hits = new List<NSkillHitInfo>();
 
         List<NBuffInfo> BuffActions = new List<NBuffInfo>();
@@ -46,6 +48,7 @@ namespace GameServer.Battle
 
         internal void Update()
         {
+            this.CastSkills.Clear();
             this.Hits.Clear();
             this.BuffActions.Clear();
             if (this.Actions.Count > 0)
@@ -84,18 +87,27 @@ namespace GameServer.Battle
 
             context.Caster.CastSkill(context, cast.skillId);
 
-            NetMessageResponse message = new NetMessageResponse();
-            message.skillCast = new SkillCastResponse();
-            message.skillCast.castInfo = context.CastSkill;
-            message.skillCast.Result = context.Result == SkillResult.Ok ? Result.Success : Result.Failed;
-            message.skillCast.Errormsg = context.Result.ToString();
-            this.Map.BroadcastBattleResponse(message);
+            //NetMessageResponse message = new NetMessageResponse();
+            //message.skillCast = new SkillCastResponse();
+            //message.skillCast.castInfoes = context.CastSkill;
+            //message.skillCast.Result = context.Result == SkillResult.Ok ? Result.Success : Result.Failed;
+            //message.skillCast.Errormsg = context.Result.ToString();
+            //this.Map.BroadcastBattleResponse(message);
         }
 
         private void BroadcastHitsMessage()
         {
-            if (this.Hits.Count == 0 && this.BuffActions.Count == 0) return;
+            if (this.Hits.Count == 0 && this.BuffActions.Count == 0 && this.CastSkills.Count == 0) return;
             NetMessageResponse message = new NetMessageResponse();
+
+            if (this.CastSkills.Count > 0)
+            {
+                message.skillCast = new SkillCastResponse();
+                message.skillCast.castInfoes.AddRange(this.CastSkills);
+                message.skillCast.Result = Result.Success;
+                message.skillCast.Errormsg = "";
+            }
+
             if (this.Hits.Count > 0)
             {
                 message.skllHits = new SkillHitResponse();
@@ -103,6 +115,7 @@ namespace GameServer.Battle
                 message.skllHits.Result = Result.Success;
                 message.skllHits.Errormsg = "";
             }
+
             if (this.BuffActions.Count > 0)
             {
                 message.buffRes = new BuffResponse();
@@ -110,6 +123,7 @@ namespace GameServer.Battle
                 message.buffRes.Result = Result.Success;
                 message.buffRes.Errormsg = "";
             }
+
             this.Map.BroadcastBattleResponse(message);
         }
 
@@ -146,6 +160,11 @@ namespace GameServer.Battle
         internal List<Creature> FindUnitsInMapRange(Vector3Int pos, int range)
         {
             return EntityManager.Instance.GetMapEntitiesInRange<Creature>(this.Map.ID, pos, range);
+        }
+
+        public void AddCastSkillInfo(NSkillCastInfo cast)
+        {
+            this.CastSkills.Add(cast);
         }
 
         public void AddHitInfo(NSkillHitInfo hit)

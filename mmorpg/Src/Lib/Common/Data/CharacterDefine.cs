@@ -87,5 +87,7 @@ namespace Common.Data
         /// 暴击概率
         /// </summary>
         public float CRI { get; set; }
+
+        public string AI { get; set; }
     }
 }

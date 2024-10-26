@@ -31,8 +31,13 @@ namespace Battle
             if (this.flyTime > duration)
             {
                 this.skill.DoHitDamages(this.hit);
-                this.Stoped = true;
+                this.Stop();
             }
+        }
+
+        void Stop()
+        {
+            this.Stoped = true;
         }
     }
 }

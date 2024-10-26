@@ -58,9 +58,11 @@ namespace Common.Battle
 
     public enum SkillType
     {
+        All = -1,
         None = 0,
         Normal = 1,
-        Skill = 2
+        Skill = 2,
+        Passive = 4,
     }
 
     public enum TargetType
@@ -83,5 +85,12 @@ namespace Common.Battle
         None = 0,
         SkillCast = 1, // 技能释放
         SkillHit = 2, // 技能命中
+    }
+
+    public enum BattleState
+    {
+        None,
+        Idle,
+        InBattle,
     }
 }
