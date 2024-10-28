@@ -38,5 +38,13 @@
     "Resource": "Map03",
     "MiniMap": "luoriyuhui",
     "Music": "bgm-map02"
+  },
+  "5": {
+    "ID": 5,
+    "Name": "竞技场",
+    "Type": "Arena",
+    "SubType": "Arena",
+    "Resource": "Arena",
+    "Music": "bgm-town"
   }
 }

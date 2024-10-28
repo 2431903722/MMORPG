@@ -2,45 +2,155 @@
   "1": {
     "ID": 1,
     "Name": "主城->野外",
+    "MapID": 1,
     "LinkTo": 6,
-    "MapID": 1
+    "Descript": null,
+    "Position": {
+      "X": 696,
+      "Y": 2604,
+      "Z": 1038
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "2": {
     "ID": 2,
     "Name": "出城传入点2",
-    "MapID": 1
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 1547,
+      "Y": 2582,
+      "Z": 830
+    },
+    "Direction": {
+      "X": 100,
+      "Y": 0,
+      "Z": 0
+    }
   },
   "3": {
     "ID": 3,
     "Name": "主城->野外",
+    "MapID": 1,
     "LinkTo": 6,
-    "MapID": 1
+    "Descript": null,
+    "Position": {
+      "X": 7318,
+      "Y": 2604,
+      "Z": 1038
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "4": {
     "ID": 4,
     "Name": "出城传入点2",
-    "MapID": 1
+    "MapID": 1,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 6710,
+      "Y": 2582,
+      "Z": 811
+    },
+    "Direction": {
+      "X": -100,
+      "Y": 0,
+      "Z": 0
+    }
   },
   "5": {
     "ID": 5,
     "Name": "野外->主城",
+    "MapID": 2,
     "LinkTo": 3,
-    "MapID": 2
+    "Descript": null,
+    "Position": {
+      "X": 2288,
+      "Y": 3988,
+      "Z": 265
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "6": {
     "ID": 6,
     "Name": "野外传入点",
-    "MapID": 2
+    "MapID": 2,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 3076,
+      "Y": 3988,
+      "Z": 78
+    },
+    "Direction": {
+      "X": 0,
+      "Y": 100,
+      "Z": 0
+    }
   },
   "7": {
     "ID": 7,
     "Name": "副本->主城",
+    "MapID": 4,
     "LinkTo": 4,
-    "MapID": 4
+    "Descript": null,
+    "Position": null,
+    "Direction": null
   },
   "8": {
     "ID": 8,
     "Name": "副本传入点",
-    "MapID": 4
+    "MapID": 4,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": null,
+    "Direction": null
+  },
+  "9": {
+    "ID": 9,
+    "Name": "竞技场复活点A",
+    "MapID": 5,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": 2400,
+      "Y": 0,
+      "Z": 2650
+    },
+    "Direction": {
+      "X": -100,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "10": {
+    "ID": 10,
+    "Name": "竞技场复活点B",
+    "MapID": 5,
+    "LinkTo": 0,
+    "Descript": null,
+    "Position": {
+      "X": -2400,
+      "Y": 0,
+      "Z": 2650
+    },
+    "Direction": {
+      "X": -100,
+      "Y": 0,
+      "Z": 0
+    }
   }
 }

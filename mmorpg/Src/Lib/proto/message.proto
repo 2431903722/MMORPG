@@ -243,6 +243,9 @@ message NetMessageRequest{
 	ChatRequest chat = 30;
 
 	SkillCastRequest skillCast = 50;
+
+	ArenaChallengRequest arenaChallengeReq = 60;
+	ArenaChallengeResponse arenaChallengeRes = 61;
 }
 
 message NetMessageResponse{
@@ -287,6 +290,11 @@ message NetMessageResponse{
 	SkillCastResponse skillCast = 50;
 	SkillHitResponse skllHits = 51;
 	BuffResponse buffRes = 52;
+
+	ArenaChallengRequest arenaChallengeReq = 60;
+	ArenaChallengeResponse arenaChallengeRes = 61;
+	ArenaBeginResponse arenaBegin = 62;
+	ArenaEndResponse arenaEnd = 63;
 
 	StatusNotify statusNotify = 100;
 	
@@ -855,4 +863,49 @@ message BuffResponse
 	RESULT result = 1;
 	string errormsg = 2;
 	repeated NBuffInfo buffs = 3;
+}
+
+// Arena
+
+message ArenaPlayer
+{
+	int32 entity_id = 1;
+	string name = 2;
+	int32 score = 3;
+	int32 rank = 4;
+}
+
+message ArenaInfo
+{
+	int32 arena_id = 1;
+	ArenaPlayer red = 2;
+	ArenaPlayer blue = 3;
+}
+
+message ArenaChallengRequest
+{
+	ArenaInfo arena_info = 1;
+}
+
+message ArenaChallengeResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	ArenaInfo arena_info = 3;
+}
+
+// 竞技场开始
+message ArenaBeginResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	ArenaInfo arena_info = 3;
+}
+
+// 竞技场结束
+message ArenaEndResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	ArenaInfo arena_info = 3;
 }

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/CharSelect.unity
     guid: dadc8672854436d4db426429a7f18603
+  - enabled: 1
+    path: Assets/Levels/Arena.unity
+    guid: c8d23bf9e5bb3e44484144d2516d4c9f
   m_configObjects: {}

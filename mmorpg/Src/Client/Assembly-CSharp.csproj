@@ -141,6 +141,7 @@
      <Compile Include="Assets\Scripts\Models\User.cs" />
      <Compile Include="Assets\Scripts\Network\NetClient.cs" />
      <Compile Include="Assets\Scripts\Scene\SceneManager.cs" />
+     <Compile Include="Assets\Scripts\Services\ArenaService.cs" />
      <Compile Include="Assets\Scripts\Services\BattleService.cs" />
      <Compile Include="Assets\Scripts\Services\ChatService.cs" />
      <Compile Include="Assets\Scripts\Services\FriendService.cs" />

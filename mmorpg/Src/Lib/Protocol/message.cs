@@ -371,6 +371,12 @@ namespace SkillBridge.Message
         [global::ProtoBuf.ProtoMember(50)]
         public SkillCastRequest skillCast { get; set; }
 
+        [global::ProtoBuf.ProtoMember(60)]
+        public ArenaChallengRequest arenaChallengeReq { get; set; }
+
+        [global::ProtoBuf.ProtoMember(61)]
+        public ArenaChallengeResponse arenaChallengeRes { get; set; }
+
     }
 
     [global::ProtoBuf.ProtoContract()]
@@ -475,6 +481,18 @@ namespace SkillBridge.Message
 
         [global::ProtoBuf.ProtoMember(52)]
         public BuffResponse buffRes { get; set; }
+
+        [global::ProtoBuf.ProtoMember(60)]
+        public ArenaChallengRequest arenaChallengeReq { get; set; }
+
+        [global::ProtoBuf.ProtoMember(61)]
+        public ArenaChallengeResponse arenaChallengeRes { get; set; }
+
+        [global::ProtoBuf.ProtoMember(62)]
+        public ArenaBeginResponse arenaBegin { get; set; }
+
+        [global::ProtoBuf.ProtoMember(63)]
+        public ArenaEndResponse arenaEnd { get; set; }
 
         [global::ProtoBuf.ProtoMember(100)]
         public StatusNotify statusNotify { get; set; }
@@ -1721,6 +1739,115 @@ namespace SkillBridge.Message
 
         [global::ProtoBuf.ProtoMember(3, Name = @"buffs")]
         public global::System.Collections.Generic.List<NBuffInfo> Buffs { get; } = new global::System.Collections.Generic.List<NBuffInfo>();
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaPlayer : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"entity_id")]
+        public int EntityId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"name")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Name { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"score")]
+        public int Score { get; set; }
+
+        [global::ProtoBuf.ProtoMember(4, Name = @"rank")]
+        public int Rank { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaInfo : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"arena_id")]
+        public int ArenaId { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"red")]
+        public ArenaPlayer Red { get; set; }
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"blue")]
+        public ArenaPlayer Blue { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaChallengRequest : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"arena_info")]
+        public ArenaInfo ArenaInfo { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaChallengeResponse : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"result")]
+        public Result Result { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"errormsg")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Errormsg { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"arena_info")]
+        public ArenaInfo ArenaInfo { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaBeginResponse : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"result")]
+        public Result Result { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"errormsg")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Errormsg { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"arena_info")]
+        public ArenaInfo ArenaInfo { get; set; }
+
+    }
+
+    [global::ProtoBuf.ProtoContract()]
+    public partial class ArenaEndResponse : global::ProtoBuf.IExtensible
+    {
+        private global::ProtoBuf.IExtension __pbn__extensionData;
+        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+
+        [global::ProtoBuf.ProtoMember(1, Name = @"result")]
+        public Result Result { get; set; }
+
+        [global::ProtoBuf.ProtoMember(2, Name = @"errormsg")]
+        [global::System.ComponentModel.DefaultValue("")]
+        public string Errormsg { get; set; } = "";
+
+        [global::ProtoBuf.ProtoMember(3, Name = @"arena_info")]
+        public ArenaInfo ArenaInfo { get; set; }
 
     }
 

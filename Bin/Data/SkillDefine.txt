@@ -7,12 +7,15 @@
       "Type": "Normal",
       "UnlockLevel": 1,
       "CastTarget": "Target",
-      "CastRange": 200.0,
+      "CastRange": 200,
       "CastTime": 0.0,
       "CD": 3.0,
       "MPCost": 0,
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
       "AP": 0.0,
       "ADFator": 1.0
     },
@@ -24,7 +27,7 @@
       "Type": "Skill",
       "UnlockLevel": 5,
       "CastTarget": "Target",
-      "CastRange": 1200.0,
+      "CastRange": 1200,
       "CastTime": 0.0,
       "CD": 8.0,
       "MPCost": 10,
@@ -46,11 +49,11 @@
       "Type": "Skill",
       "UnlockLevel": 10,
       "CastTarget": "None",
-      "CastRange": 0.0,
+      "CastRange": 0,
       "CastTime": 0.0,
       "CD": 7.0,
       "MPCost": 20,
-      "AOERange": 200,
+      "AOERange": 300,
       "SkillAnim": "SkillB",
       "Duration": 3.5,
       "Interval ": 0.8,
@@ -69,12 +72,15 @@
       "Type": "Skill",
       "UnlockLevel": 15,
       "CastTarget": "Target",
-      "CastRange": 1000.0,
+      "CastRange": 1000,
       "CastTime": 0.0,
       "CD": 12.0,
       "MPCost": 15,
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.9
+      ],
       "AD": 100.0,
       "AP": 0.0,
       "ADFator": 0.2
@@ -88,14 +94,17 @@
       "Type": "Normal",
       "UnlockLevel": 1,
       "CastTarget": "Target",
-      "CastRange": 1000.0,
+      "CastRange": 1000,
       "CastTime": 0.0,
       "CD": 3.0,
       "MPCost": 0,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
       "APFator": 1.0
     },
     "202": {
@@ -106,12 +115,17 @@
       "Type": "Skill",
       "UnlockLevel": 5,
       "CastTarget": "Target",
-      "CastRange": 1000.0,
-      "CastTime": 1.0,
+      "CastRange": 1000,
+      "CastTime": 0.0,
       "CD": 3.0,
       "MPCost": 20,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
       "AOERange": 0,
       "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.6
+      ],
       "AD": 0.0,
       "AP": 80.0,
       "APFator": 0.125
@@ -124,11 +138,11 @@
       "Type": "Skill",
       "UnlockLevel": 10,
       "CastTarget": "Position",
-      "CastRange": 1200.0,
+      "CastRange": 1200,
       "CastTime": 1.2,
       "CD": 12.0,
       "MPCost": 30,
-      "AOERange": 300,
+      "AOERange": 500,
       "SkillAnim": "SkillB",
       "Duration": 3.5,
       "Interval ": 0.8,
@@ -144,12 +158,15 @@
       "Type": "Skill",
       "UnlockLevel": 15,
       "CastTarget": "Target",
-      "CastRange": 800.0,
+      "CastRange": 800,
       "CastTime": 0.0,
       "CD": 7.0,
       "MPCost": 25,
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.8
+      ],
       "Buff": [
         4
       ],
@@ -166,14 +183,19 @@
       "Type": "Normal",
       "UnlockLevel": 1,
       "CastTarget": "Target",
-      "CastRange": 1000.0,
+      "CastRange": 1000,
       "CastTime": 0.0,
       "CD": 3.0,
       "MPCost": 0,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "Attack",
+      "HitTimes": [
+        0.8
+      ],
+      "HitEffect": "FX_Hit_1",
       "ADFator": 1.0
     },
     "302": {
@@ -184,12 +206,18 @@
       "Type": "Skill",
       "UnlockLevel": 5,
       "CastTarget": "Target",
-      "CastRange": 1000.0,
-      "CastTime": 1.0,
+      "CastRange": 1000,
+      "CastTime": 0.5,
       "CD": 8.0,
       "MPCost": 15,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
       "Buff": [
         5
       ],
@@ -205,12 +233,16 @@
       "Type": "Skill",
       "UnlockLevel": 10,
       "CastTarget": "Position",
-      "CastRange": 1200.0,
+      "CastRange": 1200,
       "CastTime": 1.2,
       "CD": 7.0,
       "MPCost": 25,
-      "AOERange": 300,
+      "AOERange": 500,
+      "AOEEffect": "FX_AOE_01",
       "SkillAnim": "SkillB",
+      "HitTimes": [
+        0.8
+      ],
       "Buff": [
         6
       ],
@@ -226,17 +258,238 @@
       "Type": "Skill",
       "UnlockLevel": 15,
       "CastTarget": "Target",
-      "CastRange": 800.0,
-      "CastTime": 1.5,
+      "CastRange": 800,
+      "CastTime": 0.5,
       "CD": 12.0,
       "MPCost": 20,
       "Bullet": true,
-      "BulletSpeed": 1000.0,
+      "BulletSpeed": 800.0,
+      "BulletResource": "BulletFX",
       "AOERange": 0,
       "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.6,
+        1.25,
+        2.0
+      ],
       "AD": 70.0,
       "AP": 0.0,
       "ADFator": 0.2
+    }
+  },
+  "1001": {
+    "10011": {
+      "ID": 10011,
+      "Name": "普通攻击",
+      "Description": "恶鬼横向挥动手中的斧子进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 200,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 1.0
+    },
+    "10012": {
+      "ID": 10012,
+      "Name": "旋风横扫",
+      "Description": "恶鬼360度横向挥动斧子，对周围的敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 200,
+      "CD": 6.0,
+      "AOERange": 300,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1002": {
+    "10021": {
+      "ID": 10021,
+      "Name": "拳击挥打",
+      "Description": "石头人向敌人挥动右拳进行攻击然后马上用继续挥动左掌进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 300,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.6,
+        1.0
+      ],
+      "ADFator": 1.0
+    },
+    "10022": {
+      "ID": 10022,
+      "Name": "大地震击",
+      "Description": "石头人高举双手锤向地面，对周围8码内敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 300,
+      "CD": 4.0,
+      "AOERange": 800,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.52
+      ],
+      "ADFator": 2.0
+    },
+    "10023": {
+      "ID": 10023,
+      "Name": "重击",
+      "Description": "石头人挥动右手重重砸下目标使目标受到巨额伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 300,
+      "CD": 7.0,
+      "SkillAnim": "SkillB",
+      "HitTimes": [
+        0.6
+      ],
+      "ADFator": 3.0
+    }
+  },
+  "1003": {
+    "10031": {
+      "ID": 10031,
+      "Name": "叉击",
+      "Description": "小恶魔挥动手中的三头叉对敌人进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 1.0
+    },
+    "10032": {
+      "ID": 10032,
+      "Name": "旋转叉击",
+      "Description": "小恶魔旋转一圈以获得巨大的冲力并向前刺出三头叉对敌人进行攻击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 6.0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.6
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1004": {
+    "10041": {
+      "ID": 10041,
+      "Name": "挥砍",
+      "Description": "骷髅兵挥动手中的短剑对敌人进行攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.5
+      ],
+      "ADFator": 1.0
+    },
+    "10042": {
+      "ID": 10042,
+      "Name": "重砍",
+      "Description": "骷髅兵高高举起手中的短剑，对敌人进行蓄力一击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 150,
+      "CD": 6.0,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        1.5
+      ],
+      "ADFator": 2.0
+    }
+  },
+  "1005": {
+    "10051": {
+      "ID": 10051,
+      "Name": "挥击",
+      "Description": "死神挥动右爪，向敌人发起攻击",
+      "Type": "Normal",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 200,
+      "CD": 3.0,
+      "SkillAnim": "Attack",
+      "HitTimes": [
+        0.4
+      ],
+      "ADFator": 1.0,
+      "APFator": 1.0
+    },
+    "10052": {
+      "ID": 10052,
+      "Name": "死亡尖叫",
+      "Description": "死神发出恐怖的尖叫，对周围8码内敌人造成一次AOE伤害",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "None",
+      "CastRange": 600,
+      "CD": 10.0,
+      "AOERange": 800,
+      "SkillAnim": "SkillA",
+      "HitTimes": [
+        0.3
+      ],
+      "ADFator": 2.0,
+      "APFator": 2.0
+    },
+    "10053": {
+      "ID": 10053,
+      "Name": "鬼影背刺",
+      "Description": "死神突然消失，随机选中一个敌人并出现在它身后发起致命一击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1000,
+      "CD": 15.0,
+      "SkillAnim": "SkillB",
+      "HitTimes": [
+        1.0
+      ],
+      "ADFator": 2.0,
+      "APFator": 2.0
+    },
+    "10054": {
+      "ID": 10054,
+      "Name": "死亡飞弹",
+      "Description": "死神右爪聚集大量死气，形成死亡飞弹，并将飞弹砸向敌人进行攻击",
+      "Type": "Skill",
+      "UnlockLevel": 1,
+      "CastTarget": "Target",
+      "CastRange": 1200,
+      "CD": 20.0,
+      "Bullet": true,
+      "BulletSpeed": 800.0,
+      "SkillAnim": "SkillC",
+      "HitTimes": [
+        0.7
+      ],
+      "ADFator": 3.0,
+      "APFator": 3.0
     }
   }
 }
