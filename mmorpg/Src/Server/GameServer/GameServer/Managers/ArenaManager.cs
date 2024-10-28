@@ -1,4 +1,5 @@
 ﻿using Common;
+using GameServer.Models;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -16,24 +17,24 @@ namespace GameServer.Managers
 
         Queue<int> InstanceIndexes = new Queue<int>();
 
-        //Dictionary<int, Arena> Arenas = new Dictionary<int, Arena>();
+        Dictionary<int, Arena> Arenas = new Dictionary<int, Arena>();
 
         public void Init()
         {
-            //for (int i = 0; i < MaxInstance; i++)
-            //{
-            //    InstanceIndexes.Enqueue(i);
-            //}
+            for (int i = 0; i < MaxInstance; i++)
+            {
+                InstanceIndexes.Enqueue(i);
+            }
         }
 
-        //public Arena NewArena(ArenaInfo info, NetConnection<NetSession> red, NetConnection<NetSession> blue)
-        //{
-        //    var instance = InstanceIndexes.Dequeue();
-        //    var map = MapManager.Instance.GetInstance(ArenaMapId, instance);
-        //    Arena arena = new Arena(map, info, red, blue);
-        //    this.Arenas[instance] = arena;
-        //    arena.PlayerEnter();
-        //    return arena;
-        //}
+        public Arena NewArena(ArenaInfo info, NetConnection<NetSession> red, NetConnection<NetSession> blue)
+        {
+            var instance = InstanceIndexes.Dequeue();
+            var map = MapManager.Instance.GetInstance(ArenaMapId, instance);
+            Arena arena = new Arena(map, info, red, blue);
+            this.Arenas[instance] = arena;
+            arena.PlayerEnter();
+            return arena;
+        }
     }
 }

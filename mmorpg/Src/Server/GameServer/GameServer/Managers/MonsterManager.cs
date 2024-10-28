@@ -22,7 +22,7 @@ namespace GameServer.Managers
         internal Monster Create(int spwnMonID, int spawnLevel, NVector3 position, NVector3 direction)
         {
             Monster monster = new Monster(spwnMonID, spawnLevel, position, direction);
-            EntityManager.Instance.AddEntity(this.Map.ID, monster);
+            EntityManager.Instance.AddEntity(this.Map.ID, this.Map.InstanceId, monster);
             monster.Id = monster.entityId;
             monster.Info.EntityId = monster.entityId;
             monster.Info.mapId = this.Map.ID;

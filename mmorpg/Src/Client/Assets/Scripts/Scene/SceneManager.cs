@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,6 +7,7 @@ using UnityEngine.Events;
 public class SceneManager : MonoSingleton<SceneManager> 
 {
     UnityAction<float> onProgress = null; // 通知进度事件
+    internal Action onSceneLoadDone;
 
     protected override void OnStart()
     {
@@ -40,6 +42,8 @@ public class SceneManager : MonoSingleton<SceneManager>
     {
         if (onProgress != null)
             onProgress(1f);
+        if (onSceneLoadDone != null)
+            onSceneLoadDone();
         Debug.Log("LevelLoadCompleted:" + obj.progress);
     }
 }

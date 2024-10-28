@@ -26,43 +26,57 @@ public class PlayerInputController : MonoBehaviour {
     public bool onAir = false;
 
     private NavMeshAgent agent;
+
     private bool autoNav = false;
+
+    public bool enableRigidbody
+    {
+        get { return !this.rb.isKinematic; }
+        set
+        {
+            this.rb.isKinematic = !value;
+            this.rb.detectCollisions = value;
+        }
+    }
 
     // Use this for initialization
     void Start () {
         state = CharacterState.Idle;
-        if (this.character == null)
-        {
-            DataManager.Instance.Load();
-            NCharacterInfo cinfo = new NCharacterInfo();
-            cinfo.Id = 1;
-            cinfo.Name = "Test";
-            cinfo.ConfigId = 1;
-            cinfo.Entity = new NEntity();
-            cinfo.Entity.Position = new NVector3();
-            cinfo.Entity.Direction = new NVector3();
-            cinfo.Entity.Direction.X = 0;
-            cinfo.Entity.Direction.Y = 100;
-            cinfo.Entity.Direction.Z = 0;
-            cinfo.attrDynamic = new NAttributeDynamic();
-            this.character = new Character(cinfo);
+        //if (this.character == null)
+        //{
+        //    DataManager.Instance.Load();
+        //    NCharacterInfo cinfo = new NCharacterInfo();
+        //    cinfo.Id = 1;
+        //    cinfo.Name = "Test";
+        //    cinfo.ConfigId = 1;
+        //    cinfo.Entity = new NEntity();
+        //    cinfo.Entity.Position = new NVector3();
+        //    cinfo.Entity.Direction = new NVector3();
+        //    cinfo.Entity.Direction.X = 0;
+        //    cinfo.Entity.Direction.Y = 100;
+        //    cinfo.Entity.Direction.Z = 0;
+        //    cinfo.attrDynamic = new NAttributeDynamic();
+        //    this.character = new Character(cinfo);
 
-            if (entityController != null) entityController.entity = this.character;
+        //    if (entityController != null) entityController.entity = this.character;
+        //}
+
+        if (agent == null)
+        {
+            agent = this.gameObject.AddComponent<NavMeshAgent>();
+            agent.stoppingDistance = 4f;
+            agent.updatePosition = false;
         }
     }
 
     public void StartNav(Vector3 target)
     {
-        if (agent == null)
-        {
-            agent = this.gameObject.AddComponent<NavMeshAgent>();
-            agent.stoppingDistance = 4f;
-        }
         StartCoroutine(BeginNav(target));
     }
 
     IEnumerator BeginNav(Vector3 target)
     {
+        agent.updatePosition = true;
         agent.SetDestination(target);
         yield return null;
         autoNav = true;
@@ -86,6 +100,7 @@ public class PlayerInputController : MonoBehaviour {
             this.character.Stop();
             this.SendEntityEvent(EntityEvent.Idle);
         }
+        agent.updatePosition = false;
         NavPathRenderer.Instance.SetPath(null, Vector3.zero);
     }
 
@@ -118,10 +133,24 @@ public class PlayerInputController : MonoBehaviour {
         }
     }
 
+    public void OnLeaveLevel()
+    {
+        this.enableRigidbody = false;
+        this.rb.velocity = Vector3.zero;
+    }
+
+    public void OnEnterLevel()
+    {
+        this.rb.velocity = Vector3.zero;
+        this.entityController.UpdateTransform();
+        this.lastPos = this.rb.transform.position;
+        this.enableRigidbody = true;
+    }
+
     void FixedUpdate()
     {
         // 判断是否有实际角色绑定
-        if (character == null)
+        if (character == null || !character.ready)
             return;
 
         if (autoNav)
@@ -194,6 +223,8 @@ public class PlayerInputController : MonoBehaviour {
     // 每帧结束后重新更新位置
     private void LateUpdate()
     {
+        if (this.character == null || !character.ready) return;
+
         Vector3 offset = this.rb.transform.position - lastPos;
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         //Debug.LogFormat("LateUpdate velocity {0} : {1}", this.rb.velocity.magnitude, this.speed);

@@ -1,12 +1,65 @@
-2024-10-28 12:26:42,850 [ 1] INFO  Unity: LoadingManager start
-2024-10-28 12:26:46,081 [ 1] INFO  Unity: DataManager > DataManager()
-2024-10-28 12:26:46,156 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{JsonReaderException: Input string '200.0' is not a valid integer. Path '1.101.CastRange', line 10, position 24., Newtonsoft.Json.JsonTextReader.ParseNumber (ReadType readType)
-Newtonsoft.Json.JsonTextReader.ReadNumberValue (ReadType readType)
-Newtonsoft.Json.JsonTextReader.ReadAsInt32 ()
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, Boolean hasConverter)
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id)
-}</args></log4net.Error>
-2024-10-28 12:26:49,550 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-10-28 12:26:49,550 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-28 16:52:16,968 [ 1] INFO  Unity: LoadingManager start
+2024-10-28 16:52:20,174 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-28 16:52:21,506 [ 1] INFO  Unity: 正在加载
+2024-10-28 16:52:25,344 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-10-28 16:52:25,344 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-28 16:52:25,345 [ 1] INFO  Unity: DoConnect
+2024-10-28 16:52:25,346 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-28 16:52:25,346 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
+2024-10-28 16:52:25,348 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-28 16:52:25,409 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-10-28 16:52:25,412 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-10-28 16:52:25,577 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-28 16:52:25,578 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+
+2024-10-28 16:52:26,557 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
+2024-10-28 16:52:26,560 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+
+2024-10-28 16:52:27,174 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-10-28 16:52:27,210 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-28 16:52:27,211 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-10-28 16:52:27,211 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-10-28 16:52:27,211 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2024-10-28 16:52:27,211 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2024-10-28 16:52:27,214 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-28 16:52:27,216 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:10
+2024-10-28 16:52:27,217 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-28 16:52:27,751 [ 1] WARN  Unity: MainPlayerCamera[22354] Awake
+
+2024-10-28 16:52:27,751 [ 1] WARN  Unity: UIMain[22400] Awake
+
+2024-10-28 16:52:27,752 [ 1] WARN  Unity: GameObjectManager[22524] Awake
+
+2024-10-28 16:52:27,754 [ 1] WARN  Unity: UIWorldElementManager[22546] Awake
+
+2024-10-28 16:52:27,756 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-28 16:52:27,778 [ 1] INFO  Unity: Set Channel:Local
+2024-10-28 16:52:32,291 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-28 16:52:32,291 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:11
+2024-10-28 16:52:32,293 [ 1] INFO  Unity: OnFriendList
+2024-10-28 16:52:41,175 [ 1] INFO  Unity: SendArenaChallengeRequest
+2024-10-28 16:52:42,374 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:10
+2024-10-28 16:52:42,374 [ 1] INFO  Unity: RemoveCharacter:10
+2024-10-28 16:52:42,375 [ 1] INFO  Unity: RemoveCharacter:11
+2024-10-28 16:52:42,375 [ 1] INFO  Unity: OnFriendList
+2024-10-28 16:52:42,375 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:2
+2024-10-28 16:52:42,375 [ 1] INFO  Unity: AddCharacter:1:001 Map:5 Entity:10
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: LoadLevel: Arena
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:11
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: OnFriendList
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:1
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:11
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: OnFriendList
+2024-10-28 16:52:42,376 [ 1] INFO  Unity: OnArenaBegin
+2024-10-28 16:52:42,377 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:10 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-10-28 16:52:42,377 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:11 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-10-28 16:52:42,631 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-28 16:53:33,071 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:11
+2024-10-28 16:53:33,071 [ 1] INFO  Unity: RemoveCharacter:11
+2024-10-28 16:53:33,071 [ 1] INFO  Unity: OnFriendList
+2024-10-28 16:53:33,072 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:11 POS:(-2400, 0, 2650) DIR:(-100, 0, 0) SPD:0 
+2024-10-28 16:53:34,395 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-28 16:53:34,395 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+
+2024-10-28 16:53:34,395 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:10 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 

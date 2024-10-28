@@ -1,16 +1,65 @@
-2024-09-17 19:40:38,469 [ 1] INFO  Unity: LoadingManager start
-2024-09-17 19:40:41,705 [ 1] INFO  Unity: DataManager > DataManager()
-2024-09-17 19:40:41,770 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{IsolatedStorageException: Could not find file "E:\Project\MMO\Bin\Data\RideDefine.txt"., System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean anonymous, FileOptions options)
-System.IO.FileStream..ctor (System.String path, FileMode mode, FileAccess access, FileShare share)
-System.IO.File.OpenRead (System.String path)
-System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
-System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding)
-System.IO.File.ReadAllText (System.String path, System.Text.Encoding encoding)
-System.IO.File.ReadAllText (System.String path)
-DataManager+<LoadData>c__Iterator0.MoveNext ()
-UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress)
-}</args></log4net.Error>
-2024-09-17 19:41:11,198 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-09-17 19:41:11,199 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-28 12:27:25,687 [ 1] INFO  Unity: LoadingManager start
+2024-10-28 12:27:28,930 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-28 12:27:30,229 [ 1] INFO  Unity: 正在加载
+2024-10-28 12:27:33,983 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-10-28 12:27:33,983 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-28 12:27:33,984 [ 1] INFO  Unity: DoConnect
+2024-10-28 12:27:33,984 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-28 12:27:33,985 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-10-28 12:27:33,987 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-28 12:27:34,499 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-10-28 12:27:34,502 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-10-28 12:27:34,700 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-28 12:27:35,447 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
+2024-10-28 12:27:36,180 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-10-28 12:27:36,266 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-28 12:27:36,266 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-10-28 12:27:36,266 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-10-28 12:27:36,266 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2024-10-28 12:27:36,266 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2024-10-28 12:27:36,269 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-28 12:27:36,270 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:1
+2024-10-28 12:27:36,271 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-28 12:27:36,774 [ 1] INFO  Unity: Archer OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-10-28 12:27:36,775 [ 1] INFO  Unity: Warrior OnDestroy :ID:0 POS:(0, 0, 0) DIR:(0, 100, 0) SPD:0 
+2024-10-28 12:27:36,793 [ 1] WARN  Unity: MainPlayerCamera[22354] Awake
+
+2024-10-28 12:27:36,793 [ 1] WARN  Unity: UIMain[22400] Awake
+
+2024-10-28 12:27:36,794 [ 1] WARN  Unity: GameObjectManager[22524] Awake
+
+2024-10-28 12:27:36,796 [ 1] WARN  Unity: UIWorldElementManager[22546] Awake
+
+2024-10-28 12:27:36,798 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-28 12:27:36,852 [ 1] INFO  Unity: Set Channel:Local
+2024-10-28 12:27:57,129 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2024-10-28 12:27:57,129 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:2
+2024-10-28 12:27:59,647 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(98, -18, 0) SPD:0
+2024-10-28 12:27:59,746 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(94, -35, 0) SPD:0
+2024-10-28 12:27:59,829 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(86, -51, 0) SPD:0
+2024-10-28 12:27:59,929 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(74, -68, 0) SPD:0
+2024-10-28 12:27:59,996 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(61, -79, 0) SPD:0
+2024-10-28 12:28:00,096 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(46, -89, 0) SPD:0
+2024-10-28 12:28:00,179 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(27, -96, 0) SPD:0
+2024-10-28 12:28:00,279 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(8, -100, 0) SPD:300
+2024-10-28 12:28:00,312 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 4000, 820) DIR:(8, -100, 0) SPD:300
+2024-10-28 12:28:00,428 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(5000, 3955, 820) DIR:(-10, -100, 0) SPD:300
+2024-10-28 12:28:01,463 [ 1] INFO  Unity: OnEntityChanger: ID:2 POS:(4939, 3650, 820) DIR:(-10, -100, 0) SPD:0
+2024-10-28 12:30:56,626 [ 1] INFO  Unity: SendFriendAdd
+2024-10-28 12:30:56,791 [ 1] INFO  Unity: OnFriendList
+2024-10-28 12:31:10,657 [ 1] INFO  Unity: OnArenaChallengeRequest
+2024-10-28 12:31:17,558 [ 1] INFO  Unity: SendArenaChallengeResponse
+2024-10-28 12:31:34,055 [ 1] INFO  Unity: OnFriendList
+2024-10-28 12:31:34,055 [ 1] INFO  Unity: OnArenaChallengeRequest
+2024-10-28 12:31:37,006 [ 1] INFO  Unity: SendArenaChallengeResponse
+2024-10-28 12:31:37,039 [ 1] INFO  Unity: OnFriendList
+2024-10-28 12:31:37,039 [ 1] INFO  Unity: OnArenaBegin
+2024-10-28 12:32:23,389 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
+2024-10-28 12:32:23,389 [ 1] INFO  Unity: RemoveCharacter:2
+2024-10-28 12:32:23,389 [ 1] INFO  Unity: OnFriendList
+2024-10-28 12:32:23,390 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:2 POS:(4939, 3650, 820) DIR:(-10, -100, 0) SPD:0 
+2024-10-28 12:32:25,088 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:1 POS:(5336, 3024, 820) DIR:(68, -73, 0) SPD:0 
+2024-10-28 12:32:25,089 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-28 12:32:25,089 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 

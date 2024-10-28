@@ -33,6 +33,8 @@ namespace GameServer.Models
         {
             get { return this.Define.ID; }
         }
+
+        public int InstanceId { get; set; }
         internal MapDefine Define;
 
         /// <summary>
@@ -49,9 +51,10 @@ namespace GameServer.Models
 
         public MonsterManager MonsterManager = new MonsterManager();
 
-        internal Map(MapDefine define)
+        internal Map(MapDefine define, int instanceId)
         {
             this.Define = define;
+            this.InstanceId = instanceId;
             this.SpawnManager.Init(this);
             this.MonsterManager.Init(this);
             this.Battle = new Battle.Battle(this);
@@ -71,8 +74,7 @@ namespace GameServer.Models
         {
             Log.InfoFormat("CharacterEnter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
 
-            character.Info.mapId = this.ID;
-            this.MapCharacters[character.Id] = new MapCharacter(conn, character);            
+            this.AddCharacter(conn, character);
 
             conn.Session.Response.mapCharacterEnter = new MapCharacterEnterResponse();
             conn.Session.Response.mapCharacterEnter.mapId = this.Define.ID;
@@ -80,19 +82,31 @@ namespace GameServer.Models
             foreach (var kv in this.MapCharacters)
             {
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.character.Info);
-                if(kv.Value.character.Id != character.Id)                
-                    this.AddCharacterEnterMap(kv.Value.connection, character.Info);                               
+                if (kv.Value.character.Id != character.Id)
+                    this.AddCharacterEnterMap(kv.Value.connection, character.Info);
             }
 
-            foreach(var kv in this.MonsterManager.Monsters)
+            foreach (var kv in this.MonsterManager.Monsters)
             {
                 conn.Session.Response.mapCharacterEnter.Characters.Add(kv.Value.Info);
             }
-            conn.SendResponse();            
+            conn.SendResponse();
+        }
+
+        public void AddCharacter(NetConnection<NetSession> conn, Character character)
+        {
+            Log.InfoFormat("AddCharacter: Map:{0} characterId:{1}", this.Define.ID, character.Id);
+            character.Info.mapId = this.ID;
+            character.OnEnterMap(this);
+            if (!this.MapCharacters.ContainsKey(character.Id))
+            {
+                this.MapCharacters[character.Id] = new MapCharacter(conn, character);
+            }            
         }
 
         internal void CharacterLeave(Character cha)
         {
+            cha.OnLeaveMap(this);
             Log.InfoFormat("CharacterLeave: Map:{0} characterId:{1}", this.Define.ID, cha.Id);
             foreach (var kv in this.MapCharacters)
             {

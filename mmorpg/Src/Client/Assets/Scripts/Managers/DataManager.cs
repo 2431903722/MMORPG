@@ -118,6 +118,9 @@ public class DataManager : Singleton<DataManager>
 
         json = File.ReadAllText(this.DataPath + "BuffDefine.txt");
         this.Buffs = JsonConvert.DeserializeObject<Dictionary<int, BuffDefine>>(json);
+
+        json = File.ReadAllText(this.DataPath + "EquipDefine.txt");
+        this.Equips = JsonConvert.DeserializeObject<Dictionary<int, EquipDefine>>(json);
     }
 
 #if UNITY_EDITOR

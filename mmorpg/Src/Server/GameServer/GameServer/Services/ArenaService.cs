@@ -1,6 +1,7 @@
 ﻿using Common;
 using GameServer.Entities;
 using GameServer.Managers;
+using GameServer.Models;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -17,7 +18,7 @@ namespace GameServer.Services
     {
         public void Init()
         {
-            //ArenaManager.Instance.Init();
+            ArenaManager.Instance.Init();
         }
 
         public ArenaService()
@@ -74,20 +75,20 @@ namespace GameServer.Services
                 return;
             }
 
-            //var arena = ArenaManager.Instance.NewArena(response.ArenaInfo, requester, sender);
-            this.SendArenaBegin(requester, sender);
+            var arena = ArenaManager.Instance.NewArena(response.ArenaInfo, requester, sender);
+            this.SendArenaBegin(arena);
         }
 
-        public void SendArenaBegin(NetConnection<NetSession> Red, NetConnection<NetSession> Blue)
+        public void SendArenaBegin(Arena arena)
         {
             var arenaBegin = new ArenaBeginResponse();
             arenaBegin.Result = Result.Failed;
             arenaBegin.Errormsg = "对方不在线";
-            //arenaBegin.ArenaInfo = arena.ArenaInfo;
-            Red.Session.Response.arenaBegin = arenaBegin;
-            Red.SendResponse();
-            Blue.Session.Response.arenaBegin = arenaBegin;
-            Blue.SendResponse();
+            arenaBegin.ArenaInfo = arena.ArenaInfo;
+            arena.Red.Session.Response.arenaBegin = arenaBegin;
+            arena.Red.SendResponse();
+            arena.Blue.Session.Response.arenaBegin = arenaBegin;
+            arena.Blue.SendResponse();
         }
     }
 }

@@ -141,6 +141,7 @@
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\StatusManager.cs" />
     <Compile Include="Managers\TeamManager.cs" />
+    <Compile Include="Models\Arena.cs" />
     <Compile Include="Models\Chat.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\Item.cs" />

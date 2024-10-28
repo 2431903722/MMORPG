@@ -48,7 +48,7 @@ public class EntityController : MonoBehaviour , IEntityNotify, IEntityController
         }           
     }
 
-    void UpdateTransform()
+    public void UpdateTransform()
     {
         this.position = GameObjectTool.LogicToWorld(entity.position);
         this.direction = GameObjectTool.LogicToWorld(entity.direction);
