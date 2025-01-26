@@ -45,7 +45,7 @@ public class UIQuestSystem : MonoBehaviour
     }
 
     /// <summary>
-    /// 初始化所有装备列表
+    /// 初始化所有任务列表
     /// </summary>
     void InitAllQuestItems()
     {

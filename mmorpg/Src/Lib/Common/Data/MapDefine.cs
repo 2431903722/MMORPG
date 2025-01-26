@@ -9,6 +9,7 @@ namespace Common.Data
     {
         Normal = 0,
         Arena = 1,
+        Story = 2,
     }
 
     public class MapDefine

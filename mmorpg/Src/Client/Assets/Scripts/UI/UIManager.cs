@@ -32,6 +32,7 @@ public class UIManager : Singleton<UIManager> {
         this.UIResources.Add(typeof(UIRide), new UIElement() { Resources = "UI/UIRide", Cache = false });
         this.UIResources.Add(typeof(UISystemConfig), new UIElement() { Resources = "UI/UISystemConfig", Cache = false });
         this.UIResources.Add(typeof(UISkill), new UIElement() { Resources = "UI/UISkill", Cache = false });
+        this.UIResources.Add(typeof(UIStory), new UIElement() { Resources = "UI/UIStory", Cache = false });
     }
 
     ~UIManager()

@@ -246,6 +246,10 @@ message NetMessageRequest{
 
 	ArenaChallengRequest arenaChallengeReq = 60;
 	ArenaChallengeResponse arenaChallengeRes = 61;
+	ArenaReadyRequest arenaReady = 64;
+
+	StoryStartRequest storyStart = 70;
+	StoryEndRequest storyEnd = 71;
 }
 
 message NetMessageResponse{
@@ -295,9 +299,14 @@ message NetMessageResponse{
 	ArenaChallengeResponse arenaChallengeRes = 61;
 	ArenaBeginResponse arenaBegin = 62;
 	ArenaEndResponse arenaEnd = 63;
+	ArenaReadyResponse arenaReady = 64;
+	ArenaRoundStartResponse arenaRoundStart = 65;
+	ArenaRoundEndResponse arenaRoundEnd = 66;
 
-	StatusNotify statusNotify = 100;
-	
+	StoryStartResponse storyStart = 70;
+	StoryEndResponse storyEnd = 71;
+
+	StatusNotify statusNotify = 100;		
 }
 
 
@@ -908,4 +917,71 @@ message ArenaEndResponse
 	RESULT result = 1;
 	string errormsg = 2;
 	ArenaInfo arena_info = 3;
+}
+
+message ArenaReadyRequest
+{
+	int32 arenaId = 1;
+	int32 entityId = 2;
+}
+
+message ArenaReadyResponse
+{
+	int32 round = 1;
+	ArenaInfo arena_info = 2;
+}
+
+message ArenaRoundStartResponse
+{
+	int32 round = 1;
+	ArenaInfo arena_info = 2;
+}
+
+message ArenaRoundEndResponse
+{
+	int32 round = 1;
+	ArenaInfo arena_info = 2;
+}
+
+enum ARENA_STATUS
+{
+	NONE = 0;
+	WAIT = 1;
+	GAME = 2;
+	RESULT = 3;
+}
+
+enum ARENA_ROUND_STATUS
+{
+	NONE = 0;
+	READY = 1;
+	FIGHT = 2;
+	RESULT = 3;
+}
+
+message StoryStartRequest
+{
+	int32 storyId = 1;
+}
+
+message StoryStartResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	int32 storyId = 3;
+	int32 instanceId = 4;
+}
+
+message StoryEndRequest
+{
+	int32 storyId = 1;
+	int32 instanceId = 2;
+}
+
+message StoryEndResponse
+{
+	RESULT result = 1;
+	string errormsg = 2;
+	int32 storyId = 3;
+	int32 instanceId = 4;
 }

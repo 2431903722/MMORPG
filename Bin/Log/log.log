@@ -1,165 +1,136 @@
-2024-10-28 17:01:28,799 [ 1] INFO  Unity: LoadingManager start
-2024-10-28 17:01:32,057 [ 1] INFO  Unity: DataManager > DataManager()
-2024-10-28 17:01:33,323 [ 1] INFO  Unity: 正在加载
-2024-10-28 17:01:39,476 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
-2024-10-28 17:01:39,476 [ 1] INFO  Unity: ConnectToServer() Start 
-2024-10-28 17:01:39,477 [ 1] INFO  Unity: DoConnect
-2024-10-28 17:01:39,478 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2024-10-28 17:01:39,478 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2024-10-29 14:53:01,801 [ 1] INFO  Unity: LoadingManager start
+2024-10-29 14:53:05,058 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-29 14:53:06,341 [ 1] INFO  Unity: 正在加载
+2024-10-29 14:53:09,245 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-10-29 14:53:09,245 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-29 14:53:09,246 [ 1] INFO  Unity: DoConnect
+2024-10-29 14:53:09,246 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-29 14:53:09,247 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2024-10-28 17:01:39,480 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2024-10-28 17:01:39,526 [ 1] INFO  Unity: OnUserLogin:Success [None]
-2024-10-28 17:01:39,529 [ 1] INFO  Unity: LoadLevel: CharSelect
-2024-10-28 17:01:39,728 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-28 17:01:39,729 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+2024-10-29 14:53:09,249 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-29 14:53:09,310 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-10-29 14:53:09,314 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-10-29 14:53:09,512 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-29 14:53:09,512 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
 
-2024-10-28 17:01:40,574 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
-2024-10-28 17:01:40,577 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+2024-10-29 14:53:10,075 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
+2024-10-29 14:53:10,077 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
 
-2024-10-28 17:01:41,108 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
-2024-10-28 17:01:41,145 [ 1] INFO  Unity: OnGameEnter:Success [None]
-2024-10-28 17:01:41,145 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
-2024-10-28 17:01:41,145 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
-2024-10-28 17:01:41,145 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
-2024-10-28 17:01:41,145 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
-2024-10-28 17:01:41,148 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
-2024-10-28 17:01:41,151 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:1
-2024-10-28 17:01:41,151 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:2
-2024-10-28 17:01:41,151 [ 1] INFO  Unity: LoadLevel: MainCity
-2024-10-28 17:01:41,415 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:01:41,687 [ 1] WARN  Unity: MainPlayerCamera[22354] Awake
+2024-10-29 14:53:10,608 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-10-29 14:53:10,645 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-29 14:53:10,645 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-10-29 14:53:10,645 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-10-29 14:53:10,646 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2024-10-29 14:53:10,646 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2024-10-29 14:53:10,649 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2024-10-29 14:53:10,651 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:1
+2024-10-29 14:53:10,652 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:2
+2024-10-29 14:53:10,652 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-29 14:53:10,913 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:11,189 [ 1] WARN  Unity: MainPlayerCamera[22358] Awake
 
-2024-10-28 17:01:41,687 [ 1] WARN  Unity: UIMain[22400] Awake
+2024-10-29 14:53:11,189 [ 1] WARN  Unity: UIMain[22404] Awake
 
-2024-10-28 17:01:41,688 [ 1] WARN  Unity: GameObjectManager[22524] Awake
+2024-10-29 14:53:11,190 [ 1] WARN  Unity: GameObjectManager[22528] Awake
 
-2024-10-28 17:01:41,691 [ 1] WARN  Unity: UIWorldElementManager[22546] Awake
+2024-10-29 14:53:11,192 [ 1] WARN  Unity: UIWorldElementManager[22550] Awake
 
-2024-10-28 17:01:41,694 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+2024-10-29 14:53:11,196 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
 {1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.MapService.OnLoadDone ()
 SceneManager.LevelLoadCompleted (UnityEngine.AsyncOperation obj)
 UnityEngine.AsyncOperation.InvokeCompletionEvent ()
 }</args></log4net.Error>
-2024-10-28 17:01:41,717 [ 1] INFO  Unity: Set Channel:Local
-2024-10-28 17:01:51,559 [ 1] INFO  Unity: OnArenaChallengeRequest
-2024-10-28 17:01:52,993 [ 1] INFO  Unity: SendArenaChallengeResponse
-2024-10-28 17:01:53,024 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:1
-2024-10-28 17:01:53,024 [ 1] INFO  Unity: RemoveCharacter:1
-2024-10-28 17:01:53,025 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:01:53,025 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
-2024-10-28 17:01:53,025 [ 1] INFO  Unity: RemoveCharacter:2
-2024-10-28 17:01:53,026 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:1
-2024-10-28 17:01:53,026 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
-2024-10-28 17:01:53,026 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:2
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: AddCharacter:1:001 Map:5 Entity:2
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: LoadLevel: Arena
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:01:53,027 [ 1] INFO  Unity: OnArenaBegin
-2024-10-28 17:01:53,027 [ 1] WARN  Unity: Failed to create agent because it is not close enough to the NavMesh
+2024-10-29 14:53:11,220 [ 1] INFO  Unity: Set Channel:Local
+2024-10-29 14:53:18,144 [ 1] INFO  Unity: SendArenaChallengeRequest
+2024-10-29 14:53:19,192 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
+2024-10-29 14:53:19,192 [ 1] INFO  Unity: RemoveCharacter:1
+2024-10-29 14:53:19,193 [ 1] INFO  Unity: RemoveCharacter:2
+2024-10-29 14:53:19,193 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:19,193 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(5440, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-10-29 14:53:19,193 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2024-10-29 14:53:19,208 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:2
+2024-10-29 14:53:19,208 [ 1] INFO  Unity: AddCharacter:1:001 Map:5 Entity:2
+2024-10-29 14:53:19,209 [ 1] INFO  Unity: LoadLevel: Arena
+2024-10-29 14:53:19,209 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:1
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: OnArenaBegin
+2024-10-29 14:53:19,210 [ 1] INFO  Unity: ArenaManager.EnterArena : 0
+2024-10-29 14:53:19,210 [ 1] WARN  Unity: Failed to create agent because it is not close enough to the NavMesh
 
-2024-10-28 17:01:53,028 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(5000, 4000, 820) DIR:(60, -80, 0) SPD:0 
-2024-10-28 17:01:53,028 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(-2400, 0, 2650) DIR:(-100, 0, 0) SPD:0 
-2024-10-28 17:01:53,265 [ 1] INFO  Unity: LevelLoadCompleted:1
-2024-10-28 17:01:53,265 [ 1] INFO  Unity: TeleporterObject: Character [001] Enter Teleporter[竞技场复活点B:10]
-2024-10-28 17:01:57,274 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(2400, 0, 2650) DIR:(-100, 0, 0) SPD:300
-2024-10-28 17:01:58,990 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1878, 0, 2700) DIR:(-100, 0, 0) SPD:300
-2024-10-28 17:01:59,273 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1790, 0, 2750) DIR:(-100, 0, 0) SPD:300
-2024-10-28 17:01:59,341 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1765, 0, 2750) DIR:(-100, 0, 0) SPD:0
-2024-10-28 17:02:06,956 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1765, 0, 2750) DIR:(-100, 0, 0) SPD:300
-2024-10-28 17:02:07,190 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1695, 0, 2750) DIR:(-98, 19, 0) SPD:300
-2024-10-28 17:02:07,306 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1665, 6, 2750) DIR:(-93, 37, 0) SPD:300
-2024-10-28 17:02:07,489 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1610, 28, 2750) DIR:(-85, 53, 0) SPD:300
-2024-10-28 17:02:07,840 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1526, 91, 2750) DIR:(-93, 36, 0) SPD:300
-2024-10-28 17:02:09,206 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(1111, 257, 2750) DIR:(-98, 19, 0) SPD:300
-2024-10-28 17:02:10,140 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(836, 312, 2750) DIR:(-98, 19, 0) SPD:0
-2024-10-28 17:02:11,373 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(836, 312, 2750) DIR:(-98, 19, 0) SPD:300
-2024-10-28 17:02:11,823 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(706, 338, 2750) DIR:(-100, 1, 0) SPD:300
-2024-10-28 17:02:12,624 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:02:12,690 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(448, 336, 2756) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:13,325 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:02:14,140 [ 1] INFO  Unity: OnFriendList
-2024-10-28 17:02:15,056 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(448, 336, 2756) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,156 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 2825) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,206 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(405, 309, 2893) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,239 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(397, 307, 2953) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,273 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(389, 305, 3024) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,306 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(380, 302, 3106) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,339 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(372, 300, 3200) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,373 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(363, 298, 3306) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,406 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(355, 295, 3422) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,439 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(347, 293, 3550) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,473 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(338, 290, 3690) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,506 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(330, 288, 3840) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,540 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(322, 286, 4003) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,573 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(317, 284, 4088) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,606 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(309, 282, 4267) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,639 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(301, 280, 4458) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,673 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(292, 277, 4660) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,706 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(284, 275, 4873) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,739 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(275, 273, 5098) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,773 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(267, 270, 5334) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,806 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(259, 268, 5582) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,839 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(250, 265, 5841) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,872 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(242, 263, 6111) DIR:(-81, -23, 55) SPD:300
-2024-10-28 17:02:15,906 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(234, 261, 6254) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:15,939 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(234, 261, 6254) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:15,973 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(234, 261, 6254) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,006 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(234, 261, 6254) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,039 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(234, 261, 6254) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,073 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(265, 270, 6176) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,106 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(277, 273, 6104) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,140 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(285, 275, 6043) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,173 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(293, 277, 5971) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,207 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(301, 280, 5888) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,240 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(308, 282, 5795) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,256 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(316, 284, 5691) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,290 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(324, 286, 5576) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,323 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(332, 289, 5451) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,356 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(340, 291, 5315) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,389 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(348, 293, 5169) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,423 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(356, 295, 5011) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,456 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(363, 298, 4843) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,489 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(371, 300, 4665) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,523 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(379, 302, 4476) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,556 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(387, 304, 4276) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,590 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(395, 306, 4065) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,622 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(403, 309, 3844) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,656 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(410, 311, 3612) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:16,689 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,723 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,756 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,789 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,823 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,856 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,889 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,923 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,956 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:16,989 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,023 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,056 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,089 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,123 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,156 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,190 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,223 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,256 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,289 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,323 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,356 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,389 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,423 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,456 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,489 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,523 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:17,790 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(418, 313, 3489) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:17,906 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(442, 320, 3417) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:17,956 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(454, 323, 3345) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:17,990 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(462, 325, 3284) DIR:(-81, -23, 55) SPD:-300
-2024-10-28 17:02:18,023 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(470, 327, 3278) DIR:(-81, -23, 55) SPD:0
-2024-10-28 17:02:27,385 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(470, 327, 3278) DIR:(-81, -23, 55) SPD:0 
-2024-10-28 17:02:27,385 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(-1602, 87, 3140) DIR:(-99, 11, 0) SPD:0 
-2024-10-28 17:02:27,385 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-10-28 17:02:27,386 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-29 14:53:19,479 [ 1] WARN  Unity: UIArena[23332] Awake
+
+2024-10-29 14:53:19,479 [ 1] INFO  Unity: ArenaManager.SendReady : 0
+2024-10-29 14:53:19,479 [ 1] INFO  Unity: SendArenaReadyRequest
+2024-10-29 14:53:19,485 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-29 14:53:19,486 [ 1] INFO  Unity: TeleporterObject: Character [001] Enter Teleporter[竞技场复活点A:9]
+2024-10-29 14:53:19,533 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:19,534 [ 1] INFO  Unity: ArenaManager.OnReady : 0 Round:1
+2024-10-29 14:53:30,474 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:53:30,474 [ 1] INFO  Unity: ArenaManager.OnRoundStart : 0 Round:1
+2024-10-29 14:53:33,042 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-98, 18, 0) SPD:0
+2024-10-29 14:53:33,141 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-94, 35, 0) SPD:0
+2024-10-29 14:53:33,224 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-86, 51, 0) SPD:0
+2024-10-29 14:53:33,324 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-74, 68, 0) SPD:0
+2024-10-29 14:53:33,424 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-58, 81, 0) SPD:0
+2024-10-29 14:53:33,508 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-43, 90, 0) SPD:0
+2024-10-29 14:53:33,591 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-27, 96, 0) SPD:0
+2024-10-29 14:53:33,674 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-9, 100, 0) SPD:0
+2024-10-29 14:53:33,774 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(11, 99, 0) SPD:0
+2024-10-29 14:53:33,857 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(29, 96, 0) SPD:0
+2024-10-29 14:53:33,957 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(48, 88, 0) SPD:0
+2024-10-29 14:53:34,058 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(65, 76, 0) SPD:0
+2024-10-29 14:53:34,174 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(79, 62, 0) SPD:0
+2024-10-29 14:53:35,407 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(88, 47, 0) SPD:0
+2024-10-29 14:53:42,040 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(95, 31, 0) SPD:300
+2024-10-29 14:53:42,074 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(95, 31, 0) SPD:300
+2024-10-29 14:53:42,157 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2365, 14, 2650) DIR:(99, 12, 0) SPD:300
+2024-10-29 14:53:42,307 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2320, 23, 2650) DIR:(100, -7, 0) SPD:300
+2024-10-29 14:53:42,857 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2150, 23, 2650) DIR:(99, 11, 0) SPD:300
+2024-10-29 14:53:43,407 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1985, 56, 2650) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:43,757 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1879, 55, 2697) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:44,074 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1789, 82, 2747) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:44,374 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1700, 109, 2797) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:44,673 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1611, 136, 2847) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:44,973 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1521, 163, 2897) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:45,273 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1432, 190, 2947) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:45,557 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1342, 217, 2997) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:45,857 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1253, 244, 3047) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:46,174 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1164, 271, 3097) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:46,473 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-1074, 298, 3147) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:46,774 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-985, 325, 3197) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:47,074 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-895, 352, 3248) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:47,374 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-806, 379, 3298) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:47,674 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-717, 406, 3348) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:47,974 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-627, 433, 3398) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:48,124 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-582, 442, 3398) DIR:(96, 29, 0) SPD:0
+2024-10-29 14:53:49,457 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-582, 442, 3398) DIR:(96, 29, 0) SPD:300
+2024-10-29 14:53:50,423 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-297, 499, 3398) DIR:(99, 11, 0) SPD:300
+2024-10-29 14:53:50,523 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-267, 505, 3398) DIR:(100, -9, 0) SPD:300
+2024-10-29 14:53:50,623 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-237, 505, 3398) DIR:(96, -29, 0) SPD:300
+2024-10-29 14:53:50,773 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-192, 496, 3398) DIR:(89, -46, 0) SPD:300
+2024-10-29 14:53:51,290 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-64, 432, 3398) DIR:(96, -29, 0) SPD:300
+2024-10-29 14:53:51,390 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-34, 426, 3398) DIR:(99, -10, 0) SPD:300
+2024-10-29 14:53:51,490 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-4, 420, 3398) DIR:(100, 9, 0) SPD:300
+2024-10-29 14:53:51,640 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(41, 420, 3398) DIR:(97, 26, 0) SPD:300
+2024-10-29 14:53:52,357 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(251, 462, 3398) DIR:(97, 26, 0) SPD:0
+2024-10-29 14:53:53,957 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(251, 462, 3398) DIR:(100, 7, 0) SPD:0
+2024-10-29 14:53:53,990 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(251, 462, 3398) DIR:(100, 7, 0) SPD:300
+2024-10-29 14:53:54,057 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(276, 462, 3398) DIR:(99, -13, 0) SPD:300
+2024-10-29 14:53:54,157 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(306, 456, 3398) DIR:(94, -33, 0) SPD:300
+2024-10-29 14:53:54,273 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(341, 442, 3398) DIR:(87, -50, 0) SPD:300
+2024-10-29 14:53:54,423 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(395, 458, 3420) DIR:(87, -50, 0) SPD:300
+2024-10-29 14:53:54,507 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(419, 440, 3420) DIR:(87, -50, 0) SPD:0
+2024-10-29 14:53:57,423 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(419, 440, 3420) DIR:(87, -50, 0) SPD:300
+2024-10-29 14:53:58,140 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(591, 311, 3420) DIR:(87, -50, 0) SPD:0
+2024-10-29 14:54:30,472 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:54:30,473 [ 1] INFO  Unity: ArenaManager.OnRoundEnd : 0 Round:1
+2024-10-29 14:54:35,505 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:54:35,505 [ 1] INFO  Unity: ArenaManager.OnReady : 0 Round:2
+2024-10-29 14:54:39,138 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(576, 53, 2792) DIR:(-99, 16, 0) SPD:0 
+2024-10-29 14:54:39,138 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(591, 311, 3420) DIR:(87, -50, 0) SPD:0 
+2024-10-29 14:54:39,138 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-29 14:54:39,139 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 

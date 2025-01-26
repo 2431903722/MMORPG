@@ -39,6 +39,7 @@ namespace GameServer
             ChatService.Instance.Init();
             BattleService.Instance.Init();
             ArenaService.Instance.Init();
+            StoryService.Instance.Init();
 
             thread = new Thread(new ThreadStart(this.Update));
 
@@ -63,12 +64,14 @@ namespace GameServer
         public void Update()
         {
             var mapManager = MapManager.Instance;
+            var arenaManager = ArenaManager.Instance;
             while (running)
             {
                 Time.Tick();
                 Thread.Sleep(100); // 10fps
                 //Console.WriteLine("{0} {1} {2} {3} {4}", Time.deltaTime, Time.frameCount, Time.ticks, Time.time, Time.realtimeSinceStartup);
                 mapManager.Update();
+                arenaManager.Update();
             }
         }
     }

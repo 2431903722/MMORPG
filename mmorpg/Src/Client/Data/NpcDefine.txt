@@ -18,7 +18,8 @@
     "Name": "多丽丝",
     "Description": "副本NPC",
     "Type": "Functional",
-    "Function": "InvokeInsrance"
+    "Function": "InvokeStory",
+    "Param": 1
   },
   "4": {
     "ID": 4,

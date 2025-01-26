@@ -1,5 +1,7 @@
-﻿using Common.Data;
+﻿using Common;
+using Common.Data;
 using GameServer.Managers;
+using GameServer.Services;
 using Network;
 using SkillBridge.Message;
 using System;
@@ -12,6 +14,9 @@ namespace GameServer.Models
 {
     class Arena
     {
+        const float READY_TIME = 11f;
+        const float ROUND_TIME = 60f;
+        const float RESULT_TIME = 5f;
         public Map Map;
         public ArenaInfo ArenaInfo;
         public NetConnection<NetSession> Red;
@@ -20,6 +25,13 @@ namespace GameServer.Models
         Map SourceMapBlue;
         int RedPoint = 9;
         int BluePoint = 10;
+        private bool redReady;
+        private bool blueReady;
+        public bool Ready { get { return this.redReady && this.blueReady; } }
+        private ArenaStatus ArenaStatus;
+        private ArenaRoundStatus RoundStatus;
+        public int Round { get; internal set; }
+        private float timer = 0f;
 
         public Arena(Map map, ArenaInfo arena, NetConnection<NetSession> red, NetConnection<NetSession> blue)
         {
@@ -28,6 +40,8 @@ namespace GameServer.Models
             this.Blue = blue;
             this.Map = map;
             arena.ArenaId = map.InstanceId;
+            this.ArenaStatus = ArenaStatus.Wait;
+            this.RoundStatus = ArenaRoundStatus.None;
         }
 
         internal void PlayerEnter()
@@ -63,6 +77,85 @@ namespace GameServer.Models
 
             EntityManager.Instance.AddMapEntity(this.Map.ID, this.Map.InstanceId, this.Red.Session.Character);
             EntityManager.Instance.AddMapEntity(this.Map.ID, this.Map.InstanceId, this.Blue.Session.Character);
+        }
+
+        internal void Update()
+        {
+            if (this.ArenaStatus == ArenaStatus.Game)
+            {
+                UpdateRound();
+            }
+        }
+
+        void UpdateRound()
+        {
+            if (this.RoundStatus == ArenaRoundStatus.Ready)
+            {
+                this.timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    this.RoundStatus = ArenaRoundStatus.Fight;
+                    this.timer = ROUND_TIME;
+                    Log.InfoFormat("Arena:[{0}] Round Start Round:[{1}]", this.ArenaInfo.ArenaId, this.Round);
+                    ArenaService.Instance.SendArenaRoundStart(this);
+                }
+            }
+            else if (this.RoundStatus == ArenaRoundStatus.Fight)
+            {
+                this.timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    this.RoundStatus = ArenaRoundStatus.Result;
+                    this.timer = RESULT_TIME;
+                    Log.InfoFormat("Arena:[{0}] Round End Round:[{1}]", this.ArenaInfo.ArenaId, this.Round);
+                    ArenaService.Instance.SendArenaRoundEnd(this);
+                }
+            }
+            else if (this.RoundStatus == ArenaRoundStatus.Result)
+            {
+                this.timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    if (this.Round >= 3)
+                        ArenaResult();
+                    else
+                        NextRound();
+                }
+            }
+        }
+
+        private void ArenaResult()
+        {
+            this.ArenaStatus = ArenaStatus.Result;
+            // 执行结算 待完成
+            Log.InfoFormat("Arena:[{0}] Result Round:[{2}]", this.ArenaInfo.ArenaId, this.Round);
+        }
+
+        internal void EntityReady(int entityId)
+        {
+            if (this.Red.Session.Character.entityId == entityId)
+            {
+                this.redReady = true;
+            }
+            if (this.Blue.Session.Character.entityId == entityId)
+            {
+                this.blueReady = true;
+            }
+            if (this.Ready)
+            {
+                this.ArenaStatus = ArenaStatus.Game;
+                this.Round = 0;
+                NextRound();
+            }
+        }
+
+        private void NextRound()
+        {
+            this.Round++;
+            this.timer = READY_TIME;
+            this.RoundStatus = ArenaRoundStatus.Ready;
+            Log.InfoFormat("Arena:[{0}]  Round[{1}]  Ready", this.ArenaInfo.ArenaId, this.Round);
+            ArenaService.Instance.SendArenaReady(this);
         }
     }
 }

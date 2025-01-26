@@ -25,12 +25,14 @@ namespace GameServer.Services
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengRequest>(this.OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaChallengeResponse>(this.OnArenaChallengeResponse);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<ArenaReadyRequest>(this.OnArenaReady);
         }
 
         public void Dispose()
         {
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengRequest>(this.OnArenaChallengeRequest);
             MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaChallengeResponse>(this.OnArenaChallengeResponse);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Unsubscribe<ArenaReadyRequest>(this.OnArenaReady);
         }
 
         private void OnArenaChallengeRequest(NetConnection<NetSession> sender, ArenaChallengRequest request)
@@ -88,6 +90,45 @@ namespace GameServer.Services
             arena.Red.Session.Response.arenaBegin = arenaBegin;
             arena.Red.SendResponse();
             arena.Blue.Session.Response.arenaBegin = arenaBegin;
+            arena.Blue.SendResponse();
+        }
+
+        private void OnArenaReady(NetConnection<NetSession> sender, ArenaReadyRequest message)
+        {
+            Arena arena = ArenaManager.Instance.GetArena(message.arenaId);
+            arena.EntityReady(message.entityId);
+        }
+
+        internal void SendArenaReady(Arena arena)
+        {
+            var arenaReady = new ArenaReadyResponse();
+            arenaReady.Round = arena.Round;
+            arenaReady.ArenaInfo = arena.ArenaInfo;
+            arena.Red.Session.Response.arenaReady = arenaReady;
+            arena.Red.SendResponse();
+            arena.Blue.Session.Response.arenaReady = arenaReady;
+            arena.Blue.SendResponse();
+        }
+
+        internal void SendArenaRoundStart(Arena arena)
+        {
+            var roundStart = new ArenaRoundStartResponse();
+            roundStart.Round = arena.Round;
+            roundStart.ArenaInfo = arena.ArenaInfo;
+            arena.Red.Session.Response.arenaRoundStart = roundStart;
+            arena.Red.SendResponse();
+            arena.Blue.Session.Response.arenaRoundStart = roundStart;
+            arena.Blue.SendResponse();
+        }
+
+        internal void SendArenaRoundEnd(Arena arena)
+        {
+            var roundEnd = new ArenaRoundEndResponse();
+            roundEnd.Round = arena.Round;
+            roundEnd.ArenaInfo = arena.ArenaInfo;
+            arena.Red.Session.Response.arenaRoundEnd = roundEnd;
+            arena.Red.SendResponse();
+            arena.Blue.Session.Response.arenaRoundEnd = roundEnd;
             arena.Blue.SendResponse();
         }
     }

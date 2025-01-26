@@ -66,9 +66,6 @@ namespace Managers
 
         private bool DoFunctionInteractive(NpcDefine npc)
         {
-            //if(npc.Type == NpcType.Functional)
-            //    return false;
-
             if (!eventMap.ContainsKey(npc.Function))
                 return false;
 

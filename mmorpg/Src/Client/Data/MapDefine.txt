@@ -32,7 +32,7 @@
   "4": {
     "ID": 4,
     "Name": "落日空间",
-    "Type": "Normal",
+    "Type": "Story",
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map03",

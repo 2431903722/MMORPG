@@ -6,8 +6,6 @@ using UnityEngine.UI;
 using UnityEngine;
 using Models;
 
-
-
 public class UIQuestItem : ListView.ListViewItem
 {
     public Text title;

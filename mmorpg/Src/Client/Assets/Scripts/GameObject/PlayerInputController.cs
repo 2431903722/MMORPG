@@ -64,7 +64,7 @@ public class PlayerInputController : MonoBehaviour {
         if (agent == null)
         {
             agent = this.gameObject.AddComponent<NavMeshAgent>();
-            agent.stoppingDistance = 4f;
+            agent.stoppingDistance = 2f;
             agent.updatePosition = false;
         }
     }

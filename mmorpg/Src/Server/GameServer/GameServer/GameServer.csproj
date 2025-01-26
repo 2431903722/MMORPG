@@ -140,12 +140,14 @@
     <Compile Include="Managers\SpawnManager.cs" />
     <Compile Include="Managers\Spawner.cs" />
     <Compile Include="Managers\StatusManager.cs" />
+    <Compile Include="Managers\StoryManager.cs" />
     <Compile Include="Managers\TeamManager.cs" />
     <Compile Include="Models\Arena.cs" />
     <Compile Include="Models\Chat.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Map.cs" />
+    <Compile Include="Models\Story.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Network\ExtensionMethods.cs" />
     <Compile Include="Network\INetSession.cs" />
@@ -172,6 +174,7 @@
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\QuestService.cs" />
+    <Compile Include="Services\StoryService.cs" />
     <Compile Include="Services\TeamService.cs" />
     <Compile Include="Services\UserSerevice.cs" />
     <Compile Include="Settings.cs" />

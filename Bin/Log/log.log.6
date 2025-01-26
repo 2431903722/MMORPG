@@ -1,12 +1,144 @@
-2024-10-28 12:26:42,850 [ 1] INFO  Unity: LoadingManager start
-2024-10-28 12:26:46,081 [ 1] INFO  Unity: DataManager > DataManager()
-2024-10-28 12:26:46,156 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{JsonReaderException: Input string '200.0' is not a valid integer. Path '1.101.CastRange', line 10, position 24., Newtonsoft.Json.JsonTextReader.ParseNumber (ReadType readType)
-Newtonsoft.Json.JsonTextReader.ReadNumberValue (ReadType readType)
-Newtonsoft.Json.JsonTextReader.ReadAsInt32 ()
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType (Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonContract contract, Boolean hasConverter)
-Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject (System.Object newObject, Newtonsoft.Json.JsonReader reader, Newtonsoft.Json.Serialization.JsonObjectContract contract, Newtonsoft.Json.Serialization.JsonProperty member, System.String id)
+2024-10-29 14:14:54,702 [ 1] INFO  Unity: LoadingManager start
+2024-10-29 14:14:57,930 [ 1] INFO  Unity: DataManager > DataManager()
+2024-10-29 14:14:59,397 [ 1] INFO  Unity: 正在加载
+2024-10-29 14:15:04,300 [ 1] INFO  Unity: UserLoginRequest::user :001 psw:123
+2024-10-29 14:15:04,300 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-10-29 14:15:04,301 [ 1] INFO  Unity: DoConnect
+2024-10-29 14:15:04,301 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-29 14:15:04,302 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-10-29 14:15:04,304 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-10-29 14:15:04,366 [ 1] INFO  Unity: OnUserLogin:Success [None]
+2024-10-29 14:15:04,369 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-10-29 14:15:04,567 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-29 14:15:04,568 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+
+2024-10-29 14:15:05,314 [ 1] INFO  Unity: Select Char:[1]001[Warrior]
+2024-10-29 14:15:05,316 [ 1] WARN  Unity: Failed to create agent because there is no valid NavMesh
+
+2024-10-29 14:15:06,197 [ 1] INFO  Unity: UserGameEnterRequest::characterId :0
+2024-10-29 14:15:06,234 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2024-10-29 14:15:06,234 [ 1] INFO  Unity: ItemManager:Init[Id:1, Count:20]
+2024-10-29 14:15:06,234 [ 1] INFO  Unity: ItemManager:Init[Id:2, Count:20]
+2024-10-29 14:15:06,234 [ 1] INFO  Unity: ItemManager:Init[Id:1001, Count:1]
+2024-10-29 14:15:06,234 [ 1] INFO  Unity: ItemManager:Init[Id:1002, Count:1]
+2024-10-29 14:15:06,237 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:2
+2024-10-29 14:15:06,240 [ 1] INFO  Unity: AddCharacter:2:002 Map:1 Entity:1
+2024-10-29 14:15:06,240 [ 1] INFO  Unity: AddCharacter:1:001 Map:1 Entity:2
+2024-10-29 14:15:06,241 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-10-29 14:15:06,504 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:06,777 [ 1] WARN  Unity: MainPlayerCamera[22358] Awake
+
+2024-10-29 14:15:06,777 [ 1] WARN  Unity: UIMain[22404] Awake
+
+2024-10-29 14:15:06,778 [ 1] WARN  Unity: GameObjectManager[22528] Awake
+
+2024-10-29 14:15:06,780 [ 1] WARN  Unity: UIWorldElementManager[22550] Awake
+
+2024-10-29 14:15:06,783 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, Services.MapService.OnLoadDone ()
+SceneManager.LevelLoadCompleted (UnityEngine.AsyncOperation obj)
+UnityEngine.AsyncOperation.InvokeCompletionEvent ()
 }</args></log4net.Error>
-2024-10-28 12:26:49,550 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2024-10-28 12:26:49,550 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2024-10-29 14:15:06,808 [ 1] INFO  Unity: Set Channel:Local
+2024-10-29 14:15:12,099 [ 1] INFO  Unity: SendArenaChallengeRequest
+2024-10-29 14:15:13,030 [ 1] INFO  Unity: OnMapCharacterLeave: CharID:2
+2024-10-29 14:15:13,031 [ 1] INFO  Unity: RemoveCharacter:1
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: RemoveCharacter:2
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:2
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: AddCharacter:1:001 Map:5 Entity:2
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: LoadLevel: Arena
+2024-10-29 14:15:13,032 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: OnMapCharacterEnter:Map:5 Count:1
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: AddCharacter:2:002 Map:5 Entity:1
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: OnArenaBegin
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: ArenaManager.EnterArena : 0
+2024-10-29 14:15:13,034 [ 1] WARN  Unity: Failed to create agent because it is not close enough to the NavMesh
+
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(5273, 3822, 820) DIR:(62, -78, 0) SPD:0 
+2024-10-29 14:15:13,034 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(2400, 0, 2650) DIR:(-100, 0, 0) SPD:0 
+2024-10-29 14:15:13,282 [ 1] WARN  Unity: UIArena[23332] Awake
+
+2024-10-29 14:15:13,282 [ 1] INFO  Unity: ArenaManager.SendReady : 0
+2024-10-29 14:15:13,283 [ 1] INFO  Unity: SendArenaReadyRequest
+2024-10-29 14:15:13,289 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-10-29 14:15:13,289 [ 1] INFO  Unity: TeleporterObject: Character [001] Enter Teleporter[竞技场复活点A:9]
+2024-10-29 14:15:13,339 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:13,339 [ 1] ERROR Unity: Message handler exception:, The requested feature is not implemented., Assembly-CSharp,   at Services.ArenaService.OnArenaReady (System.Object sender, SkillBridge.Message.ArenaReadyResponse message) [0x00000] in <filename unknown>:0 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ArenaReadyResponse] (System.Object sender, SkillBridge.Message.ArenaReadyResponse msg) [0x00000] in <filename unknown>:0 
+2024-10-29 14:15:13,340 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NotImplementedException: The requested feature is not implemented., Services.ArenaService.OnArenaReady (System.Object sender, SkillBridge.Message.ArenaReadyResponse message)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ArenaReadyResponse] (System.Object sender, SkillBridge.Message.ArenaReadyResponse msg)
+}</args></log4net.Error>
+2024-10-29 14:15:15,331 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-98, -18, 0) SPD:0
+2024-10-29 14:15:15,429 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-94, -35, 0) SPD:0
+2024-10-29 14:15:15,513 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-86, -51, 0) SPD:0
+2024-10-29 14:15:15,613 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-74, -68, 0) SPD:0
+2024-10-29 14:15:15,713 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-58, -81, 0) SPD:0
+2024-10-29 14:15:15,796 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-43, -90, 0) SPD:0
+2024-10-29 14:15:15,879 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-27, -96, 0) SPD:0
+2024-10-29 14:15:15,963 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(-9, -100, 0) SPD:0
+2024-10-29 14:15:16,063 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(11, -99, 0) SPD:0
+2024-10-29 14:15:16,146 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(29, -96, 0) SPD:0
+2024-10-29 14:15:16,247 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(48, -88, 0) SPD:0
+2024-10-29 14:15:16,346 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(65, -76, 0) SPD:0
+2024-10-29 14:15:16,430 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(77, -64, 0) SPD:0
+2024-10-29 14:15:16,530 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(87, -49, 0) SPD:0
+2024-10-29 14:15:16,630 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(95, -30, 0) SPD:0
+2024-10-29 14:15:16,747 [ 1] INFO  Unity: OnEntityChanger: ID:1 POS:(-2400, 0, 2650) DIR:(99, -12, 0) SPD:0
+2024-10-29 14:15:24,346 [ 1] INFO  Unity: OnFriendList
+2024-10-29 14:15:24,346 [ 1] ERROR Unity: Message handler exception:, The requested feature is not implemented., Assembly-CSharp,   at Services.ArenaService.OnArenaRoundStart (System.Object sender, SkillBridge.Message.ArenaRoundStartResponse message) [0x00000] in <filename unknown>:0 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[ArenaRoundStartResponse] (System.Object sender, SkillBridge.Message.ArenaRoundStartResponse msg) [0x00000] in <filename unknown>:0 
+2024-10-29 14:15:24,347 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NotImplementedException: The requested feature is not implemented., Services.ArenaService.OnArenaRoundStart (System.Object sender, SkillBridge.Message.ArenaRoundStartResponse message)
+Network.MessageDistributer`1[System.Object].RaiseEvent[ArenaRoundStartResponse] (System.Object sender, SkillBridge.Message.ArenaRoundStartResponse msg)
+}</args></log4net.Error>
+2024-10-29 14:15:53,913 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00000] in <filename unknown>:0 
+
+2024-10-29 14:15:53,913 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+
+2024-10-29 14:15:53,928 [ 1] INFO  Unity: DoConnect
+2024-10-29 14:15:53,929 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-29 14:15:53,929 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-10-29 14:15:55,930 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2024-10-29 14:15:55,931 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2024-10-29 14:15:55,933 [ 1] INFO  Unity: DoConnect
+2024-10-29 14:15:55,933 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-29 14:15:55,933 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2024-10-29 14:15:57,935 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2024-10-29 14:15:57,935 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2024-10-29 14:15:57,938 [ 1] INFO  Unity: DoConnect
+2024-10-29 14:15:57,938 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-10-29 14:15:57,938 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2024-10-29 14:15:59,939 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+
+2024-10-29 14:15:59,939 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+
+2024-10-29 14:15:59,939 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2024-10-29 14:15:59,956 [ 1] INFO  Unity: Character_1_001 OnDestroy :ID:2 POS:(2400, 0, 2650) DIR:(-100, 0, 0) SPD:0 
+2024-10-29 14:15:59,956 [ 1] INFO  Unity: Character_2_002 OnDestroy :ID:1 POS:(-2400, 0, 2650) DIR:(99, -12, 0) SPD:0 
+2024-10-29 14:15:59,957 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-10-29 14:15:59,957 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 

@@ -1,0 +1,12 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": "落日空间",
+    "Description": "落日空间",
+    "SubType": "Normal",
+    "MapId": 4,
+    "LimitTime": 300,
+    "PreQuest": 4001,
+    "Quest": 4002
+  }
+}
